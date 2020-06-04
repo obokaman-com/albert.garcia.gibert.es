@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Albert García Gibert</title>
-    <link>http://albert.garcia.gibert.es/categories/</link>
+    <link>https://albert.garcia.gibert.es/categories/</link>
     <description>Recent content in Categories on Albert García Gibert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>All rights reserved - 2015</copyright>
     
-	<atom:link href="http://albert.garcia.gibert.es/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://albert.garcia.gibert.es/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

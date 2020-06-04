@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>doom on Albert García Gibert</title>
-    <link>http://albert.garcia.gibert.es/tags/doom/</link>
+    <link>https://albert.garcia.gibert.es/tags/doom/</link>
     <description>Recent content in doom on Albert García Gibert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>All rights reserved - 2015</copyright>
     <lastBuildDate>Sat, 16 Jun 2007 13:11:58 +0000</lastBuildDate>
     
-	<atom:link href="http://albert.garcia.gibert.es/tags/doom/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://albert.garcia.gibert.es/tags/doom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DOOM como herramienta administrativa en Linux</title>
-      <link>http://albert.garcia.gibert.es/doom-herramienta-administrativa-linux-14265/</link>
+      <link>https://albert.garcia.gibert.es/doom-herramienta-administrativa-linux-14265/</link>
       <pubDate>Sat, 16 Jun 2007 13:11:58 +0000</pubDate>
       
-      <guid>http://albert.garcia.gibert.es/doom-herramienta-administrativa-linux-14265/</guid>
+      <guid>https://albert.garcia.gibert.es/doom-herramienta-administrativa-linux-14265/</guid>
       <description>Incre&amp;iacute;blemente friki... pero cierto. Un tal David Koppenhofer ha realizado una adaptaci&amp;oacute;n del popular shoot&#39;em up DOOM para conseguir representar los procesos del sistema como personajes del propio juego.De esta forma, cada vez que quieras matar un proceso... ya no tendr&amp;aacute;s que hacerlo de forma metaf&amp;oacute;rica: podr&amp;aacute;s ir directamente a por &amp;eacute;l y fulminarlo de un tiro.Via | Xonsuns&amp;nbsp;</description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>buscadores on Albert García Gibert</title>
-    <link>http://albert.garcia.gibert.es/tags/buscadores/</link>
+    <link>https://albert.garcia.gibert.es/tags/buscadores/</link>
     <description>Recent content in buscadores on Albert García Gibert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>All rights reserved - 2015</copyright>
     <lastBuildDate>Mon, 17 Oct 2005 23:23:08 +0000</lastBuildDate>
     
-	<atom:link href="http://albert.garcia.gibert.es/tags/buscadores/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://albert.garcia.gibert.es/tags/buscadores/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Los blogs de OboLog en los buscadores</title>
-      <link>http://albert.garcia.gibert.es/blogs-obolog-buscadores-656/</link>
+      <link>https://albert.garcia.gibert.es/blogs-obolog-buscadores-656/</link>
       <pubDate>Mon, 17 Oct 2005 23:23:08 +0000</pubDate>
       
-      <guid>http://albert.garcia.gibert.es/blogs-obolog-buscadores-656/</guid>
+      <guid>https://albert.garcia.gibert.es/blogs-obolog-buscadores-656/</guid>
       <description>Por lo que parece, la mayor&amp;iacute;a de buscadores ya han encontrado a los blogs alojados en OboLog. Haced la prueba y buscad vuestro nombre en Google o MSN Search... ;)</description>
     </item>
     
     <item>
       <title>Buscador en PHP</title>
-      <link>http://albert.garcia.gibert.es/buscador-en-php-433/</link>
+      <link>https://albert.garcia.gibert.es/buscador-en-php-433/</link>
       <pubDate>Fri, 10 Dec 2004 00:18:37 +0000</pubDate>
       
-      <guid>http://albert.garcia.gibert.es/buscador-en-php-433/</guid>
+      <guid>https://albert.garcia.gibert.es/buscador-en-php-433/</guid>
       <description>Bueeeno, aquesta nit toca post t&amp;egrave;cnic, que ja he aconseguit _quasi_ acabar una de les parts que trobo m&amp;eacute;s interessant del blog: el cercador. Amb el pas del temps la quantitat d&#39;informaci&amp;oacute; enregistrada a la web ha augmentat considerablement, i sense una bona categoritzaci&amp;oacute; i organitzaci&amp;oacute; dels continguts, certs missatges corren el perill de caure en l&#39;oblit. En aquest sentit, tenir un arxiu de missatges agrupats per categories o data pot ser molt &amp;uacute;til, per&amp;ograve; perd efectivitat quan parlem de categor&amp;iacute;es amb m&amp;eacute;s de 100 missatges.</description>
     </item>
     

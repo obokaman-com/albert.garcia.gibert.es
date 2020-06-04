@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hacks on Albert García Gibert</title>
-    <link>http://albert.garcia.gibert.es/tags/hacks/</link>
+    <link>https://albert.garcia.gibert.es/tags/hacks/</link>
     <description>Recent content in hacks on Albert García Gibert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>All rights reserved - 2015</copyright>
     <lastBuildDate>Wed, 25 Oct 2006 11:11:21 +0000</lastBuildDate>
     
-	<atom:link href="http://albert.garcia.gibert.es/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://albert.garcia.gibert.es/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Limpieza de floats en IE 7</title>
-      <link>http://albert.garcia.gibert.es/limpieza-floats-ie-7-4541/</link>
+      <link>https://albert.garcia.gibert.es/limpieza-floats-ie-7-4541/</link>
       <pubDate>Wed, 25 Oct 2006 11:11:21 +0000</pubDate>
       
-      <guid>http://albert.garcia.gibert.es/limpieza-floats-ie-7-4541/</guid>
+      <guid>https://albert.garcia.gibert.es/limpieza-floats-ie-7-4541/</guid>
       <description>Durante los &amp;uacute;ltimos meses, Microsoft nos ha tenido en vilo ( sobretodo a los desarrolladores web ), pendientes del soporte a la especificaci&amp;oacute;n de CSS que tendr&amp;iacute;a su nuevo navegador, Internet Explorer 7 . Despu&amp;eacute;s de unos 5 a&amp;ntilde;os sin publicar una nueva versi&amp;oacute;n, parec&amp;iacute;a que la cosa iba a salir &amp;quot;fina&amp;quot;: El modelo de caja se ha implementado correctamente, se soportan propiedades tan &amp;uacute;tiles como min/max-width, ... &amp;iquest;&amp;iexcl;Se acabaron las reglas s&amp;oacute;lo para IE!</description>
     </item>
     

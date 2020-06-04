@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sindicación on Albert García Gibert</title>
-    <link>http://albert.garcia.gibert.es/tags/sindicaci%C3%B3n/</link>
+    <link>https://albert.garcia.gibert.es/tags/sindicaci%C3%B3n/</link>
     <description>Recent content in sindicación on Albert García Gibert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <copyright>All rights reserved - 2015</copyright>
     <lastBuildDate>Fri, 29 Sep 2006 11:08:53 +0000</lastBuildDate>
     
-	<atom:link href="http://albert.garcia.gibert.es/tags/sindicaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://albert.garcia.gibert.es/tags/sindicaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nuevo interfaz para Google Reader</title>
-      <link>http://albert.garcia.gibert.es/nuevo-interfaz-google-reader-4085/</link>
+      <link>https://albert.garcia.gibert.es/nuevo-interfaz-google-reader-4085/</link>
       <pubDate>Fri, 29 Sep 2006 11:08:53 +0000</pubDate>
       
-      <guid>http://albert.garcia.gibert.es/nuevo-interfaz-google-reader-4085/</guid>
+      <guid>https://albert.garcia.gibert.es/nuevo-interfaz-google-reader-4085/</guid>
       <description>Google Reader es el lector de not&amp;iacute;cias de Google . Su lanzamiento, hace ya un a&amp;ntilde;o, no levant&amp;oacute; grandes pasiones. M&amp;aacute;s bien podr&amp;iacute;a decirse que decepcion&amp;oacute; a la mayor&amp;iacute;a, y es que Google nos tiene acostumbrados a productos de gran calidad. Ya sabes, suelen hacer lo que ya han hecho otros... pero lo hacen escandalosamente mejor. En este caso, sin embargo, no fu&amp;eacute; as&amp;iacute;. El interfaz dejaba mucho que desear, y realizar el seguimiento de una gran cantidad de canales era algo complicado, a trav&amp;eacute;s de un listado lateral que limitaba el alto y obligaba a hacer uso constante de un scroll integrado propio.</description>
     </item>
     
     <item>
       <title>Inauguració de Feedness</title>
-      <link>http://albert.garcia.gibert.es/inauguracio-feedness-431/</link>
+      <link>https://albert.garcia.gibert.es/inauguracio-feedness-431/</link>
       <pubDate>Tue, 07 Dec 2004 18:02:32 +0000</pubDate>
       
-      <guid>http://albert.garcia.gibert.es/inauguracio-feedness-431/</guid>
+      <guid>https://albert.garcia.gibert.es/inauguracio-feedness-431/</guid>
       <description>Avui s&#39;ha fet pública la versió beta del nou lector de noticies de la gent d&#39;Studio.st, Feedness.Una interfície clara i sencilla, i un munt d&#39;opcions interessants _queencara no he pogut repassar a fons_ el converteixen en una alternativareal i s&amp;ograve;lida a lectors de notícies de la talla de Bloglines. Comcorrespón a la seu car&amp;agrave;cter &#39;beta&#39;, encara hi ha certs problemes amb elregistre d&#39;usuaris, la extracció de text dels feeds o la visualitzaciódels suscriptors dels canals, per&amp;ograve; de ben segur que poc a poc es podranllimar aquests petits problemes.</description>
     </item>
     
