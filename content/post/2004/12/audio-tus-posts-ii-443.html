@@ -1,0 +1,124 @@
++++
+date = "2004-12-24 12:33:58"
+author = ""
+title = "Audio en tus Posts II"
+slug = "audio-tus-posts-ii-443"
+tags = [ "desarrollo web","flash","oboplayer" ]
++++
+<p><a href="/mensaje/442">Ayer mismo</a>
+te comentaba que habia estado trabajando en un reproductor de audio en
+Flash para poder hacer streaming de un MP3 que le pasáramos como
+parámetro. Soy un impaciente y la versión que colgué ayer, aunque
+funcionaba correctamente, tenía algunas limitaciones. &quot;Estuvimos
+trabajando en ello&quot; y hoy creo que ya podemos hablar de la primera
+versión del OboPlayer &quot;con fundamento&quot;. Vamos a echar un vistazo al
+'Making Of'.</p><p>En primer lugar, como ya comenté, el <a target="_blank" href="http://tintachina.com/archivo/videoposts_en_tintachina.php">apunte sobre videoposts de Gemma en tintachina</a> fue la chispa inspiradora. Ya <a href="/mensaje/117">antes</a> habia colgado en obokaman <a href="/mensaje/116">mensajes con videos</a> o <a href="/mensaje/34">audio</a>,
+pero el método era bastante tosco. En el caso de los videos, la mayor
+parte de las veces era un sólo swf con un video incrustado, algunos
+mínimos controles de &quot;play&quot; y &quot;stop&quot;, y un interface siempre diferente.
+Cada vez que alguien accedía a la página que lo contenía, lo descargaba
+entero, lo viera o no. En el caso de las canciones ocurría lo mismo, un
+interfaz mínimo (un sólo botón) y descarga completa de la canción. En
+ambos casos debía crear cada vez un archivo swf para cada vídeo o
+canción. Difícil de mantener, de gestionar desde la administración del
+blog, y complicado para los demás participantes enviar sus propias
+aportaciones en el mismo formato. Ahi es donde se propone interesante
+una aplicación flash independiente que actúe como intermediaria: se
+mantiene un aspecto siempre similar, se le pueden especificar qué
+archivo reproducir, se le pueden a&ntilde;adir capacidades avanzadas de
+control de reproducción, es posible reproducir archivos de audio en
+formato mp3 y por tanto, gestionar todo eso desde el propio CMS del
+blog.</p>
+		    <p>Decidí empezar a buscar en <a target="_blank" href="http://www.flashkit.com">FlashKit</a> (de momento siempre he encontrado lo que buscaba), y efectivamente, después de repasar <a target="_blank" href="http://www.flashkit.com/movies/Sound/Players/Flash_MP-Victor_V-561/index.php">algunos ejemplos demasiado complejos</a> para lo que quería, dí con <a target="_blank" href="http://www.flashkit.com/tutorials/Utilities/make_you-roozbeh_-919/index.php">el tutorial definitivo</a>. El reproductor que podemos crear con ese manual nos permite crear un reproductor que lee un mp3 mediante el método <em><strong>loadSound</strong></em>
+del que recibe la ruta de acceso por la variable url, y dispone de las
+funciones básicas de reproducción, pausa, avance rápido y retroceso
+rápido mediante botones. Era un buen comienzo, pero me pareció buena
+idea intentar extraer información del archivo MP3 como el título y el
+artista, y mostrar una barrita de progreso, para ver dónde qué parte
+estábamos escuchando y movernos por el MP3 arrastrándola. Intentaré
+explicar los pasos de manera esquemática. He comentado extensamente el
+fichero fla original para hacer más comprensible su seguimiento y
+facilitar las modificaciones que quieras hacerle.</p>
+		    <p>Crearemos
+una película de un solo frame, y tendremos una capa para la base (la
+interface), otra para los botones de control, otra para la barra de
+progreso, otra para el título del MP3, y otra para las acciones. Seamos
+ordenados. ;) Podemos usar para la prueba los botones que incorpora ya
+FLash MX en las bibliotecas comunes. En el frame de las acciones se
+definirán las funciones principales de control de reproducción, así
+como los valores iniciales para el título, la posición de la barra de
+progreso, el volumen si quisiéramos...</p>
+		    <pre class="codigo">boton_pause._visible=false;<br />clip_marcador._x=25;<br />clip_marcador._y=53;<br />_root.pos=0;<br />if (url==null) {<br />	titulo_cancion.text=&quot;No se ha cargado ninguna canción.&quot;;	<br />}else{<br />	mysound=new Sound();<br />	mysound.loadSound(url, true);<br />	mysound.stop();<br />	mysound.onID3 = function () {<br />		titulo_cancion.text=_root.mysound.id3[&quot;songname&quot;]<br />		+&quot; - &quot;+_root.mysound.id3[&quot;artist&quot;];<br />	}<br />}</pre>
+			<p>Lo que hacemos es: </p>
+			<ul>
+			  <li>Ocultar el botón de pausa</li>
+	          <li>Posicionar la barra de progreso</li>
+		      <li>Especificar dónde empezará la reproducción</li>
+		      <li>Si
+se ha pasado correctamente la url, cargamos el mp3 y leemos los datos
+de titulo y artista de las etiquetas ID3. Si os fijais, esto nos obliga
+a cargar el mp3 antes de empezar su reproducción, lo que nos hace
+perder parte de su funcionalidad (descargar sólo cuando empiece la
+reproducción). Una posibilidad sería leer la etiqueta con php (es
+posible) y pasarle los datos por string, junto con la ruta al MP3. (es
+lo que y hago)</li>
+        </ul>
+			<p>A continuación, definimos las funciones de Play, Stop y Pause.</p>
+			<pre class="codigo">function playea() {<br />	if (escuchando!=&quot;si&quot;){<br />		mysound.start((_root.pos)/1000,1);<br />		escuchando=&quot;si&quot;;<br />	}<br />	boton_play._visible=false;<br />	boton_pause._visible=true;<br />}<br /><br />function stopea() {<br />	_root.pos=0;<br />	mysound.stop();<br />	escuchando=&quot;no&quot;;<br />	clip_marcador._x=25;<br />	boton_play._visible=true;<br />	boton_pause._visible=false;	<br />}<br /><br />function pausea() {<br />	_root.pos=mysound.position;<br />	mysound.stop();<br />	escuchando=&quot;no&quot;;<br />	boton_pause._visible=false;<br />	boton_play._visible=true;<br />}<br />			</pre>
+			<p>Estas funciones se las aplicaremos luego a los botones correspondientes, de la siguiente manera:</p>
+			<pre class="codigo">on(release) {<br />	playea();<br />}<br /></pre>
+			<p>Es
+importante no usar nombres que ya son usados por Flash para funciones
+propias (play, stop, pause...). Listo! Ya tendríamos la parte más
+importante. Sólo con esto, nuestro reproductor ya funcionaría. Ahora
+vamos a los botones de avance y retroceso rápidos, y a la barra de
+proceso. Esto ya es para nota.</p>
+			<p>Creamos un botón con la forma
+de una barrita que será el objeto que nos indique el progreso durante
+la reproducción de la canción. Una vez hecho esto, creamos un MovieClip
+vacío que contedrá las acciones necesarias para gestionar avance,
+retroceso y movimiento de la barra. Lo llamaremos, en nuestro caso,
+&quot;control_proceso&quot;, y lo colocaremos en la escena principal. Dentro
+crearemos dos fotogramas clave, vacíos. En el primero colocaremos las
+acciones y el segundo lo dejaremos vacío, simplemente para que vaya
+reproduciéndonse en bucle. Este MovieClip &quot;monitorizará&quot; la película
+principal contínuamente. Este será el contenido del ActionScript en su
+primer frame:</p>
+			<pre class="codigo">if (_root.llevar) {<br />	startDrag (_root.clip_marcador,true,25,_root.clip_marcador._y,308,_root.clip_marcador._y);<br />	colocar=1;<br />}else{<br />	if (colocar) {<br />		stopDrag();<br />		pose = int(((_root.clip_marcador._x-25)/283)*(_root.mysound.duration/1000));<br />		_root.mysound.stop();<br />		_root.mysound.start(pose, 1);<br />		colocar=0;<br />		_root.boton_pause._visible=true;<br />		_root.boton_play._visible=false;<br />		_root.escuchando=&quot;si&quot;;<br />	}<br />	if (_root.escuchando==&quot;si&quot;) {<br />		ir_a_pos=int((_root.mysound.position/_root.mysound.duration)*283)+25;<br />		_root.clip_marcador._x=ir_a_pos;	<br /><br />		if (_root.rw) {<br />		pose = int((_root.mysound.position)/1000)-3;<br />		_root.mysound.stop();<br />		_root.mysound.start(pose, 1);<br />		<br />		}<br />		<br />		if (_root.fw) {<br />		pose = int((_root.mysound.position)/1000)+3;<br />		_root.mysound.stop();<br />		_root.mysound.start(pose, 1);<br />		<br />		}<br />	}	<br />}<br />			</pre>
+			<p>En
+primer lugar, miramos si se está pulsando la barra de progreso, para
+poder arrastrarla, limitando su movimiento horizontal. Después, al
+soltarla, detenemos el arrastre, y calculamos la posición a la que
+habrá que ir, en relación a dónde hemos soltado la barra (los valores
+que hemos usado aqui son en referencia al tama&ntilde;o de nuestro
+reproductor, si haceis uno de tama&ntilde;o diferente, deberiais calcular
+antes la longitud, la posición...).</p>
+			<p>En los últimos tres
+bloques tenemos la parte que controla contínuamente que la posición de
+la barrita sea la correcta según lo que está sonando, y las dos
+funciones para avance rápido y retroceso rápido. </p>
+			<p>Como te
+decía al principio, el documento original está extensamente comentado.
+Con esta explicación y los apuntes que irás leyendo entre el código,
+estoy seguro de que no te costará demasiado &quot;personalizarlo&quot; para
+adaptarlo al dise&ntilde;o de tu página o a&ntilde;adirle otras funcionalidades. Lo
+siguiente sería darle soporte para pasar, no uno, si no varios archivos
+MP3 a modo de Playlist. Eso lo dejo para la próxima versión,
+posiblemente usando phpObject... ;) </p>
+			<p>Recuerda que el archivo original está disponible para descarga: </p>
+			<ul>
+			  <li><a href="/downloads/oboplayer_mp3.fla">OboPlayer v1.0</a></li>
+        </ul>
+			<p>Estaré
+encantado de que puedas sacar partido al reproductor en Flash. Si
+finalmente decides usarlo, sería un detalle por tu parte que me
+avisaras y citaras la fuente original. Si no lo haces, es poco probable
+que el Coco te visite una noche de estas. </p>
+			<p>&iexcl;&iexcl;&iexcl;Que pases una feliz Nochebuena!!!</p>
+<p>Actualización: Lista de sites que usan una adaptación del OboPlayer
+</p><ul>
+<li><a href="http://www.neburx.com">neburX</a></li>
+<li><a href="http://personales.com/espana/coruna/deXacobe/">de xacobe</a></li>
+<li><a href="http://entrepierna.blogspot.com/2005/03/keoshiplayer.html">Entre tus piernas</a></li>
+</ul>
+<p>&nbsp;</p>

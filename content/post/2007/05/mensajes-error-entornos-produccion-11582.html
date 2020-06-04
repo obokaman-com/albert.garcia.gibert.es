@@ -1,0 +1,20 @@
++++
+date = "2007-05-15 21:30:21"
+author = ""
+title = "Mensajes de error en entornos de producción"
+slug = "mensajes-error-entornos-produccion-11582"
+tags = [ "buenas prácticas","desarrollo web","php" ]
++++
+<p>
+&iquest;Que por qu&eacute; es importante desactivar la visualizaci&oacute;n de mensajes de error en producci&oacute;n? Pues para evitar situaciones como &eacute;sta:
+</p>
+<p align="center">
+<img class="fotobonita" src="/images/post/11582-12539.jpg" alt="11582-12539.jpg" title="11582-12539.jpg" width="507" height="519" />
+</p>
+<p>
+Y c&oacute;mo hacerlo:
+</p>
+<ul>
+	<li><strong>A lo bruto</strong>: Puedes detectar mediante c&oacute;digo si te encuentras en el entorno de producci&oacute;n o de desarrollo mediante, por ejemplo, una variable de servidor: $_SERVER[&quot;SERVER_NAME&quot;]. Dependiendo de si est&aacute;s o no en producci&oacute;n, puedes eliminar los mensajes de error con un error_reporting(0), y en cualquier caso usar un sistema de logueo o de avisos propio para informarte del problema.</li>
+	<li><strong>Bien</strong>: En el fichero de configuraci&oacute;n de PHP, <strong>php.ini</strong>, desactivamos la muestra de errores por pantalla ( display_errors = Off ), y dejamos que &eacute;stos queden reflejados en el log de errores del servidor ( log_errors = On ). De esta forma, seguiremos estando informados de cuando algo falla, y evitaremos mostrar nuestras verg&uuml;enzas a los usuarios... </li>
+</ul>

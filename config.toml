@@ -1,0 +1,39 @@
+baseURL = "http://albert.garcia.gibert.es/"
+languageCode = "es-es"
+title = "Albert García Gibert"
+paginate = 5
+pluralizelisttitles = false
+DisqusShortname = "albert-garcia-gibert"
+Copyright = "All rights reserved - 2015"
+canonifyurls = true
+theme = "casper"
+publishDir = "docs"
+
+[params]
+  paginatedSections="post test"
+  description = "Cofounder and former CTO of @Uvinum, founder of @Obolog. Father of @soclajulia & @soclabril . I'd like to travel more and improve my guitar skills."
+  # metadescription = "TO-DO: Change metadescripcion"
+  cover = "/images/background-201805080646.jpg"
+  author = "Albert García Gibert"
+  authorlocation = "Barcelona, Spain"
+  authorwebsite = "http://albert.garcia.gibert.es"
+  authorbio= "Cofounder and former CTO of @Uvinum, founder of @Obolog. Father of @soclajulia & @soclabril . I'd like to travel more and improve my guitar skills."
+  authoravatar = "/images/avatar.jpg"
+  logo = "favicon.ico"
+  googleAnalyticsUserID = "UA-97247-14"
+  githubName = "obokaman-com"
+  twitterName = "obokaman"
+  facebookName = "obokaman"
+  linkedinName = "obokaman"
+  flickrName = "obokaman"
+  instagramName = "obokaman"
+  email = "albert.garcia@gibert.es"
+  hideHUGOSupport = false
+  
+  hjsStyle = "default"
+
+[permalinks]
+  post = "/:slug/"
+
+[params.social]
+  twitter = "obokaman"

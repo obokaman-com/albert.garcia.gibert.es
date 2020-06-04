@@ -1,0 +1,45 @@
++++
+date = "2006-03-23 23:17:54"
+author = ""
+title = "Descripción y fuentes del upload  PHP + AJAX con barra de progreso"
+slug = "descripcion-fuentes-upload-php-ajax-barra-progreso-1596"
+tags = [ "ajax","desarrollo web","php","web 2.0" ]
++++
+<p>
+       D&iacute;as atr&aacute;s <a href="/mensaje/1511">coment&eacute;</a>  que hab&iacute;a estado trabajando en <a href="http://www.obolog.com/upload.php">un peque&ntilde;o experimento</a>  para conseguir implementar un sistema para realizar upload de archivos mediante PHP, que permitiera generar una barra de progreso, con la que controlar el estado de la carga de archivos en todo momento.      
+</p>
+            
+<p>
+      A continuaci&oacute;n encontrar&eacute;is disponible para descara el c&oacute;digo fuente de dicho experimento y una peque&ntilde;a descripci&oacute;n del paquete y de los requisitos para su puesta en marcha.      
+</p>
+       <h4>Contenidos del paquete</h4> <ul><li><b>/cgi-bin/upload.cgi:</b> este es el CGI perl que se encarga de gestionar el upload, adem&aacute;s de ir escribiendo todos los datos POST en un &uacute;nico archivo que nos permite controlar el total de datos cargados en el servidor en un momento determinado.</li><li><b>/upload.php</b>: es el documento principal, que contiene el c&oacute;digo HTML y JS necesario para crear din&aacute;micamente los campos file y el listado de archivos que vamos a cargar al servidor, as&iacute; como dibujar din&aacute;micamente la barra de progreso a partir de las respuestas recibidas por AJAX.</li><li><b>/ajax_process.php:</b> es el script PHP que recibir&aacute; las peticiones AJAX, comprobar&aacute; el estado del upload y devolver&aacute; una respuesta XML con datos como el tama&ntilde;o total del archivo, la cantidad de datos cargada, los nombres de los archivos...</li><li><b>/xml.class.php</b>: un par de clases para crear/parsear datos XML.</li><li><b>/img</b>: contiene dos im&aacute;genes opcionales: un fondo animado para la barra de progreso y un icono &quot;en proceso&quot;.</li></ul><br />
+  <h4>Ejemplo en vivo<br />
+  </h4>  
+<p>
+  Pod&eacute;is ver un ejemplo real en la URL <a href="http://www.obolog.com/upload.php">http://www.obolog.com/upload.php</a> <br />
+    
+</p>
+  <h4>Descarga del c&oacute;digo fuente</h4>  
+<p>
+  Pod&eacute;is descargar un ZIP con el c&oacute;digo fuente desde <a href="http://www.obolog.com/downloads/ajax_upload.zip">http://www.obolog.com/downloads/ajax_upload.zip</a>   
+</p>
+  <h4>Cr&eacute;ditos</h4>  
+<p>
+  La idea de la carga m&uacute;ltiple de archivos la tom&eacute; de : <a rel="bookmark" href="http://the-stickman.com/web-development/javascript/upload-multiple-files-with-a-single-file-element/">Upload multiple files with a single file element</a>  
+</p>
+    
+<p>
+  El c&oacute;digo del script CGI que permite el upload y la escritura de los datos raw POST es una modificaci&oacute;n de <a href="http://www.raditha.com/php/progress.php/">Mega Upload</a>, de raditha.com.   
+</p>
+    
+<p>
+  Toda la implementaci&oacute;n de AJAX se ha llevado a cabo usando la librer&iacute;a <a href="http://www.jquery.com">Jquery</a> , consiguiendo una simplificaci&oacute;n extrema ( vereis que todo el c&oacute;digo necesario para la creaci&oacute;n din&aacute;mica de campos file y la escritura y modificaci&oacute;n de la barra de progreso supera en poco las 50 l&iacute;neas ).  
+</p>
+    
+<p>
+ &nbsp; 
+</p>
+    
+<p>
+  Y bueno, eso es todo amigos. Que lo disfrut&eacute;is. Preguntas y dudas a los comentarios.   
+</p>

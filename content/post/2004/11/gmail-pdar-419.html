@@ -1,0 +1,42 @@
++++
+date = "2004-11-17 16:51:03"
+author = ""
+title = "Gmail en una PDA?"
+slug = "gmail-pdar-419"
+tags = [ "gmail","internet","pda","tecnologia" ]
++++
+<p>Muchos de los poseedores de una cuenta de Gmail sabréis ya que desde hace poco (a mi me lo han activado hoy mismo) <a href="http://gmail.google.com/support/bin/answer.py?answer=13273" target="_blank">es posible acceder mediante el protocolo POP a vuestra cuenta</a>.
+Esto se traduce en la posibilidad de leer y enviar correo mediante
+vuestro cliente favorito (Thunderbird, Eudora, Outlook...). En el caso
+concreto de Gmail creo que usar un cliente de correo en vez del webmail
+nos hace perdernos las estudiadas y cuidadas funcionalidades de las que
+han dotado al interfaz de acceso web. Es simplemente el sistema más
+sencillo, cómodo y organizado que he conocido para mantener una cuenta
+de correo. Aunque esto signifique un uso intensivo de javascript, Gmail
+es accesible desde la mayoria de navegadores de pc de sobremesa. El
+problema viene cuando el dispositivo no es un PC, si no un dispositivo
+móvil... y ahí es donde (al menos eso pensaba) entra en juego esta
+nueva capacidad de Gmail: el acceso POP.</p><p>La mayoria de dispositivos PDA y móviles que permiten el acceso a
+internet disponen de clientes de correo desde los que descargar
+mensajes mediante POP3. En el caso concreto de las PocketPC, se incluye
+Pocket Outlook, que como su nombre indica, es una versión reducida del
+cliente de correo de Microsoft. Ni corto ni perezoso, me he aplicado a
+la tarea de configurar mi cuenta de Gmail para leer los mensajes desde
+allí... pero Oh! Horror! Para acceder al servidor POP y SMTP que ha
+habilitado Gmail, es necesario usar puertos diferentes de los
+habituales (110 para POP y 25 para SMTP). </p>
+<div class="quote">
+Incoming Mail (POP3) Server &ndash; requires SSL:  	pop.gmail.com<br />
+Use SSL: Yes<br />
+Port: 995<br />
+Outgoing Mail (SMTP) Server &ndash; requires TLS: 	smtp.gmail.com (use authentication)<br />
+Use Authentication: Yes<br />
+Use STARTTLS: Yes (some clients call this SSL)<br />
+Port: 465 or 587<br />
+Account Name: 	your Gmail username (including '@gmail.com')<br />
+Email Address: 	your full Gmail email address (username@gmail.com)<br />
+Password: 	your Gmail password</div>
+<p>Y, vaya por dónde, Pocket Outlook no permite usar otros puertos que
+no sean los estandares de otra manera que no sea tocando el registro, y
+eso afectaria a las otras cuentas de correo que uso... A menos que
+implemente en la web algún script de acceso adaptado a PDA como <a href="http://gmail-lite.sourceforge.net/#gmailer" target="_blank">G-Lite</a> o pruebe <a href="http://www.msmobiles.com/news.php/3155.html">algún otro sistema rebuscado</a>, creo que voy a tener que seguir comiéndome los mocos con esto... :( Qué lástima!</p>
