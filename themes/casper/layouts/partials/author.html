@@ -8,7 +8,7 @@
 
 {{with $authoravatar}}
 <figure class="author-image">
-    <a class="img" href="{{$.Site.BaseURL}}" style="background-image: url({{. | relURL}})"><span class="hidden">{{$authorname}}'s Picture</span></a>
+    <a class="img" href="{{$.Site.BaseURL}}" style="background-image: url({{. | relURL}})"><span class="hidden">Foto de {{$authorname}}</span></a>
 </figure>
 {{end}}
 
@@ -17,7 +17,7 @@
   {{if $authorbio}}
   <p>{{$authorbio}}</p>
   {{else}}
-  <p>Read <a href="{{.Site.BaseURL}}">more posts</a> by this author.</p>
+  <p>Leer <a href="{{.Site.BaseURL}}">más artículos</a> de {{$authorname}}.</p>
   {{end}}
   <div class="author-meta">
     {{with $authorlocation}}<span class="author-location icon-location">{{.}}</span>{{end}}

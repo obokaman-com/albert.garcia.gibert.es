@@ -1,7 +1,7 @@
 <div class="nav">
     <h3 class="nav-title">Menu</h3>
     <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
+        <span class="hidden">Cerrar</span>
     </a>
     <ul>
         {{ $currentNode := . }}
@@ -16,9 +16,9 @@
     </ul>
 
     {{ if .Site.Params.RSSLink}}
-    <a class="subscribe-button icon-feed" href="{{.Site.Params.RSSLink }}">Subscribe</a> </div>
+    <a class="subscribe-button icon-feed" href="{{.Site.Params.RSSLink }}">Suscríbete</a> </div>
     {{else}}
-    <a class="subscribe-button icon-feed" href="{{if .IsNode}}{{.RSSLink}}{{else}}{{"index.xml" | relURL}}{{end}}">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="{{if .IsNode}}{{.RSSLink}}{{else}}{{"index.xml" | relURL}}{{end}}">Suscríbete</a>
     {{end}}
 </div>
 <span class="nav-cover"></span>

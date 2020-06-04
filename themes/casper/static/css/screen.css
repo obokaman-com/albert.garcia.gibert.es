@@ -1051,6 +1051,9 @@ body:not(.post-template) .post-title {
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .author-thumb {
@@ -1068,6 +1071,10 @@ body:not(.post-template) .post-title {
 
 .post-meta a:hover {
     text-decoration: underline;
+}
+
+.enumeration + .enumeration:before {
+    content: ", ";
 }
 
 .user-meta {
@@ -1144,6 +1151,9 @@ body:not(.post-template) .post-title {
     padding: 0;
     margin: 0;
     border: none;
+    margin-right: 8px;
+    padding-right: 12px;
+    border-right: #d5dbde 1px solid;
 }
 
 /* Stop elements, such as img wider than the post content, from
@@ -1754,16 +1764,8 @@ body:not(.post-template) .post-title {
         line-height: 1.65em;
     }
 
-    .post-date {
-        display: none;
-    }
-
     .post-template .post-header {
         margin-bottom: 2rem;
-    }
-
-    .post-template .post-date {
-        display: inline-block;
     }
 
     hr {

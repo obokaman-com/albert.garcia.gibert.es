@@ -25,10 +25,8 @@
             {{end}}     
         {{end}}
 
-        {{if .Params.tags }}on
-            {{ range $index, $tag := .Params.tags }}
-                <a href="{{$.Site.BaseURL}}/tags/{{ $tag | urlize }}/">#{{ $tag }}</a>,
-            {{ end }}
+        {{if .Params.tags }}en
+            {{ range $index, $tag := .Params.tags }}<span class="enumeration"><a href="{{$.Site.BaseURL}}/tags/{{ $tag | urlize }}/">#{{ $tag }}</a></span>{{ end }}
         {{end}}
         <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Format "2 Jan 2006" }}

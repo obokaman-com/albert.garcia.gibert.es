@@ -4,7 +4,6 @@ title = "Albert García Gibert"
 paginate = 5
 pluralizelisttitles = false
 DisqusShortname = "albert-garcia-gibert"
-Copyright = "All rights reserved - 2015"
 canonifyurls = true
 theme = "casper"
 publishDir = "docs"
