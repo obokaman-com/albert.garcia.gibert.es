@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>backup flickr on Albert García Gibert</title>
+    <link>http://albert.garcia.gibert.es/tags/backup-flickr/</link>
+    <description>Recent content in backup flickr on Albert García Gibert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Mon, 27 Aug 2007 15:09:01 +0000</lastBuildDate>
+    
+	<atom:link href="http://albert.garcia.gibert.es/tags/backup-flickr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Descargar álbumes completos de Flickr a tu disco duro ( PC &amp; Mac )</title>
+      <link>http://albert.garcia.gibert.es/descargar-albumes-completos-flickr-disco-duro-pc-mac-24702/</link>
+      <pubDate>Mon, 27 Aug 2007 15:09:01 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/descargar-albumes-completos-flickr-disco-duro-pc-mac-24702/</guid>
+      <description>Un comentario que ha llegado hoy a uno de los mensajes antiguos del blog, sobre la Vall d&#39;Aran,&amp;nbsp; me ha encendido una lucecita: muchos de los mensajes de la &amp;eacute;poca del blog colectivo apuntan a&amp;uacute;n a fotos de la antigua galer&amp;iacute;a fotogr&amp;aacute;fica de obokaman, hoy ya inactiva. Son bastantes los mensajes con fotos y enlaces rotos, as&amp;iacute; que me he propuesto cargar de nuevo todas las im&amp;aacute;genes usando la funcionalidad de &amp;aacute;lbumes del propio OboLog.</description>
+    </item>
+    
+  </channel>
+</rss>

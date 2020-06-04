@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>peer to peer on Albert García Gibert</title>
+    <link>http://albert.garcia.gibert.es/tags/peer-to-peer/</link>
+    <description>Recent content in peer to peer on Albert García Gibert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Wed, 04 Jan 2006 11:12:51 +0000</lastBuildDate>
+    
+	<atom:link href="http://albert.garcia.gibert.es/tags/peer-to-peer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AllPeers, lo mejor que le ha pasado a Firefox...</title>
+      <link>http://albert.garcia.gibert.es/allpeers-mejor-le-pasado-firefox-704/</link>
+      <pubDate>Wed, 04 Jan 2006 11:12:51 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/allpeers-mejor-le-pasado-firefox-704/</guid>
+      <description>Si Firefox ha conseguido convertirse a lo largo de estos dos &amp;uacute;ltimos a&amp;ntilde;os en un serio competidor frente a Internet Explorer, gracias a su estabilidad, a su velocidad, a su fiel cumplimiento de los est&amp;aacute;ndares, y a su larga y variada lista de extensiones, AllPeers  podr&amp;iacute;a llegar a incrementar de manera cr&amp;iacute;tica esa popularidad, incluso entre aquellos sectores &amp;quot;no-t&amp;eacute;cnicos&amp;quot; que siguen con su IE &amp;quot;porque ya estaba instalado&amp;quot;, pero en cambio se patean foros y foros para conseguir configurar correctamente su emule.</description>
+    </item>
+    
+  </channel>
+</rss>

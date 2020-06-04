@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>playstation 2 on Albert García Gibert</title>
+    <link>http://albert.garcia.gibert.es/tags/playstation-2/</link>
+    <description>Recent content in playstation 2 on Albert García Gibert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Wed, 29 Dec 2004 17:01:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://albert.garcia.gibert.es/tags/playstation-2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disco duro para tu ps2</title>
+      <link>http://albert.garcia.gibert.es/disco-duro-ps2-457/</link>
+      <pubDate>Wed, 29 Dec 2004 17:01:00 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/disco-duro-ps2-457/</guid>
+      <description>Conectar un disco duro a tu Playstation 2, hacer copias de seguridad de tus juegos a ese disco duro, y jugar directamente desde el mismo sin necesidad de introducir los DVD, todo eso sin necesidad de abrir la consola e instalar costosos y complicados modchips. Ese es el objetivo de este software que me ha dejado con la boca abierta: HDLoader.  ¿Y cómo es posible conectar un disco duro a la Playstation 2?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Albert García Gibert</title>
+    <link>http://albert.garcia.gibert.es/tags/css/</link>
+    <description>Recent content in css on Albert García Gibert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Thu, 22 Mar 2007 09:26:50 +0000</lastBuildDate>
+    
+	<atom:link href="http://albert.garcia.gibert.es/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guiños humorísticos en CSSEdit 2</title>
+      <link>http://albert.garcia.gibert.es/guinos-humoristicos-cssedit-2-9271/</link>
+      <pubDate>Thu, 22 Mar 2007 09:26:50 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/guinos-humoristicos-cssedit-2-9271/</guid>
+      <description>Hace unos d&amp;iacute;as escrib&amp;iacute;a en Pixelovers acerca de CSSEdit 2 , un editor fant&amp;aacute;stico de CSS para Mac. Hoy, navegando en busca de un buen sustituto de dicho software para Windows ( un sustituto que por cierto a&amp;uacute;n n he conseguido encontrar... si alguien me echa un cable... ), me he topado con un blog en qu&amp;eacute; han descubierto un gui&amp;ntilde;o humor&amp;iacute;stico en el icono del programita .... Atenci&amp;oacute;n al detalle.</description>
+    </item>
+    
+    <item>
+      <title>Lavado de cara</title>
+      <link>http://albert.garcia.gibert.es/lavado-de-cara-7335/</link>
+      <pubDate>Mon, 22 Jan 2007 20:49:02 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/lavado-de-cara-7335/</guid>
+      <description>Por fin. Llevaba ya tiempo dando vueltas a un cambio de dise&amp;ntilde;o para el blog... el &amp;uacute;ltimo restyling nunca me acab&amp;oacute; de convencer, y quer&amp;iacute;a un dise&amp;ntilde;o m&amp;aacute;s limpio, claro y legible. Aunque ya hab&amp;iacute;a cogido cari&amp;ntilde;o a esa combinaci&amp;oacute;n de grises y naranjas/amarillos que ven&amp;iacute;a usando desde el principio de los tiempos, tocaba renovarse. Hay algunos detalles que a&amp;uacute;n me hacen dudar: el tagline, &amp;quot;pensamientos en red&amp;quot; ten&amp;iacute;a m&amp;aacute;s sentido al tratarse obokaman de un diario colectivo.</description>
+    </item>
+    
+    <item>
+      <title>Limpieza de floats en IE 7</title>
+      <link>http://albert.garcia.gibert.es/limpieza-floats-ie-7-4541/</link>
+      <pubDate>Wed, 25 Oct 2006 11:11:21 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/limpieza-floats-ie-7-4541/</guid>
+      <description>Durante los &amp;uacute;ltimos meses, Microsoft nos ha tenido en vilo ( sobretodo a los desarrolladores web ), pendientes del soporte a la especificaci&amp;oacute;n de CSS que tendr&amp;iacute;a su nuevo navegador, Internet Explorer 7 . Despu&amp;eacute;s de unos 5 a&amp;ntilde;os sin publicar una nueva versi&amp;oacute;n, parec&amp;iacute;a que la cosa iba a salir &amp;quot;fina&amp;quot;: El modelo de caja se ha implementado correctamente, se soportan propiedades tan &amp;uacute;tiles como min/max-width, ... &amp;iquest;&amp;iexcl;Se acabaron las reglas s&amp;oacute;lo para IE!</description>
+    </item>
+    
+  </channel>
+</rss>

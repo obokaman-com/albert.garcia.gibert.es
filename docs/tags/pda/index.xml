@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pda on Albert García Gibert</title>
+    <link>http://albert.garcia.gibert.es/tags/pda/</link>
+    <description>Recent content in pda on Albert García Gibert</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <copyright>All rights reserved - 2015</copyright>
+    <lastBuildDate>Wed, 17 Nov 2004 16:51:03 +0000</lastBuildDate>
+    
+	<atom:link href="http://albert.garcia.gibert.es/tags/pda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gmail en una PDA?</title>
+      <link>http://albert.garcia.gibert.es/gmail-pdar-419/</link>
+      <pubDate>Wed, 17 Nov 2004 16:51:03 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/gmail-pdar-419/</guid>
+      <description>Muchos de los poseedores de una cuenta de Gmail sabréis ya que desde hace poco (a mi me lo han activado hoy mismo) es posible acceder mediante el protocolo POP a vuestra cuenta.Esto se traduce en la posibilidad de leer y enviar correo mediantevuestro cliente favorito (Thunderbird, Eudora, Outlook...). En el casoconcreto de Gmail creo que usar un cliente de correo en vez del webmailnos hace perdernos las estudiadas y cuidadas funcionalidades de las quehan dotado al interfaz de acceso web.</description>
+    </item>
+    
+    <item>
+      <title>Diseño adaptable a todos los bolsillos</title>
+      <link>http://albert.garcia.gibert.es/diseno-adaptable-todos-bolsillos-390/</link>
+      <pubDate>Fri, 29 Oct 2004 13:05:13 +0000</pubDate>
+      
+      <guid>http://albert.garcia.gibert.es/diseno-adaptable-todos-bolsillos-390/</guid>
+      <description>O m&amp;aacute;s bien dicho, de dise&amp;ntilde;os adaptables a todos los dispositivos de bolsillo, eso es de lo que vamos a hablar. Sobre c&amp;oacute;mo conseguirlo trata el &amp;uacute;ltimo art&amp;iacute;culo que he leido en A List Apart. Si bien ya muchos desarrolladores estamos sensibilizados con los beneficios de programar usando est&amp;aacute;ndares web, a veces creo que no llegamos a ser conscientes (al menos hablo por mi) del enorme beneficio que podemos llegar a conseguir por ese &amp;quot;sobreesfuerzo&amp;quot; que puede suponer atenerse a los, en ocasiones, r&amp;iacute;gidos est&amp;aacute;ndares del W3C.</description>
+    </item>
+    
+  </channel>
+</rss>
