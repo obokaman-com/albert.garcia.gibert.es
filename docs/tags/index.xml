@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Albert García Gibert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 17 May 2013 21:57:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 00:15:12 +0000</lastBuildDate>
     
 	<atom:link href="https://albert.garcia.gibert.es/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>obolog</title>
+      <link>https://albert.garcia.gibert.es/tags/obolog/</link>
+      <pubDate>Fri, 05 Jun 2020 00:15:12 +0000</pubDate>
+      
+      <guid>https://albert.garcia.gibert.es/tags/obolog/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>empresa</title>
@@ -116,15 +125,6 @@
       <pubDate>Tue, 11 Nov 2008 00:00:00 +0000</pubDate>
       
       <guid>https://albert.garcia.gibert.es/tags/hosting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>obolog</title>
-      <link>https://albert.garcia.gibert.es/tags/obolog/</link>
-      <pubDate>Tue, 11 Nov 2008 00:00:00 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/tags/obolog/</guid>
       <description></description>
     </item>
     

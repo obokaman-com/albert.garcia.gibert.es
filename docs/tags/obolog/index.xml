@@ -6,10 +6,20 @@
     <description>Recent content in obolog on Albert García Gibert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Tue, 11 Nov 2008 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 00:15:12 +0000</lastBuildDate>
     
 	<atom:link href="https://albert.garcia.gibert.es/tags/obolog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Despedida y cierre de Obolog</title>
+      <link>https://albert.garcia.gibert.es/despedida-cierre-obolog/</link>
+      <pubDate>Fri, 05 Jun 2020 00:15:12 +0000</pubDate>
+      
+      <guid>https://albert.garcia.gibert.es/despedida-cierre-obolog/</guid>
+      <description>Entre algunos de los propósitos que me había marcado tras mi salida de Uvinum estaba poner algo de orden en algunos side-projects que seguían coleando después de unos pocos años de cierto &amp;ldquo;abandono&amp;rdquo; virtual. Y entre ellos, un cierre doloroso que había estado postergando desde hace tiempo.
+Y es que en septiembre hará 18 años que publiqué mi blog, obokaman.com, programándolo desde cero para poder practicar con un nuevo lenguaje de programación que había conocido hacía poco tiempo, PHP.</description>
+    </item>
     
     <item>
       <title>Sobre nuestra migración a Dinahosting</title>

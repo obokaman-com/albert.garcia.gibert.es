@@ -1267,6 +1267,15 @@ body:not(.post-template) .post-title {
     color: #50585D;
 }
 
+.post-template figcaption
+{
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #9EABB3;
+    margin-top:-0.6em;
+}
 
 /* ==========================================================================
    6. Author profile
