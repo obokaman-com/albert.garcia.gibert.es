@@ -1,51 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>javascript on Albert García Gibert</title>
-    <link>https://albert.garcia.gibert.es/tags/javascript/</link>
-    <description>Recent content in javascript on Albert García Gibert</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
-    <lastBuildDate>Wed, 21 Feb 2007 09:34:34 +0000</lastBuildDate>
-    
-	<atom:link href="https://albert.garcia.gibert.es/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>JQuery sigue avanzando</title>
-      <link>https://albert.garcia.gibert.es/jquery-sigue-avanzando-8356/</link>
-      <pubDate>Wed, 21 Feb 2007 09:34:34 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/jquery-sigue-avanzando-8356/</guid>
-      <description>JQuery es una de las librer&amp;iacute;as javascript que m&amp;aacute;s r&amp;aacute;pidamente se ha estado extendiendo durante el &amp;uacute;ltimo a&amp;ntilde;o. John Resig empezaba a postear en el blog del proyecto a finales de enero del 2006, y desde entonces no ha hecho m&amp;aacute;s que cosechar buenas cr&amp;iacute;ticas y conseguir apoyos.Hace unas semanas, anunciaban en su blog la publicaci&amp;oacute;n de la nueva versi&amp;oacute;n 1.1, con unas mejoras de rendimiento espectaculares y algunas nuevas funcionalidades.</description>
-    </item>
-    
-    <item>
-      <title>Buffete libre de Cheat Sheets: Sírvase usted mismo</title>
-      <link>https://albert.garcia.gibert.es/buffete-libre-cheat-sheets-sirvase-usted-mismo-5150/</link>
-      <pubDate>Mon, 13 Nov 2006 20:54:35 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/buffete-libre-cheat-sheets-sirvase-usted-mismo-5150/</guid>
-      <description>Si eres desarrollador o trabajas en esto del dise&amp;ntilde;o web estar&amp;aacute;s conmigo en lo &amp;uacute;til que resulta en ocasiones disponer de peque&amp;ntilde;as chuletas donde apuntar los patrones m&amp;aacute;s comunes al contruir una query, o los diferentes selectores soportados por CSS2, o un listado con funciones de tratamiento de cadenas de texto para PHP...A estos efectos, los Cheat Sheets de ilovejackdaniels.com son bastante pr&amp;aacute;cticos ( yo tengo 3 copias plastificadas en el escritorio ) y cubren diferentes &amp;aacute;reas o tecnolog&amp;iacute;as.</description>
-    </item>
-    
-    <item>
-      <title>Lanzamiento oficial de JQuery 1.0</title>
-      <link>https://albert.garcia.gibert.es/lanzamiento-oficial-jquery-10-3680/</link>
-      <pubDate>Sat, 26 Aug 2006 19:58:49 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/lanzamiento-oficial-jquery-10-3680/</guid>
-      <description>Durante la madrugada del viernes al s&amp;aacute;bado, John Resig ha anunciado la esperada publicaci&amp;oacute;n oficial de la versi&amp;oacute;n 1.0 de JQuery , una fant&amp;aacute;stica librer&amp;iacute;a javascript que en unos pocos meses ha supuesto una peque&amp;ntilde;a revoluci&amp;oacute;n para dise&amp;ntilde;adores y desarrolladores. Eventos din&amp;aacute;micos, AJAX, acceso sencillo a DOM y una filosof&amp;iacute;a de trabajo que ha conseguido implementar una nueva manera de escribir javascript, consiguiendo resultados de una complejidad importante con un c&amp;oacute;digo extremadamente reducido.</description>
-    </item>
-    
-    <item>
-      <title>Upload de archivos y progressbar con PHP,Perl y AJAX</title>
-      <link>https://albert.garcia.gibert.es/upload-archivos-progressbar-phpperl-ajax-1511/</link>
-      <pubDate>Wed, 15 Mar 2006 21:41:06 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/upload-archivos-progressbar-phpperl-ajax-1511/</guid>
-      <description>A&amp;uacute;n cuando no he conseguido desentramar el misterio de la antena reaparecida, otra misteriosa casualidad ha roto mi paz interior, esta vez relacionada con el trabajo. Hoy al llegar a la oficina me he encontrado con una recomendaci&amp;oacute;n por mail en qu&amp;eacute; se citaba un art&amp;iacute;culo en ingl&amp;eacute;s que habla acerca de un sistema de carga de ficheros con barra de progreso usando t&amp;eacute;cnicas AJAX y PHP+Perl como lenguages de servidor.</description>
-    </item>
-    
-  </channel>
-</rss>

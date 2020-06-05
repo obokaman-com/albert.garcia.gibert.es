@@ -1,24 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tabaco on Albert García Gibert</title>
-    <link>https://albert.garcia.gibert.es/tags/tabaco/</link>
-    <description>Recent content in tabaco on Albert García Gibert</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
-    <lastBuildDate>Wed, 08 Mar 2006 22:49:23 +0000</lastBuildDate>
-    
-	<atom:link href="https://albert.garcia.gibert.es/tags/tabaco/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Estoy enganchado...</title>
-      <link>https://albert.garcia.gibert.es/enganchado-1427/</link>
-      <pubDate>Wed, 08 Mar 2006 22:49:23 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/enganchado-1427/</guid>
-      <description>Maldita sea... lo he hecho. He bajado a comprar tabaco porque no he resistido a la idea de quedarme trabajando delante del ordenador hasta la madrugada sin fumar un s&amp;oacute;lo cigarro. Estoy enganchado. Maldita sea...</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,33 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>tecnologia on Albert García Gibert</title>
-    <link>https://albert.garcia.gibert.es/tags/tecnologia/</link>
-    <description>Recent content in tecnologia on Albert García Gibert</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
-    <lastBuildDate>Thu, 20 Jul 2006 08:58:40 +0000</lastBuildDate>
-    
-	<atom:link href="https://albert.garcia.gibert.es/tags/tecnologia/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Google Vision</title>
-      <link>https://albert.garcia.gibert.es/google-vision-3311/</link>
-      <pubDate>Thu, 20 Jul 2006 08:58:40 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/google-vision-3311/</guid>
-      <description>&amp;iquest;Perdido, no? Pues bien, no te preocupes: Google al rescate. Un joven dise&amp;ntilde;ador brit&amp;aacute;nico est&amp;aacute; desarrollando un sistema que te indicar&amp;aacute; en qu&amp;eacute; lugar te encuentras, simplemente mirando a trav&amp;eacute;s de &amp;eacute;l. Combinando avanzadas t&amp;eacute;cnicas de reconocimiento de imagen, y las tecnolog&amp;iacute;as GPS y OLED, y mediante una pantalla retr&amp;aacute;ctil flexible, podremos marcar y reconocer lugares, y navegar por los mapas explicativos durante, por ejemplo, unas vacaciones en el extranjero.</description>
-    </item>
-    
-    <item>
-      <title>Gmail en una PDA?</title>
-      <link>https://albert.garcia.gibert.es/gmail-pdar-419/</link>
-      <pubDate>Wed, 17 Nov 2004 16:51:03 +0000</pubDate>
-      
-      <guid>https://albert.garcia.gibert.es/gmail-pdar-419/</guid>
-      <description>Muchos de los poseedores de una cuenta de Gmail sabréis ya que desde hace poco (a mi me lo han activado hoy mismo) es posible acceder mediante el protocolo POP a vuestra cuenta.Esto se traduce en la posibilidad de leer y enviar correo mediantevuestro cliente favorito (Thunderbird, Eudora, Outlook...). En el casoconcreto de Gmail creo que usar un cliente de correo en vez del webmailnos hace perdernos las estudiadas y cuidadas funcionalidades de las quehan dotado al interfaz de acceso web.</description>
-    </item>
-    
-  </channel>
-</rss>
