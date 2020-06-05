@@ -32,7 +32,7 @@ Y más en aquella época en la que vendrían tantos cambios para los que no estu
 
 Resumiendo mucho, hasta hoy. 
 
-Ahora es momento de pasar página y dar por última vez las gracias por Obolog: A los cientos de miles de usuarios que se animaron a partcipar en la comunidad (y a los que pusieron las primeras piedras: Ruben, Andra, Fernando...❤️). A los editores de Nexoblogs. A todos los que me dieron feedback, me enseñaron y me ayudaron a mejorar (Quim, viendo juntos esos taglines para las primeras versiones, desde Anilina: "Tu blog en menos que canta un gallo!". 😂 Borja, esas sesiones de optimización de MySql, Apache, revisando logs... 🔝). A mis socios Albert, Toni y Sergi. Con las botas puestas, tíos. 💪
+Ahora es momento de pasar página y dar por última vez las gracias por Obolog: A los cientos de miles de usuarios que se animaron a partcipar en la comunidad (y a los que pusieron las primeras piedras: Ruben, Andra, Fernando...❤️). A los editores de Nexoblogs. A todos los que me dieron feedback, me enseñaron y me ayudaron a mejorar (Quim, viendo juntos esos taglines para las primeras versiones, desde Anilina: "Tu blog en menos que canta un gallo!". 😂 Albert López y ese ojo avizor con las optimizaciones SEO para los blogs, los recopilatorios de la semana, los cientos de bugs cazados al vuelto...🤟 Borja, esas sesiones de optimización de MySql, Apache, revisando logs... 🔝). A mis socios Albert Lombarte, Toni Pinel y Sergi Ambel. Con las botas puestas, tíos. 💪
 
 ¡Hasta la próxima! 👋
 
