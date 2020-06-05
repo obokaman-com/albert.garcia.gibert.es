@@ -8,3 +8,5 @@ Simple: https://albert.garcia.gibert.es 🙋🏻‍♂️
 - Hosted in **[Github Pages](https://pages.github.com/)**
 
 Statically generated, so 🔝 performant, and 100% free. 💸
+
+![Website screenshot](/static/images/website-screenshot.jpg)
