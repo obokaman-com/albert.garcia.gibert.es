@@ -6,10 +6,11 @@ tags = ["música"]
 title = "Que tinguem sort"
 
 +++
-Esta canción es preciosa. Me gustaría poder estar en su piel y ser suficientemente fuerte como para sentir serenamente lo que canta. Escuchadla y leerla.
+Esta canción es preciosa. Me gustaría poder estar en su piel y ser suficientemente fuerte como para sentir serenamente lo que canta. 
+
+Escuchadla y leerla.
 
 {{< youtube JzW4trGkVds >}}
-
 
 **Que tinguem sort**
 
