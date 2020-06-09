@@ -1,64 +1,65 @@
 +++
 date = 2002-11-11T23:00:00Z
 image = "/images/2020/06/que-tinguem-sort-3.jpg"
-slug = "que-tinguem-sort"
+slug = "tinguem-sort-28"
 tags = ["música"]
 title = "Que tinguem sort"
 
 +++
 Esta canción es preciosa. Me gustaría poder estar en su piel y ser suficientemente fuerte como para sentir serenamente lo que canta. Escuchadla y leerla.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JzW4trGkVds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube JzW4trGkVds >}}
 
-**Que tinguem sort**  
 
-Si em dius adéu,  
+**Que tinguem sort**
 
-vull que el dia sigui net i clar,  
+Si em dius adéu,
 
-que cap ocell  
+vull que el dia sigui net i clar,
+
+que cap ocell
 
 trenqui l'harmonia del seu cant.
 
-Que tinguis sort  
+Que tinguis sort
 
-i que trobis el que t'ha mancat  
+i que trobis el que t'ha mancat
 
 en mi.
 
-Si em dius "et vull",  
+Si em dius "et vull",
 
-que el sol faci el dia molt més llarg,  
+que el sol faci el dia molt més llarg,
 
-i així, robar  
+i així, robar
 
 temps al temps d'un rellotge aturat.
 
-Que tinguem sort,  
+Que tinguem sort,
 
-que trobem tot el que ens va mancar  
+que trobem tot el que ens va mancar
 
 ahir.
 
-I així pren tot el fruit que et pugui donar  
+I així pren tot el fruit que et pugui donar
 
-el camí que, a poc a poc, escrius per a demà.  
+el camí que, a poc a poc, escrius per a demà.
 
-Què demà mancarà el fruit de cada pas;  
+Què demà mancarà el fruit de cada pas;
 
 per això, malgrat la boira, cal caminar.
 
-Si véns amb mi,  
+Si véns amb mi,
 
-no demanis un camí planer,  
+no demanis un camí planer,
 
-ni estels d'argent,  
+ni estels d'argent,
 
-ni un demà ple de promeses, sols  
+ni un demà ple de promeses, sols
 
-un poc de sort,  
+un poc de sort,
 
-i que la vida ens doni un camí  
+i que la vida ens doni un camí
 
 ben llarg.
 
