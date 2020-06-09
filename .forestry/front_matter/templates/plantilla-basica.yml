@@ -18,3 +18,5 @@ fields:
 - type: file
   name: image
   label: image
+pages:
+- content/post/2002/11/que-tinguem-sort.md
