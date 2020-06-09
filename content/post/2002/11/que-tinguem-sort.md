@@ -1,6 +1,5 @@
 +++
 date = 2002-11-11T23:00:00Z
-draft = true
 image = "/images/2020/06/que-tinguem-sort-3.jpg"
 slug = "que-tinguem-sort"
 tags = ["música"]
@@ -9,9 +8,9 @@ title = "Que tinguem sort"
 +++
 Esta canción es preciosa. Me gustaría poder estar en su piel y ser suficientemente fuerte como para sentir serenamente lo que canta. Escuchadla y leerla.
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/JzW4trGkVds](https://www.youtube.com/embed/JzW4trGkVds "https://www.youtube.com/embed/JzW4trGkVds")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JzW4trGkVds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-\**Que tinguem sort**  
+**Que tinguem sort**  
 
 Si em dius adéu,  
 
