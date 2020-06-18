@@ -2,13 +2,21 @@
 
 
 {{if .Params.cover}}
-	{{if or (eq (substr .Params.cover 0 7) "http://") (eq (substr .Params.cover 0 8) "https://")}}
+{{ $originalImg := resources.Get ( .Params.cover ) }}
+{{ if $originalImg }}
+{{ $thumbnailImg := $originalImg.Fill "1600x700 Smart" }}
+<header class="main-header post-head" style="background-image: url({{ $thumbnailImg.RelPermalink | safeHTML }})">
+	{{else if or (eq (substr .Params.cover 0 7) "http://") (eq (substr .Params.cover 0 8) "https://")}}
   <header class="main-header tag-head" style="background-image: url({{.Params.cover}})">
   {{ else }}
   <header class="main-header tag-head" style="background-image: url({{.Params.cover | relURL}})">
   {{ end }}
 {{else if .Site.Params.cover}}
-	 {{if or (eq (substr .Site.Params.cover 0 7) "http://") (eq (substr .Site.Params.cover 0 8) "https://")}}
+      {{ $originalImg := resources.Get ( .Site.Params.cover ) }}
+      {{ if $originalImg }}
+      {{ $thumbnailImg := $originalImg.Fill "1600x700 Smart" }}
+      <header class="main-header post-head" style="background-image: url({{ $thumbnailImg.RelPermalink | safeHTML }})">
+      {{else if or (eq (substr .Site.Params.cover 0 7) "http://") (eq (substr .Site.Params.cover 0 8) "https://")}}
   <header class="main-header tag-head" style="background-image: url({{.Site.Params.cover}})">
   {{ else }}
   <header class="main-header tag-head" style="background-image: url({{.Site.Params.cover  | relURL}})">
