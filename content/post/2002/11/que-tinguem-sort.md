@@ -1,6 +1,5 @@
 +++
 date = 2002-11-11T23:00:00Z
-image = "/images/2020/06/que-tinguem-sort-3.jpg"
 slug = "tinguem-sort-28"
 tags = ["música"]
 title = "Que tinguem sort"

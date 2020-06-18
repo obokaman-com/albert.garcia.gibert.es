@@ -6,7 +6,7 @@ pluralizelisttitles = false
 DisqusShortname = "albert-garcia-gibert"
 canonifyurls = true
 theme = "casper"
-publishDir = "docs"
+assetDir = "static"
 
 [params]
   paginatedSections="post test"

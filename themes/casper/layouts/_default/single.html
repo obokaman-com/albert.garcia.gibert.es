@@ -1,10 +1,14 @@
 {{ partial "header.html" . }}
 
 {{if .Params.image}}
-  {{if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://")}}
-  <header class="main-header post-head" style="background-image: url({{.Params.image }})">
+  {{ $originalImg := resources.Get ( .Params.image ) }}
+  {{ if $originalImg }}
+    {{ $thumbnailImg := $originalImg.Fit "1600x1200" }}
+    <header class="main-header post-head" style="background-image: url({{ $thumbnailImg.RelPermalink | safeHTML }})">
+  {{ else if or (eq (substr .Params.image 0 7) "http://") (eq (substr .Params.image 0 8) "https://") }}
+    <header class="main-header post-head" style="background-image: url({{.Params.image }})">
   {{ else }}
-  <header class="main-header post-head" style="background-image: url({{.Params.image | relURL}})">
+    <header class="main-header post-head" style="background-image: url({{.Params.image | relURL}})">
   {{ end }}
   <nav class="main-nav overlay clearfix">
 {{else}}

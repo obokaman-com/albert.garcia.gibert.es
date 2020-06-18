@@ -1,6 +1,6 @@
 +++
 date = 2020-06-05T00:15:12Z
-image = "/images/2020/06/socios-obolog.jpg"
+image = "/images/2020/06/foto-socios-obolog.jpg"
 slug = "despedida-cierre-obolog"
 tags = ["obolog"]
 title = "Despedida y cierre de Obolog"
