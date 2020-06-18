@@ -1194,6 +1194,11 @@ body:not(.post-template) .post-title {
     transform: translateX(-50%);
 }
 
+.post-excerpt img {
+    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+    margin:0.3em 1em 0.1em 0;
+}
+
 /* The author credit area after the post */
 .post-footer {
     position: relative;
@@ -1290,7 +1295,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-head.main-header {
-    height: 65vh;
+    height: 45vh;
     min-height: 180px;
 }
 
@@ -1663,7 +1668,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-head.main-header {
-        height:45vh;
+        height:40vh;
     }
 
     .tag-head.main-header,
