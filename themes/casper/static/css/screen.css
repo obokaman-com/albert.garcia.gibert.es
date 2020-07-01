@@ -597,12 +597,18 @@ body.nav-opened .site-wrapper {
 .main-header a.bloglogo .icon-codepen,
 .main-header a.bloglogo .icon-github,
 .main-header a.bloglogo .icon-twitter,
+.main-header a.bloglogo .icon-flickr,
 .main-header a.bloglogo .icon-facebook,
 .main-header a.bloglogo .icon-instagram,
 .main-header a.bloglogo .icon-pinterest,
+.main-header a.bloglogo .icon-mail,
 .main-header a.bloglogo .icon-google-plus {
     color: white;
     font-size: 2em;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
 }
 
 .main-nav {
