@@ -1304,6 +1304,10 @@ body:not(.post-template) .post-title {
     margin-bottom:1.75em !important;
 }
 
+.post-template .twitter-tweet-rendered iframe {
+    width:100% !important;
+}
+
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
