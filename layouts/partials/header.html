@@ -93,9 +93,17 @@
 
       ga('create', '{{.}}', 'auto');
       ga('send', 'pageview');
-
     </script>
     {{end}}
+
+    <link rel="preload" href="/fonts/Open_Sans/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Open_Sans/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Merriweather/Merriweather-Light.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Merriweather/Merriweather-LightItalic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Merriweather/Merriweather-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Merriweather/Merriweather-BoldItalic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Inconsolata/Inconsolata-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Genericons/Genericons.woff" as="font" type="font/woff" crossorigin>
 
     {{ if .Site.Params.customHeaderPartial }}
         {{ partial .Site.Params.customHeaderPartial . }}
