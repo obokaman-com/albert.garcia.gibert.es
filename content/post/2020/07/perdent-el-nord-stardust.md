@@ -14,7 +14,7 @@ Estos días [grabé una versión acústica](https://www.youtube.com/watch?v=rDK1
 
 {{< youtube id=APoKa8baL4c class="video-player">}}
 
-Hace relativamente poco **descubrí un pequeño "homenaje" que se coló en el punteo**: Probando si funcionaban algunos videojuegos antiguos en mi Amstrad CPC, me dió por jugar un rato a Stardust, un arcade de naves con el que había pasado MUCHAS horas cuando era pequeño. Mientras paseaba por las opciones del menú y sonaba de fondo la banda sonora (obra del genial [Cesar Astudillo](https://twitter.com/cesarastudillo)), me quedé a cuadros. **Acababa de sonar un trozo del punteo de Perdent el Nord en mi Amstrad**. 🤯
+Hace relativamente poco **descubrí un pequeño "homenaje" que se coló en el punteo**: Probando si funcionaban algunos videojuegos antiguos en mi Amstrad CPC, me dió por jugar un rato a Stardust, un arcade de naves con el que había pasado MUCHAS horas cuando era pequeño. Mientras paseaba por las opciones del menú y sonaba de fondo la banda sonora (obra del genial [César Astudillo](https://twitter.com/cesarastudillo)), me quedé a cuadros. **Acababa de sonar un trozo del punteo de Perdent el Nord en mi Amstrad**. 🤯
 
 Podéis escucharlo comparando:
 
