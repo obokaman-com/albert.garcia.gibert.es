@@ -9,7 +9,7 @@
             {{ if $originalImg }}
                 {{ $thumbnailImg := $originalImg.Fill "150x150 Center" }}
                 <figure>
-                    <img width="150" height="150" src="{{ $thumbnailImg.RelPermalink | safeHTML }}" align="left" alt="{{ .Title }}">
+                    <img width="150" height="150" src="{{ $thumbnailImg.RelPermalink | safeHTML }}" align="right" alt="{{ .Title }}">
                 </figure>
             {{ end }}
         {{ end }}

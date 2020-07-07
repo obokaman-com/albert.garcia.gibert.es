@@ -1209,8 +1209,9 @@ body:not(.post-template) .post-title {
 }
 
 .post-excerpt img {
-    box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
-    margin:0.3em 1em 0.1em 0;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+    margin:0.3em 0 0.1em 1em;
+    border-radius: 4px;
 }
 
 /* The author credit area after the post */
