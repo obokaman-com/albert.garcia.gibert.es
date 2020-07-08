@@ -12,7 +12,6 @@ assetDir = "static"
 [params]
   paginatedSections="post test"
   description = "Cofounder and former CTO of @Uvinum, founder of @Obolog. Father of @soclajulia & @soclabril . I'd like to travel more and improve my guitar skills."
-  # metadescription = "TO-DO: Change metadescripcion"
   cover = "/images/background-202006041954.jpg"
   author = "Albert García Gibert"
   authorlocation = "El Prat de Llobregat, Barcelona"
@@ -29,7 +28,6 @@ assetDir = "static"
   instagramName = "obokaman"
   email = "albert.garcia@gibert.es"
   hideHUGOSupport = false
-  
   hjsStyle = "default"
 
 [permalinks]
