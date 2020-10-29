@@ -3,12 +3,12 @@ date = 2020-10-28T19:27:36Z
 image = "/images/2020/10/cryptoadvisor-screenshot-dark.png"
 slug = "nuevo-proyecto-playground-chatbots-cryptoadvisor"
 tags = ["proyectos", "criptomonedas"]
-title = "CryptoAdvisor.Club: el robo advisor de criptomonedas"
+title = "CryptoAdvisor.Club: El asistente virtual para invertir en criptomonedas"
 
 +++
-Esta semana _Albert Lombarte_ y yo ponemos en marcha [**CryptoAdvisor.Club**](https://cryptoadvisor.club/es), un robo advisor en forma de bot 🤖 de Telegram que puede ayudarnos a sacar mayor partido a nuestra cartera de criptomonedas. Se trata de un _side project_ en el que hemos trabajado los últimos dos meses, con la intención de **aprender todo lo necesario para montar un chatbot**: UX para interfaces conversacionales, librerías y herramientas disponibles, sistemas de analítica para bots, buenas prácticas para el diseño de la infraestructura técnica necesaria, particularidades de las diferentes plataformas de chat disponibles (_Telegram, Slack, Facebook Messenger, Whatsapp, Microsoft Bot, Alexa, Google Assistant..._)
+Esta semana _Albert Lombarte_ y yo ponemos en marcha [**CryptoAdvisor.Club**](https://cryptoadvisor.club/es), un asistente virtual en forma de bot 🤖 de Telegram que puede ayudarnos a sacar mayor partido a nuestra cartera de criptomonedas. Se trata de un _side project_ en el que hemos trabajado los últimos dos meses, con la intención de **aprender todo lo necesario para montar un chatbot**: UX para interfaces conversacionales, librerías y herramientas disponibles, sistemas de analítica para bots, buenas prácticas para el diseño de la infraestructura técnica necesaria, particularidades de las diferentes plataformas de chat disponibles (_Telegram, Slack, Facebook Messenger, Whatsapp, Microsoft Bot, Alexa, Google Assistant..._)
 
-Si te interesa conocer un poco el porqué de este proyecto, a continuación doy un poco de contexto. Si tanto texto te aburre, te agradeceré al menos que [**pruebes nuestro bot**](https://cryptoadvisor.club/bot) y nos hagas llegar tu feedback. ☺️
+Si te interesa conocer un poco el porqué de este proyecto, a continuación doy un poco de contexto. Si tanto texto te aburre, te agradeceré al menos que [**pruebes nuestro bot**](https://cryptoadvisor.club/es) y nos hagas llegar tu feedback. ☺️
 
 #### ¿Porqué un _side project_?
 
