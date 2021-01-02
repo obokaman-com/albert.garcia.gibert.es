@@ -43,7 +43,7 @@
             <h1 class="page-title">Hablando de {{humanize .Title}}</h1>
             <h2 class="page-description">
                 {{if .Params.description}}
-                    {{.Params.description}}
+                    {{.Params.description | safeHTML}}
                 {{end}}
             </h2>
         </div>

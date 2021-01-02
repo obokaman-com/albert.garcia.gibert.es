@@ -2,7 +2,7 @@
 date = 2020-10-29T11:13:15Z
 image = "/images/2020/10/cryptoadvisorclub-screenshot.png"
 slug = "criptoadvisor-como-se-hizo"
-tags = ["proyectos", "criptomonedas"]
+tags = ["proyectos", "criptomonedas", "cryptoadvisor"]
 title = "El making of de CryptoAdvisor.Club"
 
 +++

@@ -2,7 +2,7 @@
 date = 2020-10-28T19:27:36Z
 image = "/images/2020/10/cryptoadvisorclub-screenshot.png"
 slug = "nuevo-proyecto-playground-chatbots-cryptoadvisor"
-tags = ["proyectos", "criptomonedas"]
+tags = ["proyectos", "criptomonedas", "cryptoadvisor"]
 title = "CryptoAdvisor.Club: El asistente virtual para invertir en criptomonedas"
 
 +++

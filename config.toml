@@ -11,7 +11,7 @@ assetDir = "static"
 
 [params]
   paginatedSections="post test"
-  description = "Cofounder and former CTO of Uvinum. Founder of Obolog and Splitweet. Father of Júlia & Abril. I'd like to travel more and improve my guitar skills."
+  description = "Building <a href='https://cryptoadvisor.club'>CryptoAdvisor.Club</a>, the easy and calm crypto investment bot. Cofounder and former CTO of <a href='https://www.lavanguardia.com/economia/emprendedores/20180804/451201682513/pernod-ricard-uvinum.html'>Uvinum</a>. Founder of <a href='https://www.genbeta.com/web/obolog-plataforma-espanola-de-creacion-de-blogs-totalmente-reformada'>Obolog</a> and <a href='https://computerhoy.com/noticias/internet/hootsuite-compra-start-espanola-splitweet-2493'>Splitweet</a>. Father of Júlia & Abril. I'd like to travel more and improve my guitar skills."
   cover = "/images/background-202006041954.jpg"
   author = "Albert García Gibert"
   authorlocation = "El Prat de Llobregat, Barcelona"
