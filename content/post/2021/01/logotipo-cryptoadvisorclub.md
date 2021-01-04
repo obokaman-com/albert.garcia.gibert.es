@@ -58,12 +58,12 @@ Mientras tanto nos llegaron un par de propuestas más del diseñador:
 
 A estas alturas, y **probablemente condicionados por el trabajo que ya habíamos estado avanzando por nuestra cuenta** (y el feedback que ya habíamos empezado a recoger de algunos usuarios y gente cercana), ninguna de las nuevas propuestas nos pareció mejorar el camino que habíamos empezado a tomar. La primera propuesta por la **poca personalidad que nos parecía transmitir** (y de nuevo esas formas curvas, que en esta ocasión parecían hacer "gotear" la forma del logotipo). La segunda propuesta nos gustó a ambos y obtuvo bastantes votos también, por memorable y original, al tiempo que combinaba varios de los puntos que habíamos estado comentando. El problema es que **nos pareció demasiado "informal"**, y acabamos descartándola también.
 
-A partir de las últimas iteraciones del logotipo anterior, llegamos a la versión actual del logotipo de CryptoAdvisor, que veis a continuación.
+Así pues, seguimos trabajando sobre las ideas anteriores. Con algunas iteraciones desde donde lo habíamos dejado, prácticamente llegamos a la versión actual del logotipo de CryptoAdvisor, que veis a continuación.
 
-{{< figure src="/images/2021/01/our-final-logo.png" caption="El logotipo final de CryptoAdvisor.Club" >}}
+{{< figure src="/images/2021/01/final-logo.png" caption="El logotipo final de CryptoAdvisor.Club" >}}
 
-El logotipo final fue el resultado de trabajar sobre la última versión. Tanto en el caso del punto central como en el filete exterior de la C, modificamos la forma para formar un ángulo recto en la parte inferior derecha, de forma que **pudiera ser ligeramente más reconocible la "a" minúscula que buscábamos**. Fué necesario tanto alargar en línea recta la línea de base de la C como cerrar más la parte superior de la misma. El resultado nos recordaba, además, a **una cabeza** (nuestro bot, Ben) mirando a la derecha, siendo la parte superior derecha de la C su nariz, **la parte inferior su barbilla y el punto interior su "cerebro"** (sus recomendaciones).
+A la izquierda veis la propuesta que volvimos a enviar al diseñador. Tanto en el caso del punto central como en el filete exterior de la C, modificamos la forma para formar un ángulo recto en la parte inferior derecha, de forma que **pudiera ser ligeramente más reconocible la "a" minúscula que buscábamos**. Fué necesario tanto alargar en línea recta la línea de base de la C como cerrar más la parte superior de la misma. El resultado nos recordaba, además, a **una cabeza** (nuestro bot, Ben) mirando a la derecha, siendo la parte superior derecha de la C su nariz, **la parte inferior su barbilla y el punto interior su "cerebro"** (sus recomendaciones).
 
-El último toque fue plasmarlo en negativo sobre una pastilla sólida del azul escogido, lo que **hizo que funcionara estupendamente a modo de avatar**, tanto en Telegram como para redes sociales, o el propio logotipo de la página web.
+A la derecha, la versión final del logotipo: anchos y espacios equilibrados (mejora su "visibilidad" como avatar a pequeño tamaño) y una inversión vertical que ayuda a reconocer algo mejor ambas iniciales en el logotipo.
 
 Y a tí, **¿Qué te parece? ¿Con cuál te hubieras quedado?**
