@@ -88,7 +88,7 @@
         "@type": "WebPage",
         "@id": {{ .Site.BaseURL }}
     },
-    "description": {{ .Site.Params.description }}
+    "description": {{ .Site.Params.metadescription | default .Site.Params.description }}
 }
   </script>
     {{ end }}
