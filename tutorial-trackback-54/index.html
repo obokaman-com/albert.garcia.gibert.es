@@ -9,14 +9,14 @@ en XHTML 1.0, CSS2 y RSS 2. :DD) . Uno de los
 temas que más me ha llamado la atención
 últimamente es el sistema de Trackback,
 desarrollado hace algun tiempo por los chicos
-de <a href=http://www.moveabletype.org/>Moveable
+de <a href=https://www.moveabletype.org/>Moveable
 Type</a> para permitir a una página enlazar
 con un post de otra, y permitir a la otra saber
 que la han enlazado, a grandes rasgos. Gracias
-a un post de <a href=http://www.kusor.net target=_blank>Kusor</a>
-y al recordatorio de <a href=http://www.perseverantia.com/versvs/ target=_blank>Lunatiko</a>,
-descubrí un <a href=http://www.hitormiss.org/projects/trackback/ target=_blank>tutorial</a>
-bastante claro de <a href=http://hit-or-miss.org/>Matt
+a un post de <a href=https://www.kusor.net target=_blank>Kusor</a>
+y al recordatorio de <a href=https://www.perseverantia.com/versvs/ target=_blank>Lunatiko</a>,
+descubrí un <a href=https://www.hitormiss.org/projects/trackback/ target=_blank>tutorial</a>
+bastante claro de <a href=https://hit-or-miss.org/>Matt
 Kingston</a> sobre cómo implementar un
 sistema de trackback. El tutorial está
 pensado para PHP y MySql, aunque es suficientemente
@@ -29,13 +29,13 @@ conveniente aportar mi granito de arena a la comunidad
 y traducir el tutorial con el que ayer mismo implementé
 el sistema de trackback en obokaman.com</p><p style="background:#333;text-align:center;margin:0 30px;padding:3px;border:1px dashed #fff;font:13px georgia,helvetica,arial;color:#cbc77e"><strong>Tutorial
 de Trackback 'casero'</strong></p><p class=txtgran>NOTA: Moveable Type ha publicado
-<a href=http://www.movabletype.org/docs/mttrackback.html target=_blank>documentación
+<a href=https://www.movabletype.org/docs/mttrackback.html target=_blank>documentación
 técnica</a> sobre cómo implementar
-el TrackBack.</p><p class=txtgran>¿Qué es el <a href=http://www.movabletype.org/trackback/ target=_blank>TrackBack</a>?
+el TrackBack.</p><p class=txtgran>¿Qué es el <a href=https://www.movabletype.org/trackback/ target=_blank>TrackBack</a>?
 Básicamente, es una manera de registrar
 quién ha enlazado a tus posts y notificar
 a los demás que los has enlazado. (creado
-por los chicos de <a href=http://www.moveabletype.org/ target=_blank>Moveable
+por los chicos de <a href=https://www.moveabletype.org/ target=_blank>Moveable
 Type</a>).</p><p class=txtgran>Como no he encontrado documentación
 o tutoriales sobre cómo funciona el sistema
 de TrackBack, voy a intentar condensar lo que
@@ -69,7 +69,7 @@ las variables que debes/puedes enviar cuando llames
 a esa URL.</p><p class=txtgran>"url" = Esta es la
 URL del enlace permanente al tu post, desde el
 que estás enlazando al mío. Debe
-incluir el http://</p><p class=txtgran>"title" = Este es el
+incluir el https://</p><p class=txtgran>"title" = Este es el
 título de tu post. La implementación
 del TrackBack en MT recorta automáticamente
 el título después de las 5 primeras
@@ -90,12 +90,12 @@ es el nombre de tu blog. De nuevo, me aburrí
 después de mandar una palabra de más
 de 400 caracteres en este campo...</p><p class=txtgran>Por tanto, la URL que deberías
 construir si quieres enviar un TB ping a mi post
-número 500, quedaría así:</p><p class=txtgran>/tb/?id=500&url=http://www.miblog.com/archives/00123.html
+número 500, quedaría así:</p><p class=txtgran>/tb/?id=500&url=https://www.miblog.com/archives/00123.html
 &blog_name=Mi+blog&title=Aqui+iria+el+titulo</p><p class=txtgran>Asegúrate de codificar
 correctamente los caracteres para URL ("+"
 en vez de espacios, etc.) En PHP existe la función
 urlencode para eso. (<span class=txtama>NT:
-quedaría algo así:<br></span><span class=txtama>$tburl="/tb/?id=500&url=http://www.miblog.com/archives/00123.html&blog_name="<br></span><span class=txtama>.urlencode($nombre_blog)."&title=".urlencode($titulo_post);<br>?></span>)</p><p class=txtgran>Para poder hacer el TB ping desde
+quedaría algo así:<br></span><span class=txtama>$tburl="/tb/?id=500&url=https://www.miblog.com/archives/00123.html&blog_name="<br></span><span class=txtama>.urlencode($nombre_blog)."&title=".urlencode($titulo_post);<br>?></span>)</p><p class=txtgran>Para poder hacer el TB ping desde
 mi weblog, incluí un campo de texto en
 el formulario desde el que posteo los nuevos mensajes,
 donde pego la TB URL del post al que quiero enlazar.
@@ -208,7 +208,7 @@ automáticamente las TB URL de una página
 determinada. Si quisiera activar esa detección
 automática para mi página, debería
 añadir el siguiente código en la
-página, después de cada post:</p><p class=codigo><rdf:rdf xmlns:rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns# <br>xmlns:dc="http://purl.org/dc/elements/1.1/"><br><rdf:description about="http://www.hitormiss.org/tb/?id=id_of_the_post" <br>dc:title="Title of my blog entry"<br>dc:identifier="Permalink URL to this blog
+página, después de cada post:</p><p class=codigo><rdf:rdf xmlns:rdf=https://www.w3.org/1999/02/22-rdf-syntax-ns# <br>xmlns:dc="https://purl.org/dc/elements/1.1/"><br><rdf:description about="https://www.hitormiss.org/tb/?id=id_of_the_post" <br>dc:title="Title of my blog entry"<br>dc:identifier="Permalink URL to this blog
 entry"<br>dc:creator="The name of my weblog"<br>dc:date="Date of the entry" /><br></rdf:rdf></p><div class=txtgran style="border-bottom:1px dotted #fff;margin:0 0 7px"><strong><a name=conc></a>Conclusion</strong></div><div class=txtgran>Este tutorial es una simplificación
 de lo que envuelve a la implementación
 de un sistema de TrackBack 'casero'. Básicamente,
@@ -225,7 +225,7 @@ no... maldita la gracia! Vamos a ver: el id de
 este post, como ves arriba, es el 54, así
 que partimos de que si, como he dicho antes, la
 TB URL principal de mi blog es <strong>/tb/id=X</strong>
-, la TB URL para este post en concreto sería:<br><br><u>/tb/?id=54&blog_name=tu+blog+aqui&url=http://www.tublog.com/tupost.php<br>&title=el+titulo+de+tu+post&excerpt=un+pequenyo+extracto+de+tu+post</u><br><br>Fíjate cómo especificamos el valor de las
+, la TB URL para este post en concreto sería:<br><br><u>/tb/?id=54&blog_name=tu+blog+aqui&url=https://www.tublog.com/tupost.php<br>&title=el+titulo+de+tu+post&excerpt=un+pequenyo+extracto+de+tu+post</u><br><br>Fíjate cómo especificamos el valor de las
 variables empezando después del ?, poniendo
 el nombre de la variable, después "=",
 el valor y un símbolo "&" 
@@ -258,8 +258,8 @@ VALUES ('$id','$url','$title','$excerpt','$blog_name',NOW());";<br>mysql_query($
 puedo contar si después de esto seguís
 teniendo alguna duda, podéis escribirme
 a obokaman@obokaman.com e intentaré contestaros
-;D.</p><p class=txtgran>Texto original por: <a href=http://hit-or-miss.org/ target=_blank>Matt
-Kingston</a> - <a href=http://www.hitormiss.org/projects/trackback/ target=_blank>Documento
+;D.</p><p class=txtgran>Texto original por: <a href=https://hit-or-miss.org/ target=_blank>Matt
+Kingston</a> - <a href=https://www.hitormiss.org/projects/trackback/ target=_blank>Documento
 original aquí</a><br>Traducción y comentarios en castellano
 por : obokaman</p><p>Espero que te haya sido de ayuda. Hasta la próxima
 rallada! ;D</p></section><footer class=post-footer><figure class=author-image><a class=img href=https://albert.garcia.gibert.es/ style=background-image:url(/images/avatar.jpg)><span class=hidden>Foto de Albert García Gibert</span></a></figure><section class=author><h4><a href=https://albert.garcia.gibert.es/>Albert García Gibert</a></h4><p>Cofounder and former CTO of Uvinum. Founder of Obolog and Splitweet. Father of Júlia & Abril. I'd like to travel more and improve my guitar skills.</p><div class=author-meta><span class="author-location icon-location">El Prat de Llobregat, Barcelona</span>
