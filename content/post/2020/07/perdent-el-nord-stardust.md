@@ -6,11 +6,11 @@ tags = ["música","kompotser"]
 title = "Perdent el Nord: cuando homenajeamos la BS de Stardust"
 
 +++
-"**Perdent el Nord**" era el tema con el que solíamos abrir nuestros conciertos, y Xavi solía introducirla con el escueto pero mítico: "_Hola, sí, bona nit. Som els Kompotser del Prat i això és una cançó de desamor que es diu Perdent el Nord_".
+"**Perdent el Nord**" era el tema con el que solíamos abrir nuestros conciertos, y Xavi solía introducirla con el mítico: "_Hola, sí, bona nit. Som els Kompotser del Prat i això és una cançó de desamor que es diu Perdent el Nord_".
 
 Fue uno de los primeros temas propios de la banda. No recuerdo fechas exactamente, pero **diría que la compusimos sobre el 97-98**. Xavi me pasó unas cuantas letras y musiqué algunas de ellas. De ahí saldrían Perdent el Nord o Perduts en l'Univers, algunos "clásicos" de KomPotSer.
 
-Estos días [grabé una versión acústica](https://www.youtube.com/watch?v=rDK1UJC4ZbE) de este tema, ([rockero en su versión original](https://www.youtube.com/watch?v=rDK1UJC4ZbE)). 
+Estos días [grabé una versión acústica](https://www.youtube.com/watch?v=APoKa8baL4c) de este tema, ([rockero en su versión original](https://www.youtube.com/watch?v=rDK1UJC4ZbE)). 
 
 {{< youtube id=APoKa8baL4c class="video-player">}}
 
