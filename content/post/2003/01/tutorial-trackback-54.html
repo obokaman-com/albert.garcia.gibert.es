@@ -14,14 +14,14 @@ tags = [ "pensamientos" ]
                                 temas que más me ha llamado la atención 
                                 últimamente es el sistema de Trackback, 
                                 desarrollado hace algun tiempo por los chicos 
-                                de <a href="http://www.moveabletype.org/">Moveable 
+                                de <a href="https://www.moveabletype.org/">Moveable
                                 Type</a> para permitir a una página enlazar 
                                 con un post de otra, y permitir a la otra saber 
                                 que la han enlazado, a grandes rasgos. Gracias 
-                                a un post de <a href="http://www.kusor.net" target="_blank">Kusor</a> 
-                                y al recordatorio de <a href="http://www.perseverantia.com/versvs/" target="_blank">Lunatiko</a>, 
-                                descubrí un <a href="http://www.hitormiss.org/projects/trackback/" target="_blank">tutorial</a> 
-                                bastante claro de <a href="http://hit-or-miss.org/">Matt 
+                                a un post de <a href="https://www.kusor.net" target="_blank">Kusor</a>
+                                y al recordatorio de <a href="https://www.perseverantia.com/versvs/" target="_blank">Lunatiko</a>,
+                                descubrí un <a href="https://www.hitormiss.org/projects/trackback/" target="_blank">tutorial</a>
+                                bastante claro de <a href="https://hit-or-miss.org/">Matt
                                 Kingston</a> sobre cómo implementar un 
                                 sistema de trackback. El tutorial está 
                                 pensado para PHP y MySql, aunque es suficientemente 
@@ -35,14 +35,14 @@ tags = [ "pensamientos" ]
                                 el sistema de trackback en obokaman.com</p><p style="background:#333;text-align:center;margin:0px 30px 0px 30px;padding:3px;border:1px dashed white;font:13px georgia,helvetica,arial;color:#CBC77E;"><strong>Tutorial 
                                 de Trackback 'casero'</strong></p>
                               <p class="txtgran">NOTA: Moveable Type ha publicado 
-                                <a href="http://www.movabletype.org/docs/mttrackback.html" target="_blank">documentación 
+                                <a href="https://www.movabletype.org/docs/mttrackback.html" target="_blank">documentación
                                 técnica</a> sobre cómo implementar 
                                 el TrackBack.</p>
-                              <p class="txtgran">¿Qué es el <a href="http://www.movabletype.org/trackback/" target="_blank">TrackBack</a>? 
+                              <p class="txtgran">¿Qué es el <a href="https://www.movabletype.org/trackback/" target="_blank">TrackBack</a>?
                                 Básicamente, es una manera de registrar 
                                 quién ha enlazado a tus posts y notificar 
                                 a los demás que los has enlazado. (creado 
-                                por los chicos de <a href="http://www.moveabletype.org/" target="_blank">Moveable 
+                                por los chicos de <a href="https://www.moveabletype.org/" target="_blank">Moveable
                                 Type</a>).</p>
                               <p class="txtgran">Como no he encontrado documentación 
                                 o tutoriales sobre cómo funciona el sistema 
@@ -88,7 +88,7 @@ tags = [ "pensamientos" ]
                               <p class="txtgran">"url" = Esta es la 
                                 URL del enlace permanente al tu post, desde el 
                                 que estás enlazando al mío. Debe 
-                                incluir el http://</p>
+                                incluir el https://</p>
                               <p class="txtgran">"title" = Este es el 
                                 título de tu post. La implementación 
                                 del TrackBack en MT recorta automáticamente 
@@ -114,7 +114,7 @@ tags = [ "pensamientos" ]
                               <p class="txtgran">Por tanto, la URL que deberías 
                                 construir si quieres enviar un TB ping a mi post 
                                 número 500, quedaría así:</p>
-                              <p class="txtgran">/tb/?id=500&url=http://www.miblog.com/archives/00123.html 
+                              <p class="txtgran">/tb/?id=500&url=https://www.miblog.com/archives/00123.html
                                 &blog_name=Mi+blog&title=Aqui+iria+el+titulo</p>
                               <p class="txtgran">Asegúrate de codificar 
                                 correctamente los caracteres para URL ("+" 
@@ -122,7 +122,7 @@ tags = [ "pensamientos" ]
                                 urlencode para eso. (<span class="txtama">NT: 
                                 quedaría algo así: <br />
                                 <?<br />
-                                </span><span class="txtama">$tburl="/tb/?id=500&url=http://www.miblog.com/archives/00123.html&blog_name="<br />
+                                </span><span class="txtama">$tburl="/tb/?id=500&url=https://www.miblog.com/archives/00123.html&blog_name="<br />
                                 </span><span class="txtama">.urlencode($nombre_blog)."&title=".urlencode($titulo_post);<br />
                                 ?></span>)</p>
                               <p class="txtgran">Para poder hacer el TB ping desde 
@@ -274,9 +274,9 @@ tags = [ "pensamientos" ]
                                 automática para mi página, debería 
                                 añadir el siguiente código en la 
                                 página, después de cada post:</p>
-                              <p class="codigo"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"                                 <br />
-                                xmlns:dc="http://purl.org/dc/elements/1.1/"><br />
-                                <rdf:Description about="http://www.hitormiss.org/tb/?id=id_of_the_post"                                 <br />
+                              <p class="codigo"><rdf:RDF xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#"                                 <br />
+                                xmlns:dc="https://purl.org/dc/elements/1.1/"><br />
+                                <rdf:Description about="https://www.hitormiss.org/tb/?id=id_of_the_post"                                 <br />
                                 dc:title="Title of my blog entry" <br />
                                 dc:identifier="Permalink URL to this blog 
                                 entry" <br />
@@ -305,7 +305,7 @@ tags = [ "pensamientos" ]
                                 , la TB URL para este post en concreto sería: 
                                 <br />
                                 <br />
-                                <u>/tb/?id=54&blog_name=tu+blog+aqui&url=http://www.tublog.com/tupost.php<br />
+                                <u>/tb/?id=54&blog_name=tu+blog+aqui&url=https://www.tublog.com/tupost.php<br />
                                 &title=el+titulo+de+tu+post&excerpt=un+pequenyo+extracto+de+tu+post</u><br />
                                 <br />
                                 Fíjate cómo especificamos el valor de las 
@@ -372,8 +372,8 @@ tags = [ "pensamientos" ]
                                 teniendo alguna duda, podéis escribirme 
                                 a obokaman@obokaman.com e intentaré contestaros 
                                 ;D.</p>
-                              <p class="txtgran">Texto original por: <a href="http://hit-or-miss.org/" target="_blank">Matt 
-                                Kingston</a> - <a href="http://www.hitormiss.org/projects/trackback/" target="_blank">Documento 
+                              <p class="txtgran">Texto original por: <a href="https://hit-or-miss.org/" target="_blank">Matt
+                                Kingston</a> - <a href="https://www.hitormiss.org/projects/trackback/" target="_blank">Documento
                                 original aquí</a><br />
                                 Traducción y comentarios en castellano 
                                 por : obokaman</p>

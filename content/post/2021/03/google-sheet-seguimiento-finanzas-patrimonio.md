@@ -16,7 +16,7 @@ Algunos sabéis ya de **mi afición por hacerme listas**, _Notions_ y _Google Sh
 > 
 > 👇 Lo comparto aquí por si puede ser útil para otros.
 > 
-> 📊 [**Registro y estado de patrimonio &raquo;**](http://bit.ly/gsheet-patrimonio) 
+> 📊 [**Registro y estado de patrimonio &raquo;**](https://bit.ly/gsheet-patrimonio) 
 > 
 > Puedes hacer una copia en tu Google Drive y editar con tus propios datos.
 
@@ -40,7 +40,7 @@ En realidad no tiene mucha miga. Concluí que debía:
 
 ### El dashboard de seguimiento en Google Sheet
 
-Para hacer seguimiento de todo ello y monitorizar la evolución, la representatividad de cada categoría, etc. desde hace un par de años vengo usando un dashboard muy parecido a este: 📊 [**Registro y estado de patrimonio &raquo;**](http://bit.ly/gsheet-patrimonio)
+Para hacer seguimiento de todo ello y monitorizar la evolución, la representatividad de cada categoría, etc. desde hace un par de años vengo usando un dashboard muy parecido a este: 📊 [**Registro y estado de patrimonio &raquo;**](https://bit.ly/gsheet-patrimonio)
 
 Consta de las siguientes secciones:
 
@@ -79,7 +79,7 @@ Puedes editar el importe de la aportación en la celda naranja, o incluso puedes
 ---
 
 {{< center >}}
-<p>👉 📊 <a href="http://bit.ly/gsheet-patrimonio"><strong>Registro y estado de patrimonio &raquo</strong></a> 👈</p>
+<p>👉 📊 <a href="https://bit.ly/gsheet-patrimonio"><strong>Registro y estado de patrimonio &raquo</strong></a> 👈</p>
 {{< /center >}}
 
 Normalmente me lleva no más de 5 minutos al mes llevarlo al día, y me resulta bastante útil sobre todo para hacer seguimiento en cuestión de rendimiento de las inversiones y de la distribución.

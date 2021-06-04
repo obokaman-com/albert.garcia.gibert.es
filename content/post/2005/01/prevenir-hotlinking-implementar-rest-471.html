@@ -12,10 +12,10 @@ tags = [ "desarrollo web" ]
 		    </div><p>Esto es sencillo de conseguir modificando o creando un fichero llamado ".htaccess" en la carpeta raíz, con el siguiente contenido:</p>
 		    <pre class="codigo">RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http://(www\.)?obokaman\.com/ [NC]
-RewriteCond %{HTTP_REFERER} !^http://(www\.)?internostrum\.com/ [NC]
-RewriteCond %{HTTP_REFERER} !^http://(www\.)?bloglines\.com/ [NC]
-RewriteCond %{HTTP_REFERER} !^http://(www\.)?feedness\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?obokaman\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?internostrum\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?bloglines\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?feedness\.com/ [NC]
 RewriteRule \.(jpe?g|gif|bmp|png)$ nohotlink.gif [L]</pre>
 <p>Como ves, las líneas donde aparece "RewriteCond", son en las que se especifica qué servidores son los "autorizados". En mi caso he activado dos lectores de noticias y la página que permite hacer las traducciones de catalán a castellano. Al final, RewriteRule, le dice qué hacer cuando se cumplan las condiciones _redireccionar a la imagen nohotlink.gif_. Tu puedes cambiar esas lineas para adaptarlo a tus necesidades.</p>
 <p>El segundo tema que queria tratar de instaurar en obokaman.com era referente a las URL "amigables", esto es, intentar evitar las direcciones del tipo "indice_msg.php?blog=colectivo&categoria=Internet", que resultan ininteligibles en muchos casos y cambiarlo por algo del tipo "/archivos/colectivo/internet". De la misma manera, a partir de ahora para acceder a los mensajes lo haremos usando la url www.obokaman.com/mensaje/id_del_mensaje, para acceder al blog de cada uno, lo haremos escribiendo www.obokaman.com/blog/nombre_de_usuario., etc... Aunque las URL así lo indiquen, no hay ninguna carpeta en la web que se llame "blog" ni "archivos" ni "mensaje". De traducir esas URL a las correctas se encarga de nuevo el mod rewrite de Apache. Estas son las lineas que convierten las URL en el caso de obokaman.com</p>
@@ -26,5 +26,5 @@ RewriteRule \.(jpe?g|gif|bmp|png)$ nohotlink.gif [L]</pre>
   RewriteRule ^(.*)archivos/?$ /indice_msg.php [QSA]
   RewriteRule ^(.*)buscar/?$ /buscar.php [QSA]
   RewriteRule ^(.*)blog/(.*)/?$ /index.php?blog=$2 [QSA]</pre>
-  <p>RewriteRule le especifica mediante expresiones regulares, la cadena modelo y la URL real a la que se debe redireccionar en cada caso. Lo de las expresiones regulares tiene candela. Si quieres empaparte con su sintaxis te recomiendo <a href="http://www.regular-expressions.info/reference.html" target="_blank">esta web</a> como referencia. </p>
+  <p>RewriteRule le especifica mediante expresiones regulares, la cadena modelo y la URL real a la que se debe redireccionar en cada caso. Lo de las expresiones regulares tiene candela. Si quieres empaparte con su sintaxis te recomiendo <a href="https://www.regular-expressions.info/reference.html" target="_blank">esta web</a> como referencia. </p>
   <p>Bueno, y eso es todo. Como ves, nada que afecte en apariencia al funcionamiento normal de la web, pero que mejora su rendimiento. </p>

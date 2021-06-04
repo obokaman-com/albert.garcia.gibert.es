@@ -6,16 +6,16 @@ slug = "limpieza-floats-ie-7-4541"
 tags = [ "css","desarrollo web","diseño","hacks","internet explorer 7","navegadores" ]
 +++
 <p>
-Durante los &uacute;ltimos meses, Microsoft nos ha tenido en vilo ( sobretodo a los desarrolladores web ), pendientes del soporte a la especificaci&oacute;n de CSS que tendr&iacute;a su nuevo navegador, <a href="http://www.microsoft.com/windows/ie/default.mspx">Internet Explorer 7</a> . Despu&eacute;s de unos 5 a&ntilde;os sin publicar una nueva versi&oacute;n, parec&iacute;a que la cosa iba a salir &quot;fina&quot;: <a href="http://blogs.msdn.com/ie/archive/2006/02/02/523679.aspx">El modelo de caja se ha implementado correctamente</a>, se soportan propiedades tan &uacute;tiles como min/max-width, ... &iquest;&iexcl;Se acabaron las reglas s&oacute;lo para IE!? No... 
+Durante los &uacute;ltimos meses, Microsoft nos ha tenido en vilo ( sobretodo a los desarrolladores web ), pendientes del soporte a la especificaci&oacute;n de CSS que tendr&iacute;a su nuevo navegador, <a href="https://www.microsoft.com/windows/ie/default.mspx">Internet Explorer 7</a> . Despu&eacute;s de unos 5 a&ntilde;os sin publicar una nueva versi&oacute;n, parec&iacute;a que la cosa iba a salir &quot;fina&quot;: <a href="https://blogs.msdn.com/ie/archive/2006/02/02/523679.aspx">El modelo de caja se ha implementado correctamente</a>, se soportan propiedades tan &uacute;tiles como min/max-width, ... &iquest;&iexcl;Se acabaron las reglas s&oacute;lo para IE!? No...
 </p>
 <p>
-Por poner un ejemplo, no se han implementado los pseudo-elementos :before y :after. &iquest;Trivial? Para nada. Entre otros muchos usos, como la inclusi&oacute;n de elementos que afecten a la presentaci&oacute;n de ciertos bloques ( comillas antes y despu&eacute;s de elementos cite, pipelines despu&eacute;s de listas de enlaces horizontales... )  o la limpieza de floats a trav&eacute;s del <a href="http://www.positioniseverything.net/easyclearing.html">easy clearing method</a> quedan totalmente inutilizada. 
+Por poner un ejemplo, no se han implementado los pseudo-elementos :before y :after. &iquest;Trivial? Para nada. Entre otros muchos usos, como la inclusi&oacute;n de elementos que afecten a la presentaci&oacute;n de ciertos bloques ( comillas antes y despu&eacute;s de elementos cite, pipelines despu&eacute;s de listas de enlaces horizontales... )  o la limpieza de floats a trav&eacute;s del <a href="https://www.positioniseverything.net/easyclearing.html">easy clearing method</a> quedan totalmente inutilizada.
 </p>
 <p>
 El antiguo hack para explorer es ignorado por el nuevo IE y adem&aacute;s,  al carecer &eacute;ste de soporte para :before, tampoco la regla gen&eacute;rica funciona. Esto se traduce en un mont&oacute;n de sitios descuajeringados: el anterior m&eacute;todo permit&iacute;a que aquellos contenedores que tuvieran hijos flotantes obtuvieran una altura correcta, correspondiente a su hijo m&aacute;s alto.
 </p>
 <p>
-Cuando ya hab&iacute;a perdido toda esperanza de disponer, de nuevo, de un m&eacute;todo lo m&aacute;s gen&eacute;rico posible que permitiera disponer de un marcado &quot;limpio&quot; para conseguir el deseado efecto... me encontr&eacute; con el art&iacute;culo de Roger Johansson, <a href="http://www.456bereastreet.com/archive/200603/new_clearing_method_needed_for_ie7/#content-secondary">New clearing method needed for IE7?</a>, en que justo se plantea esto mismo, y en el que, a trav&eacute;s de la discusi&oacute;n generada por sus lectores, consigue llegar a una versi&oacute;n funcional para IE y que hace uso exclusivamente de CSS.
+Cuando ya hab&iacute;a perdido toda esperanza de disponer, de nuevo, de un m&eacute;todo lo m&aacute;s gen&eacute;rico posible que permitiera disponer de un marcado &quot;limpio&quot; para conseguir el deseado efecto... me encontr&eacute; con el art&iacute;culo de Roger Johansson, <a href="https://www.456bereastreet.com/archive/200603/new_clearing_method_needed_for_ie7/#content-secondary">New clearing method needed for IE7?</a>, en que justo se plantea esto mismo, y en el que, a trav&eacute;s de la discusi&oacute;n generada por sus lectores, consigue llegar a una versi&oacute;n funcional para IE y que hace uso exclusivamente de CSS.
 </p>
 <p>
 <b>La soluci&oacute;n:</b>
@@ -43,7 +43,7 @@ Con un peque&ntilde;o a&ntilde;adido para IE 6, que se podr&iacute;a implementar
 <b>Informaci&oacute;n adicional:</b>
 </p>
 <ul>
-	<li>La t&eacute;cnica original:    <a href="http://www.positioniseverything.net/easyclearing.html">How To Clear Floats Without Structural Markup</a></li>
-	<li><a href="http://www.tanfa.co.uk/archives/show.asp?var=300">EasyClearing, the Aslett/PIE way is NOT broken in IE7!</a></li>
-	<li><a href="http://www.stuffandnonsense.co.uk/archives/clearing_floats_without_structural_markup_in_ie7.html">Clearing floats without structural markup in IE7</a></li>
+	<li>La t&eacute;cnica original:    <a href="https://www.positioniseverything.net/easyclearing.html">How To Clear Floats Without Structural Markup</a></li>
+	<li><a href="https://www.tanfa.co.uk/archives/show.asp?var=300">EasyClearing, the Aslett/PIE way is NOT broken in IE7!</a></li>
+	<li><a href="https://www.stuffandnonsense.co.uk/archives/clearing_floats_without_structural_markup_in_ie7.html">Clearing floats without structural markup in IE7</a></li>
 </ul>
