@@ -34,7 +34,7 @@
         {{ if .Site.Params.RSSLink}}
           <a class="menu-button icon-feed" href="{{.Site.Params.RSSLink }}">&nbsp;&nbsp;Suscríbete</a>
         {{else}}
-          <a class="menu-button icon-feed" href="{{ .RSSLink }}">&nbsp;&nbsp;Suscríbete</a>
+          <a class="menu-button icon-feed" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}">&nbsp;&nbsp;Suscríbete</a>
         {{end}}
       {{end}}
     </nav>

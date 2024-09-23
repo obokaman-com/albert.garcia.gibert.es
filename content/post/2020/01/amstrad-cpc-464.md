@@ -8,7 +8,7 @@ title = "Amstrad CPC 464: contigo empezó todo"
 +++
 Leía esta mañana: 
 
-{{< tweet 1221172696291168257 >}}
+{{< tweet user="obokaman" id="1221172696291168257" >}}
 
 ❤️ Y es que "_contigo empezó todo_". Aún lo tengo en casa, [funcionando](https://instagram.com/p/BwfTvhJBAYC/?igshid=1iigy5k2vurj7). Además de las decenas de juegos transcritos desde revistas, aún guardo las cintas con los primeros programas de cosecha propia: mini-juegos tipo "escoge tu propia aventura". 7 años tendría o por ahí...
 

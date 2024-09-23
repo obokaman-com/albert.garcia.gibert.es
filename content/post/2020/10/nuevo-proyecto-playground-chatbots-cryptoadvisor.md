@@ -16,7 +16,7 @@ Puedes acceder al bot desde [https://cryptoadvisor.club/bot](https://cryptoadvis
 
 #### Un poco de contexto
 
-Hace ya unos 5 meses que [dejé Uvinum]({{< ref "/content/post/2020/05/el-de-cuando-sali-de-uvinum.md" >}}), con dos propósitos claros en mente:
+Hace ya unos 5 meses que [dejé Uvinum]({{< ref "/post/2020/05/el-de-cuando-sali-de-uvinum.md" >}}), con dos propósitos claros en mente:
 1) **Recuperar tiempo para mí** 😇: reciclar conocimientos, recuperar algunas aficiones y buenos hábitos, reflexionar sobre mi futuro...
 2) **Empezar a desarrollar una idea** a la que veníamos dando vueltas desde hace un tiempo con _Albert Lombarte_, amigo, socio y compañero de aventuras varias. 
 
@@ -56,4 +56,4 @@ A modo de refuerzo de la opción que escogimos, creo que este tipo de _side proj
 
 De modo que mientras terminamos esta fase y nos preparamos para empezar, ahora sí,  con el desarrollo del nuevo proyecto, **nos encantaría escuchar tu feedback sobre CryptoAdvisor.Club**.
 
-¿Te interesa conocer alguns detalles técnicos sobre [**cómo hicimos CryptoAdvisor.Club 👨‍💻**]({{< ref "/content/post/2020/10/cryptoadvisor-como-se-hizo.md" >}})?
+¿Te interesa conocer alguns detalles técnicos sobre [**cómo hicimos CryptoAdvisor.Club 👨‍💻**]({{< ref "/post/2020/10/cryptoadvisor-como-se-hizo.md" >}})?

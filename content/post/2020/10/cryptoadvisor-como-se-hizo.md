@@ -6,7 +6,7 @@ tags = ["proyectos", "criptomonedas", "cryptoadvisor"]
 title = "El making of de CryptoAdvisor.Club"
 
 +++
-Anteriormente te explicaba [los motivos que nos llevaron a lanzar CryptoAdvisor.Club]({{< ref "/content/post/2020/10/nuevo-proyecto-playground-chatbots-cryptoadvisor.md" >}}), el asistente virtual para la inversión en criptomonedas. 
+Anteriormente te explicaba [los motivos que nos llevaron a lanzar CryptoAdvisor.Club]({{< ref "/post/2020/10/nuevo-proyecto-playground-chatbots-cryptoadvisor.md" >}}), el asistente virtual para la inversión en criptomonedas. 
 
 En este artículo te comparto algunos detalles técnicos sobre **el stack y las herramientas que hemos utilizado para construir el bot de [CryptoAdvisor.Club](https://cryptoadvisor.club/es)**.
 
