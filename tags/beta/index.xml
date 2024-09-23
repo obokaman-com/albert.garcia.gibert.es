@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>beta on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/beta/</link><description>Recent content in beta on Albert García Gibert</description><generator>Hugo -- gohugo.io</generator><language>es-es</language><lastBuildDate>Tue, 16 May 2006 15:38:26 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/beta/index.xml" rel="self" type="application/rss+xml"/><item><title>Nueva home de Yahoo</title><link>https://albert.garcia.gibert.es/nueva-home-yahoo-2322/</link><pubDate>Tue, 16 May 2006 15:38:26 +0000</pubDate><guid>https://albert.garcia.gibert.es/nueva-home-yahoo-2322/</guid><description>Ya hab&amp;iacute;an corrido por ah&amp;iacute; algunas screenshots, ahora es p&amp;uacute;blicamente accesible:
-https://www.yahoo.com/preview
-Fijaos en la manera que tienen de presentar las nuevas opciones desde el &amp;quot;Take a quick tour&amp;quot; ( superponen un PNG transparente, o c&amp;oacute;mo ponen en pr&amp;aacute;ctica algunas de los &amp;uacute;ltimos patrones de dise&amp;ntilde;o de su librer&amp;iacute;a en las opciones laterales, &amp;quot;mail&amp;quot;, &amp;quot;messenger&amp;quot;, &amp;quot;radio&amp;quot;...
-Destacable tambi&amp;eacute;n el uso de CSS Sprites para ahorrar ancho de banda en lo que se refiere al uso de iconos peque&amp;ntilde;os.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Beta on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/beta/</link><description>Recent content in Beta on Albert García Gibert</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Tue, 16 May 2006 15:38:26 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/beta/index.xml" rel="self" type="application/rss+xml"/><item><title>Nueva home de Yahoo</title><link>https://albert.garcia.gibert.es/nueva-home-yahoo-2322/</link><pubDate>Tue, 16 May 2006 15:38:26 +0000</pubDate><guid>https://albert.garcia.gibert.es/nueva-home-yahoo-2322/</guid><description>&lt;p>
+ Ya hab&amp;iacute;an corrido por ah&amp;iacute; algunas screenshots, ahora es p&amp;uacute;blicamente accesible: 
+&lt;/p>
+ 
+&lt;p>
+ &lt;a title="https://www.yahoo.com/preview" href="https://www.yahoo.com/preview">https://www.yahoo.com/preview&lt;/a>
+&lt;/p>
+ 
+&lt;p>
+ Fijaos en la manera que tienen de presentar las nuevas opciones desde el &amp;quot;Take a quick tour&amp;quot; ( superponen un PNG transparente, o c&amp;oacute;mo ponen en pr&amp;aacute;ctica algunas de los &amp;uacute;ltimos patrones de dise&amp;ntilde;o de su librer&amp;iacute;a en las opciones laterales, &amp;quot;mail&amp;quot;, &amp;quot;messenger&amp;quot;, &amp;quot;radio&amp;quot;... 
+&lt;/p>
+ 
+&lt;p>
+ Destacable tambi&amp;eacute;n el uso de CSS Sprites para ahorrar ancho de banda en lo que se refiere al uso de iconos peque&amp;ntilde;os. Se trata de usar una sola imagen que contiene un grupo de iconos peque&amp;ntilde;os, y mediante CSS mostrar s&amp;oacute;lo aquella que corresponde al elemento en cuesti&amp;oacute;n. ( CSS Sprites -&amp;gt; &lt;a title="https://www.alistapart.com/articles/sprites/" href="https://www.alistapart.com/articles/sprites/">https://www.alistapart.com/articles/sprites/&lt;/a> ). De esta manera la imagen para todo un grupo de iconos s&amp;oacute;lo se descarga una vez.
+&lt;/p></description></item></channel></rss>

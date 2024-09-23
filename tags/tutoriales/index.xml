@@ -1,3 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tutoriales on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/tutoriales/</link><description>Recent content in tutoriales on Albert García Gibert</description><generator>Hugo -- gohugo.io</generator><language>es-es</language><lastBuildDate>Fri, 07 Nov 2003 11:52:50 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/tutoriales/index.xml" rel="self" type="application/rss+xml"/><item><title>Tutorial de Photoshop</title><link>https://albert.garcia.gibert.es/tutorial-photoshop-112/</link><pubDate>Fri, 07 Nov 2003 11:52:50 +0000</pubDate><guid>https://albert.garcia.gibert.es/tutorial-photoshop-112/</guid><description>Fa una estona penjava aquest mateix tutorial a la web de ojodigital.
-Si et va el tema retoc amb Photoshop potser et sembli interessant, així que el penjaré tambè per aqui. He intentat ser el més clar possible en les explicacions, il·lustrant cada pas que he anat donant. Si tens cap dubte o necessites ajuda o aclariments, ja saps on em pots trobar. Espero que et sigui útil.
-La imagen es esta:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutoriales on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/tutoriales/</link><description>Recent content in Tutoriales on Albert García Gibert</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Fri, 07 Nov 2003 11:52:50 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/tutoriales/index.xml" rel="self" type="application/rss+xml"/><item><title>Tutorial de Photoshop</title><link>https://albert.garcia.gibert.es/tutorial-photoshop-112/</link><pubDate>Fri, 07 Nov 2003 11:52:50 +0000</pubDate><guid>https://albert.garcia.gibert.es/tutorial-photoshop-112/</guid><description>&lt;p>Fa una estona penjava aquest mateix tutorial a la 
+ web de &lt;a href="https://www.ojodigital.com" target="_blank">ojodigital&lt;/a>.
+ Si et va el tema retoc amb Photoshop potser et sembli 
+ interessant, així que el penjaré tambè 
+ per aqui. He intentat ser el més clar possible 
+ en les explicacions, il·lustrant cada pas 
+ que he anat donant. Si tens cap dubte o necessites 
+ ajuda o aclariments, ja saps on em pots trobar. 
+ Espero que et sigui útil.&lt;/p>&lt;span class="txtalt">La 
+ imagen es esta:&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque01.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Lo primero que haremos será localizar un fondo de 
+ hojas y ramas para ir ambientando... (via google)&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque02.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Ahora buscaremos una textura de piedra agrietada, 
+ suelo arenoso, madera astillada... algo por el estilo&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque03.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ De lo que se trata es de "fusionar" esa textura 
+ con nuestra foto, así que seleccionaremos la capa 
+ de la textura y le aplicaremos el modo de fusión 
+ "Luz Fuerte"&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque04.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Dejaremos a un lado la textura, ponemos la capa 
+ correspondiente en invisible. Vamos ahora a por 
+ los ojos. He buscado una foto de un guepardo, que 
+ tienen unos ojos muy bonitos...&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque05.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Me quedo con lo que me interesa, los ojos. Elimino 
+ el resto de la foto.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque06.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Pongo la capa de los ojos en el modo "Aclarar" y 
+ elimino algunas partes más para que se adecue a 
+ la forma de mis ojos.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque07.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Algunos retoques más con la goma de borrar sobre 
+ la capa de los ojos y la dejamos lista&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque08.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Ahora probamos qué tal va quedando todo. Volvemos 
+ a hacer visible la capa de la textura de piedra 
+ y borramos lo que sobre para que sólo se texturice 
+ la cara.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque09.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Vamos ahora a añadir algo de textura al conjunto 
+ de la piel de la cara, fuera del quebrado que le 
+ hemos hecho. Una textura de piel de melón me irá 
+ de perlas.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque10.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Selecciono la capa y pongo el modo de fusión en 
+ "Superponer". Elimino las partes de la capa que 
+ sobresalen de la cara, y también aquellas que están 
+ sobre los ojos y los labios, no quiero que los texturice.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque11.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Llegados a este punto añado una capa de Brillo/contraste 
+ y aumento el contraste varios puntos. Luego añado 
+ una capa de Tono/Saturación y reduzco varios puntos 
+ la saturación. (esto es a gusto del consumidor)&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque12.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Busco una textura de pared de piedra suave y se 
+ la aplico sólo a los bordes de la imagen usando 
+ una selección con un calado de 10/15px&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque13.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Ahora añado una capa nueva y aplico el filtro/interpretar/nubes. 
+ Luego aplico el filtro interpretar/nubes de diferencia. 
+ Le añado a esa capa algo de ruido, muy poco.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque14.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Pongo esa capa en el modo de fusión "Superponer"&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque15.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ La idea es que ese efecto sólo se aplique a los 
+ bordes de la imagen, porque sobreexpone demasiado 
+ el contenido, así que marco un rectángulo interior 
+ y le pongo un calado de 10/15 px. Elimino lo que 
+ queda dentro.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque16.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Vuelvo a la capa de Tono saturación y reduzco de 
+ nuevo la saturación y aumento un poquiiiin el contraste. 
+ Es la hora de dar los ultimos toques y añadir la 
+ firma.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque17.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Un poco más de contraste y menos brillo y está lista 
+ para servir.&lt;br />
+ &lt;img src="https://albert.garcia.gibert.es/img_blog_obo/retoquedark/retoque18.jpg" border="0" alt=""> 
+ &lt;br />
+ &lt;br />
+ Teniendo los conocimientos de la técnica aquí ya 
+ cada uno se deja guiar por sus gustos y su creatividad.&lt;/span></description></item></channel></rss>

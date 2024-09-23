@@ -1,12 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>flash on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/flash/</link><description>Recent content in flash on Albert García Gibert</description><generator>Hugo -- gohugo.io</generator><language>es-es</language><lastBuildDate>Wed, 30 Mar 2005 10:29:03 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/flash/index.xml" rel="self" type="application/rss+xml"/><item><title>OboPlayer se extiende</title><link>https://albert.garcia.gibert.es/oboplayer-se-extiende-540/</link><pubDate>Wed, 30 Mar 2005 10:29:03 +0000</pubDate><guid>https://albert.garcia.gibert.es/oboplayer-se-extiende-540/</guid><description>Ayer por la noche me llevé una sorpresa al ver que en la web del actual Lehendakari Ibarretxe, candidato también a las próximas elecciones al parlamento Vasco, usan una adaptación del Oboplayer para reproducir los archivos de audio de su site y el reproductor de Tintachina para los videos (y citan las fuentes amablemente, por supuesto). Es gratificante ver que se amplia la lista de sites que han podido sacar partido a esas herramientas.</description></item><item><title>Y ahora... video en los posts!</title><link>https://albert.garcia.gibert.es/ahora-video-posts-458/</link><pubDate>Wed, 29 Dec 2004 22:15:45 +0000</pubDate><guid>https://albert.garcia.gibert.es/ahora-video-posts-458/</guid><description>Si hace sólo algunos días te hablaba de la posibilidad de adjuntar un reproductor de MP3 online a los posts de tu blog, ahora es el turno de los videos. Siguiendo los pasos del reproductor de videoposts de Gemma, llega el OboVideoPlayer, jejeje... Para abrir boca, ahi va un trocito del concierto que hicimos en el Centro Cívico del Prat. Estamos tocando Yellow. &amp;iquest;Se nota de quién era madre la que filmaba?</description></item><item><title>Audio en tus Posts II</title><link>https://albert.garcia.gibert.es/audio-tus-posts-ii-443/</link><pubDate>Fri, 24 Dec 2004 12:33:58 +0000</pubDate><guid>https://albert.garcia.gibert.es/audio-tus-posts-ii-443/</guid><description>Ayer mismo
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flash on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/flash/</link><description>Recent content in Flash on Albert García Gibert</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Wed, 30 Mar 2005 10:29:03 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/flash/index.xml" rel="self" type="application/rss+xml"/><item><title>OboPlayer se extiende</title><link>https://albert.garcia.gibert.es/oboplayer-se-extiende-540/</link><pubDate>Wed, 30 Mar 2005 10:29:03 +0000</pubDate><guid>https://albert.garcia.gibert.es/oboplayer-se-extiende-540/</guid><description>&lt;p>Ayer por la noche me llevé una sorpresa al ver que en &lt;a href="https://www.ibarretxe.com/" target="_blank">la web del actual Lehendakari Ibarretxe&lt;/a>, candidato también a las próximas elecciones al parlamento Vasco, &lt;a href="https://www.ibarretxe.com/gaiak/audioak/euskaraikasten">usan una adaptación&lt;/a> del &lt;a href="https://albert.garcia.gibert.es/mensaje/443">Oboplayer&lt;/a> para reproducir los archivos de audio de su site y el reproductor de &lt;a href="https://tintachina.com/archivo/videoposts_en_tintachina.php">Tintachina&lt;/a> para los videos (y &lt;a href="https://www.ibarretxe.com/about/software" target="_blank">citan las fuentes amablemente&lt;/a>,
+por supuesto). Es gratificante ver que se amplia la lista de sites que
+han podido sacar partido a esas herramientas. Por el momento he podido
+ver que usan el Oboplayer en:&lt;/p></description></item><item><title>Y ahora... video en los posts!</title><link>https://albert.garcia.gibert.es/ahora-video-posts-458/</link><pubDate>Wed, 29 Dec 2004 22:15:45 +0000</pubDate><guid>https://albert.garcia.gibert.es/ahora-video-posts-458/</guid><description>&lt;p>Si hace sólo algunos días te hablaba de la posibilidad de &lt;a href="https://albert.garcia.gibert.es/mensaje/442">adjuntar un reproductor de MP3 online&lt;/a> a los posts de tu blog, ahora es el turno de los videos. Siguiendo los pasos del &lt;a href="https://tintachina.com/archivo/videoposts_en_tintachina.php" target="_blank">reproductor de videoposts de Gemma&lt;/a>,
+llega el OboVideoPlayer, jejeje... Para abrir boca, ahi va un trocito
+del concierto que hicimos en el Centro Cívico del Prat. Estamos tocando
+Yellow. &amp;iquest;Se nota de quién era madre la que filmaba? &lt;/p></description></item><item><title>Audio en tus Posts II</title><link>https://albert.garcia.gibert.es/audio-tus-posts-ii-443/</link><pubDate>Fri, 24 Dec 2004 12:33:58 +0000</pubDate><guid>https://albert.garcia.gibert.es/audio-tus-posts-ii-443/</guid><description>&lt;p>&lt;a href="https://albert.garcia.gibert.es/mensaje/442">Ayer mismo&lt;/a>
 te comentaba que habia estado trabajando en un reproductor de audio en
 Flash para poder hacer streaming de un MP3 que le pasáramos como
 parámetro. Soy un impaciente y la versión que colgué ayer, aunque
 funcionaba correctamente, tenía algunas limitaciones. &amp;quot;Estuvimos
 trabajando en ello&amp;quot; y hoy creo que ya podemos hablar de la primera
 versión del OboPlayer &amp;quot;con fundamento&amp;quot;. Vamos a echar un vistazo al
-'Making Of'.
-En primer lugar, como ya comenté, el apunte sobre videoposts de Gemma en tintachina fue la chispa inspiradora.</description></item><item><title>Àudio als teus Posts</title><link>https://albert.garcia.gibert.es/audio-als-teus-posts-442/</link><pubDate>Thu, 23 Dec 2004 17:55:17 +0000</pubDate><guid>https://albert.garcia.gibert.es/audio-als-teus-posts-442/</guid><description>Fa uns dies, un post a tintachina
+'Making Of'.&lt;/p>&lt;p>En primer lugar, como ya comenté, el &lt;a target="_blank" href="https://tintachina.com/archivo/videoposts_en_tintachina.php">apunte sobre videoposts de Gemma en tintachina&lt;/a> fue la chispa inspiradora. Ya &lt;a href="https://albert.garcia.gibert.es/mensaje/117">antes&lt;/a> habia colgado en obokaman &lt;a href="https://albert.garcia.gibert.es/mensaje/116">mensajes con videos&lt;/a> o &lt;a href="https://albert.garcia.gibert.es/mensaje/34">audio&lt;/a>,
+pero el método era bastante tosco. En el caso de los videos, la mayor
+parte de las veces era un sólo swf con un video incrustado, algunos
+mínimos controles de &amp;quot;play&amp;quot; y &amp;quot;stop&amp;quot;, y un interface siempre diferente.
+Cada vez que alguien accedía a la página que lo contenía, lo descargaba
+entero, lo viera o no. En el caso de las canciones ocurría lo mismo, un
+interfaz mínimo (un sólo botón) y descarga completa de la canción. En
+ambos casos debía crear cada vez un archivo swf para cada vídeo o
+canción. Difícil de mantener, de gestionar desde la administración del
+blog, y complicado para los demás participantes enviar sus propias
+aportaciones en el mismo formato. Ahi es donde se propone interesante
+una aplicación flash independiente que actúe como intermediaria: se
+mantiene un aspecto siempre similar, se le pueden especificar qué
+archivo reproducir, se le pueden a&amp;ntilde;adir capacidades avanzadas de
+control de reproducción, es posible reproducir archivos de audio en
+formato mp3 y por tanto, gestionar todo eso desde el propio CMS del
+blog.&lt;/p></description></item><item><title>Àudio als teus Posts</title><link>https://albert.garcia.gibert.es/audio-als-teus-posts-442/</link><pubDate>Thu, 23 Dec 2004 17:55:17 +0000</pubDate><guid>https://albert.garcia.gibert.es/audio-als-teus-posts-442/</guid><description>&lt;p>Fa uns dies, &lt;a href="https://tintachina.com/archivo/videoposts_en_tintachina.php" target="_blank">un post a tintachina&lt;/a>
 em feia reprendre una part de la nova versió d'obokaman.com que havia
 deixat de banda: el reproductor multim&amp;egrave;dia. Pensava en com muntar un
 flash al qual li passés un par&amp;agrave;metre en forma de URL d'un mp3 o video,
@@ -14,4 +35,8 @@ i aquest fes streaming de l'arxiu original. Les avantatges son &amp;ograve;bvies
 poder escoltar una can&amp;ccedil;ó directament de la web, estalviar amplada de
 banda (només es descarrega all&amp;ograve; que escoltes, el reproductor sol pesa
 només 13,5Kb), adaptar la imatge del reproductor a la teva web i no fer
-servir mediaplayers incrustats ni coses lletjes per l'estil.</description></item></channel></rss>
+servir mediaplayers incrustats ni &lt;em>coses lletjes &lt;/em>per l'estil. Si bé amb el model que ens presenta la &lt;a href="https://www.tintachina.com" target="_blank">Gemma&lt;/a>
+ja en podem tenir més que suficient, he pensat que, tenint en compte
+que aquesta primera versió és només per audio, seria interessant afegir
+la opció d'avan&amp;ccedil;ar i retrocedir, i mostrar una barra de progr&amp;egrave;s que ens
+indiqui en quin lloc ens trobem de la can&amp;ccedil;ó.&lt;/p></description></item></channel></rss>
