@@ -3,12 +3,8 @@ de &lt;a href="https://www.nexoblogs.com">&lt;strong>nexoBlogs&lt;/strong>&lt;/a
 para grabar un vídeo con el que abrir una nueva sección en el blog dedicada exclusivamente a entrevistas.
 En fins, más allá de mi nula presencia ante una cámara (qué vergüenza, por dios), quería agradecerles
 el esfuerzo y felicitarles por el montaje del vídeo.&lt;/p>
-
-
- 
- &lt;div class="video-player">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IS1kaTNfd4k?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" title="YouTube video"
- >&lt;/iframe>
+&lt;div class="video-player">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IS1kaTNfd4k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;p>Ahora les toca prepararse, porque se me está ocurriendo que sería la mar de interesante preparar

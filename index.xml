@@ -4,7 +4,7 @@
 &lt;p>He montado &lt;strong>un Google Sheet con el que poder hacer seguimiento en el tiempo de la evolución a grandes rasgos de tus ahorros y tus inversiones&lt;/strong>.&lt;/p></description></item><item><title>El de cuando hicimos el logotipo de CryptoAdvisor.Club</title><link>https://albert.garcia.gibert.es/logotipo-cryptoadvisor/</link><pubDate>Sat, 02 Jan 2021 18:50:15 +0000</pubDate><guid>https://albert.garcia.gibert.es/logotipo-cryptoadvisor/</guid><description>&lt;p>Hace ya un par de meses pusimos en marcha la beta de &lt;a href="https://cryptoadvisor.club">CryptoAdvisor.Club&lt;/a>. De la misma forma que lanzamos el servicio a modo de producto mínimo viable, &lt;strong>tratamos de reducir a la mínima expresión cualquier otro &amp;ldquo;complemento necesario&amp;rdquo; que rodeara al lanzamiento&lt;/strong> (página web con Notion, Integromat para automatizar publicaciones, etc.). Lo mismo con el logo.&lt;/p>
 &lt;p>Para las primeras versiones simplemente tomamos una imagen de stock con el logotipo de Bitcoin, y que cumpliera dos requisitos importantes:&lt;/p></description></item><item><title>El making of de CryptoAdvisor.Club</title><link>https://albert.garcia.gibert.es/criptoadvisor-como-se-hizo/</link><pubDate>Thu, 29 Oct 2020 11:13:15 +0000</pubDate><guid>https://albert.garcia.gibert.es/criptoadvisor-como-se-hizo/</guid><description>&lt;p>Anteriormente te explicaba &lt;a href="https://albert.garcia.gibert.es/nuevo-proyecto-playground-chatbots-cryptoadvisor/">los motivos que nos llevaron a lanzar CryptoAdvisor.Club&lt;/a>, el asistente virtual para la inversión en criptomonedas.&lt;/p>
 &lt;p>En este artículo te comparto algunos detalles técnicos sobre &lt;strong>el stack y las herramientas que hemos utilizado para construir el bot de &lt;a href="https://cryptoadvisor.club/es">CryptoAdvisor.Club&lt;/a>&lt;/strong>.&lt;/p>
-&lt;h4 id="el-_stack_-técnico">El &lt;em>stack&lt;/em> técnico&lt;/h4>
+&lt;h4 id="el-stack-técnico">El &lt;em>stack&lt;/em> técnico&lt;/h4>
 &lt;ul>
 &lt;li>Es una aplicación en &lt;strong>PHP 7.4&lt;/strong>, con Symfony. CQRS, DDD, eventos&amp;hellip;&lt;/li>
 &lt;li>Usamos intensivamente la librería &lt;strong>&lt;a href="https://botman.io/">BotMan&lt;/a>&lt;/strong>, con algunos drivers propios para modificar algunos comportamientos a la hora de interactuar con menús y botones.&lt;/li>
@@ -30,17 +30,11 @@
 &lt;/figure>
 
 &lt;p>El pasado viernes fue mi último dia en &lt;a href="https://www.drinksco.es">&lt;strong>Uvinum / Drinks&amp;amp;Co&lt;/strong>&lt;/a>. Empezamos en octubre de 2009 y han sido casi 11 años de viaje. Un proyecto apasionante, con unos socios y unos compañeros excepcionales. Una experiencia de vida que me ha marcado, de la que me llevo cientos de recuerdos, y aprendizajes también de los muchos errores cometidos, que espero guíen con acierto las decisiones que estén por llegar. Pero todo empieza y todo acaba.&lt;/p></description></item><item><title>Amstrad CPC 464: contigo empezó todo</title><link>https://albert.garcia.gibert.es/amstrad-cpc-464-contigo-empezo-todo/</link><pubDate>Sun, 26 Jan 2020 12:20:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/amstrad-cpc-464-contigo-empezo-todo/</guid><description>&lt;p>Leía esta mañana:&lt;/p>
-&lt;blockquote class="twitter-tweet">&lt;p lang="es" dir="ltr">El ordenador Amstrad CPC tal como fue anunciado en la televisión española entre 1984 y 1985. &lt;a href="https://t.co/XNUvHb7Xo1">pic.twitter.com/XNUvHb7Xo1&lt;/a>&lt;/p>&amp;mdash; Program Bytes 48k (@pb48k) &lt;a href="https://twitter.com/pb48k/status/1221172696291168257?ref_src=twsrc%5Etfw">January 25, 2020&lt;/a>&lt;/blockquote>
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
 
-
-&lt;p>❤️ Y es que &amp;ldquo;&lt;em>contigo empezó todo&lt;/em>&amp;rdquo;. Aún lo tengo en casa, &lt;a href="https://instagram.com/p/BwfTvhJBAYC/?igshid=1iigy5k2vurj7">funcionando&lt;/a>. Además de las decenas de juegos transcritos desde revistas, aún guardo las cintas con los primeros programas de cosecha propia: mini-juegos tipo &amp;ldquo;escoge tu propia aventura&amp;rdquo;. 7 años tendría o por ahí&amp;hellip;&lt;/p></description></item><item><title>Nos hacemos mayores: la mudanza de Verticomm</title><link>https://albert.garcia.gibert.es/mayores-mudanza-verticomm-2272176/</link><pubDate>Fri, 17 May 2013 21:57:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/mayores-mudanza-verticomm-2272176/</guid><description>&lt;p>&amp;ldquo;Lo que estamos haciendo &lt;strong>es una pasada&lt;/strong>.&amp;rdquo;&lt;/p>
-
-
- 
- &lt;div class="video-player">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OkkK30BbmzY?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" title="YouTube video"
- >&lt;/iframe>
+&lt;p>❤️ Y es que &amp;ldquo;&lt;em>contigo empezó todo&lt;/em>&amp;rdquo;. Aún lo tengo en casa, &lt;a href="https://instagram.com/p/BwfTvhJBAYC/?igshid=1iigy5k2vurj7">funcionando&lt;/a>. Además de las decenas de juegos transcritos desde revistas, aún guardo las cintas con los primeros programas de cosecha propia: mini-juegos tipo &amp;ldquo;escoge tu propia aventura&amp;rdquo;. 7 años tendría o por ahí&amp;hellip;&lt;/p>
+&lt;p>Recuerdo pasarlo en grande, &lt;strong>transcribiendo juegos y programas con mis padres&lt;/strong> (qué paciencia), tratando de encontrar dónde nos habíamos equivocado cuando después de dos horas de picar, el RUN lanzaba un SINTAX ERROR en la línea vete a saber. Aunque repitiera código como un lorito, creedeme que &lt;strong>acabé aprendiendo bastante de aquellas sesiones&lt;/strong>. Dió además la casualidad que por aquel entonces mis tíos Jordi y Siscu, no adolescentes pero muy jóvenes, se habían aficionado a sus Commodore 64 y MSX respectivamente, y también hacían sus pinitos programando. Llegaron al acuerdo con mis padres de darme clases de BASIC los sábados por la mañana. Iba a su casa y hacíamos algunos ejercicios durante una hora aprox. La siguiente nos la pasábamos viciándonos a algún videojuego: &lt;em>Penguin Adventure&lt;/em>, &lt;em>Frogger&lt;/em>, &lt;em>Freddy Hardest&lt;/em>, &lt;em>Phantis&lt;/em>..&lt;/p></description></item><item><title>Nos hacemos mayores: la mudanza de Verticomm</title><link>https://albert.garcia.gibert.es/mayores-mudanza-verticomm-2272176/</link><pubDate>Fri, 17 May 2013 21:57:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/mayores-mudanza-verticomm-2272176/</guid><description>&lt;p>&amp;ldquo;Lo que estamos haciendo &lt;strong>es una pasada&lt;/strong>.&amp;rdquo;&lt;/p>
+&lt;div class="video-player">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OkkK30BbmzY?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" title="YouTube video">&lt;/iframe>
  &lt;/div></description></item><item><title>No dejes esa botella a medias: llévatela a casa</title><link>https://albert.garcia.gibert.es/no-dejes-esa-botella-medias-llevatela-casa-236328/</link><pubDate>Sun, 19 Apr 2009 22:42:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/no-dejes-esa-botella-medias-llevatela-casa-236328/</guid><description>&lt;p>
  Hoy Silvia me ha invitado a comer a un restaurante en Terrassa al
  que hace tiempo que estábamos rondando,&amp;nbsp; &lt;a href= "https://11870.com/pro/el-rancho-terrassa">El Rancho
@@ -362,12 +356,8 @@ Esta curiosa e ilustrativa lista de sistemas operativos puede verse en el formul
 &lt;p>
 Via | &lt;a href="https://www.37signals.com/svn/posts/480-screens-around-town-photojojo-hp-and-safeway">Signal VS Noise&lt;/a>&amp;nbsp;
 &lt;/p></description></item><item><title>oPhone: la respuesta de Microsoft al iPhone de Apple</title><link>https://albert.garcia.gibert.es/ophone-respuesta-microsoft-al-iphone-apple-14566/</link><pubDate>Wed, 20 Jun 2007 11:44:29 +0000</pubDate><guid>https://albert.garcia.gibert.es/ophone-respuesta-microsoft-al-iphone-apple-14566/</guid><description>&lt;p>Llega el &lt;strong>oPhone&lt;/strong>, la respuesta de Microsoft al iPhone de Apple.&lt;/p>
-
-
- 
- &lt;div class="video-player">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/WazA77xcf0A?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" title="YouTube video"
- >&lt;/iframe>
+&lt;div class="video-player">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/WazA77xcf0A?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;p>Cuanto HDPtismo. ;)&lt;/p></description></item><item><title>Adiós a el Fary</title><link>https://albert.garcia.gibert.es/adios-a-el-fary-14523/</link><pubDate>Wed, 20 Jun 2007 00:13:34 +0000</pubDate><guid>https://albert.garcia.gibert.es/adios-a-el-fary-14523/</guid><description>&lt;p>
@@ -383,12 +373,8 @@ de &lt;a href="https://www.nexoblogs.com">&lt;strong>nexoBlogs&lt;/strong>&lt;/a
 para grabar un vídeo con el que abrir una nueva sección en el blog dedicada exclusivamente a entrevistas.
 En fins, más allá de mi nula presencia ante una cámara (qué vergüenza, por dios), quería agradecerles
 el esfuerzo y felicitarles por el montaje del vídeo.&lt;/p>
-
-
- 
- &lt;div class="video-player">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IS1kaTNfd4k?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" title="YouTube video"
- >&lt;/iframe>
+&lt;div class="video-player">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IS1kaTNfd4k?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;p>Ahora les toca prepararse, porque se me está ocurriendo que sería la mar de interesante preparar
@@ -744,12 +730,8 @@ Posiblemente, si eres lector habitual de otros blogs de &lt;a href="https://www.
 &lt;/p></description></item><item><title>I'll see you in hell, Pachelbel</title><link>https://albert.garcia.gibert.es/ill-see-you-in-hell-pachelbel-8191/</link><pubDate>Thu, 15 Feb 2007 19:19:47 +0000</pubDate><guid>https://albert.garcia.gibert.es/ill-see-you-in-hell-pachelbel-8191/</guid><description>&lt;p>Me hago eco de un vídeo que me envió Esteve por correo. Lo tenía desde hacía ya un par de días en el buzón y no había
 tenido tiempo de echarle un vistazo&amp;hellip; y la verdad es que me he reído un buen rato con él.&lt;/p>
 &lt;p>El Canon de Pachelbel y los Acordes de la Muerte. ;)&lt;/p>
-
-
- 
- &lt;div class="video-player">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OGM7PsXGkgg?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" title="YouTube video"
- >&lt;/iframe>
+&lt;div class="video-player">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OGM7PsXGkgg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;p>Enjoy!&lt;/p></description></item><item><title>Gmail en abierto</title><link>https://albert.garcia.gibert.es/gmail-abierto-8179/</link><pubDate>Thu, 15 Feb 2007 07:10:05 +0000</pubDate><guid>https://albert.garcia.gibert.es/gmail-abierto-8179/</guid><description>&lt;p>
@@ -3953,12 +3935,8 @@ es que no tiene precio hacer eso en Agosto!
 &lt;br />
 &amp;quot;Es usted la mujer más hermosa que he visto en toda mi vida, lo cual no dice mucho a mi favor...&amp;quot;&lt;/p>&lt;p>&lt;/p></description></item><item><title>Que tinguem sort</title><link>https://albert.garcia.gibert.es/tinguem-sort-28/</link><pubDate>Mon, 11 Nov 2002 23:00:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/tinguem-sort-28/</guid><description>&lt;p>Esta canción es preciosa. Me gustaría poder estar en su piel y ser suficientemente fuerte como para sentir serenamente lo que canta.&lt;/p>
 &lt;p>Escuchadla y leedla.&lt;/p>
-
-
- 
- &lt;div class="video-player">
- &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JzW4trGkVds?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" title="YouTube video"
- >&lt;/iframe>
+&lt;div class="video-player">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JzW4trGkVds?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" title="YouTube video">&lt;/iframe>
  &lt;/div>
 
 &lt;p>&lt;strong>Que tinguem sort&lt;/strong>&lt;/p>
