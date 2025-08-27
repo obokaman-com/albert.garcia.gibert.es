@@ -1,7 +1,6 @@
 baseURL = "https://albert.garcia.gibert.es/"
 languageCode = "es-es"
 title = "Albert García Gibert"
-paginate = 5
 pluralizelisttitles = false
 DisqusShortname = "albert-garcia-gibert"
 canonifyurls = true
@@ -9,11 +8,14 @@ theme = "casper"
 publishDir = "docs"
 assetDir = "static"
 
+[pagination]
+  pagerSize = 5
+
 [params]
   paginatedSections="post test"
   metaDescription = "Building CryptoAdvisor.Club, the easy and calm crypto investment bot. Cofounder and former CTO of Uvinum. Founder of Obolog and Splitweet. Father of Júlia & Abril. I'd like to travel more and improve my guitar skills."
   description = "Working at <a href='https://www.krakend.io/'>KrakenD</a>, the ultra-performant API Gateway, and <a href='https://cryptoadvisor.club'>CryptoAdvisor.Club</a>, the easy and calm crypto investment bot.<br>Cofounder and former CTO of <a href='https://www.lavanguardia.com/economia/emprendedores/20180804/451201682513/pernod-ricard-uvinum.html'>Uvinum</a>.<br>Prev. <a href='/despedida-cierre-obolog/'>Softonic</a>, <a href='/despedida-cierre-obolog/'>Obolog</a> and <a href='https://computerhoy.com/noticias/internet/hootsuite-compra-start-espanola-splitweet-2493'>Splitweet</a>.<br><br>Father of two. I'd like to travel more and improve my guitar skills."
-  cover = "/images/background-202409230809-bn.jpg"
+  cover = "/images/background-202508272-bn.jpg"
   author = "Albert García Gibert"
   authorlocation = "El Prat de Llobregat, Barcelona"
   authorwebsite = "https://twitter.com/obokaman"
@@ -27,7 +29,7 @@ assetDir = "static"
   linkedinName = "obokaman"
   youtubeName = "obokaman"
   instagramName = "obokaman"
-  email = "albert.garcia@gibert.es"
+  email = "obokaman@gmail.com"
   hideHUGOSupport = false
   hjsStyle = "default"
 
