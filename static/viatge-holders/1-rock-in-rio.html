@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje de Amigos 2026 - Lisboa + Experiencia Épica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: 
+                linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)),
+                url('https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .slide-title {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .slide.active .slide-title {
+            display: block;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .context-box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .context-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .context-item {
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .option-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            width: 100%;
+            align-items: start;
+        }
+
+        .option-left, .option-right {
+            text-align: left;
+        }
+
+        .experience-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .experience-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-list li:before {
+            content: "🎯";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .itinerary {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .budget-box {
+            background: linear-gradient(45deg, #11998e, #38ef7d);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .why-choose {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #feca57;
+        }
+
+        .conclusion-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .option-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .option-card.comporta {
+            border-color: #ff6b6b;
+        }
+
+        .option-card.azores {
+            border-color: #4ecdc4;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .slide-counter {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide.active * {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Portada -->
+    <div class="slide active">
+        <div class="slide-title">PORTADA</div>
+        <h1>Viaje de Amigos 2026</h1>
+        <p class="subtitle">Lisboa + Experiencia Épica</p>
+        <div class="context-box">
+            <div class="context-grid">
+                <div class="context-item">
+                    <strong>📅 Fechas:</strong><br>19–24 junio 2026
+                </div>
+                <div class="context-item">
+                    <strong>🎸 Evento Central:</strong><br>Linkin Park en Rock in Rio Lisboa<br><small>(sábado 21 junio, VIP)</small>
+                </div>
+                <div class="context-item">
+                    <strong>💰 Presupuesto:</strong><br>~12.000€ para los 4
+                </div>
+                <div class="context-item">
+                    <strong>🎯 Objetivo:</strong><br>Concierto legendario + fiesta + gastronomía top + aventura + exclusividad
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Opción 1 Comporta -->
+    <div class="slide">
+        <div class="slide-title">OPCIÓN 1 - COMPORTA</div>
+        <h2>🏖️ Lisboa + Comporta Exclusivo</h2>
+        <p class="subtitle">La mezcla perfecta de fiesta, lujo y adrenalina</p>
+        
+        <div class="option-content">
+            <div class="option-left">
+                <h3>🎯 Experiencias Clave</h3>
+                <ul class="experience-list">
+                    <li><strong>Fiesta:</strong> Rooftops, Bairro Alto, LuxFrágil, beach clubs</li>
+                    <li><strong>Gastronomía:</strong> Alma (2★ Michelin), Cervejaria Ramiro, Sal</li>
+                    <li><strong>Aventura:</strong> Buggies dunas, speedboat, caballos playa</li>
+                    <li><strong>Exclusividad:</strong> Sublime Comporta o villa privada</li>
+                </ul>
+
+                <div class="budget-box">
+                    <h3>💰 Presupuesto: ~12.000€</h3>
+                    <small>Vuelos (800€) + Hoteles (2.800€) + VIP Rock in Rio (1.200€) + Restaurantes (2.000€) + Aventuras (2.200€) + Fiesta (1.200€) + Extras (2.000€)</small>
+                </div>
+            </div>
+
+            <div class="option-right">
+                <div class="itinerary">
+                    <h3>📋 Itinerario 5-6 días</h3>
+                    <p><strong>Jue:</strong> BCN→Lisboa, rooftop + Bairro Alto</p>
+                    <p><strong>Vie:</strong> Sintra + Belém, cena Alma, noche moderada</p>
+                    <p><strong>Sáb:</strong> <span class="highlight">LINKIN PARK VIP</span> + LuxFrágil</p>
+                    <p><strong>Dom:</strong> Traslado Comporta, recovery, cena Sal</p>
+                    <p><strong>Lun:</strong> Buggies + speedboat + caballos</p>
+                    <p><strong>Mar:</strong> Playa libre, vuelta BCN</p>
+                </div>
+
+                <div class="why-choose">
+                    <h3>✅ Por qué elegir esta opción</h3>
+                    <p>• <strong>Equilibrio total:</strong> fiesta Lisboa + relax Comporta</p>
+                    <p>• <strong>Gastronomía top</strong> + experiencias auténticas</p>
+                    <p>• <strong>Aventura memorable</strong> sin perder glamour</p>
+                    <p>• <strong>Perfecto para nuestro estilo y edad</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Opción 2 Azores -->
+    <div class="slide">
+        <div class="slide-title">OPCIÓN 2 - AZORES</div>
+        <h2>🌋 Lisboa + Aventura Volcánica Azores</h2>
+        <p class="subtitle">La experiencia más irrepetible y exótica</p>
+        
+        <div class="option-content">
+            <div class="option-left">
+                <h3>🎯 Experiencias Clave</h3>
+                <ul class="experience-list">
+                    <li><strong>Fiesta:</strong> Bairro Alto, LuxFrágil + bares locales Azores</li>
+                    <li><strong>Gastronomía:</strong> Alma, cozido volcánico, marisco fresco</li>
+                    <li><strong>Aventura:</strong> Barranquismo, kayak cráter, ballenas, termas</li>
+                    <li><strong>Exclusividad:</strong> Helicóptero volcanes, resort eco-lujo</li>
+                </ul>
+
+                <div class="budget-box">
+                    <h3>💰 Presupuesto: ~12.000€</h3>
+                    <small>Vuelos (1.400€) + Hoteles (2.600€) + VIP Rock in Rio (1.200€) + Restaurantes (2.200€) + Aventuras volcánicas (3.000€) + Fiesta (800€) + Extras (800€)</small>
+                </div>
+            </div>
+
+            <div class="option-right">
+                <div class="itinerary">
+                    <h3>📋 Itinerario 6 días</h3>
+                    <p><strong>Jue:</strong> BCN→Lisboa, rooftop + Bairro Alto</p>
+                    <p><strong>Vie:</strong> Sintra + Belém, cena Alma (2★ Michelin)</p>
+                    <p><strong>Sáb:</strong> <span class="highlight">LINKIN PARK VIP</span> + LuxFrágil</p>
+                    <p><strong>Dom:</strong> Vuelo Azores, termas + cena volcánica</p>
+                    <p><strong>Lun:</strong> Barranquismo + kayak + helicóptero volcanes</p>
+                    <p><strong>Mar:</strong> Ballenas + vuelta vía Lisboa</p>
+                </div>
+
+                <div class="why-choose">
+                    <h3>✅ Por qué elegir esta opción</h3>
+                    <p>• <strong>Factor wow absoluto:</strong> paisajes únicos Europa</p>
+                    <p>• <strong>Experiencias irrepetibles:</strong> termas volcánicas, ballenas</p>
+                    <p>• <strong>Equilibra</strong> fiesta Lisboa + aventura salvaje</p>
+                    <p>• <strong>Historia épica</strong> para toda la vida</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Conclusión -->
+    <div class="slide">
+        <div class="slide-title">CONCLUSIÓN</div>
+        <h2>🤔 ¿Cuál Elegimos?</h2>
+        <p class="subtitle">Dos filosofías de viaje diferentes</p>
+        
+        <div class="conclusion-grid">
+            <div class="option-card comporta">
+                <h3>🏖️ Comporta</h3>
+                <p><strong>EL VIAJE PERFECTO PARA NOSOTROS</strong></p>
+                <br>
+                <p>✅ <strong>Equilibrio ideal:</strong> concierto + fiesta + gastronomía top + lujo playa + aventura justa</p>
+                <br>
+                <p>✅ <strong>Timing perfecto:</strong> sin prisas, recovery post-concierto</p>
+                <br>
+                <p>✅ <strong>Ambiente nocturno garantizado:</strong> LuxFrágil + beach clubs</p>
+                <br>
+                <p>✅ <strong>Aventuras memorables:</strong> buggies dunas + speedboat</p>
+                <br>
+                <p><em>"El plan más cómodo y completo"</em></p>
+            </div>
+
+            <div class="option-card azores">
+                <h3>🌋 Azores</h3>
+                <p><strong>LA HISTORIA MÁS ÉPICA QUE CONTAR</strong></p>
+                <br>
+                <p>🔥 <strong>Factor wow brutal:</strong> paisajes volcánicos únicos en Europa</p>
+                <br>
+                <p>🔥 <strong>Aventuras imposibles:</strong> barranquismo volcánico, termas salvajes</p>
+                <br>
+                <p>⚠️ <strong>Timing más justo:</strong> vuelo post-concierto</p>
+                <br>
+                <p>⚠️ <strong>Menos ambiente nocturno</strong> en la segunda parte</p>
+                <br>
+                <p><em>"La experiencia más irrepetible"</em></p>
+            </div>
+        </div>
+
+        <div class="context-box" style="margin-top: 30px;">
+            <h3>🎯 Decisión Final</h3>
+            <p style="font-size: 1.2rem; text-align: center;">
+                <strong>¿Queremos comodidad y equilibrio perfecto?</strong> → <span class="highlight">COMPORTA</span><br>
+                <strong>¿Queremos la historia más brutal de nuestras vidas?</strong> → <span class="highlight">AZORES</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Controles de navegación -->
+    <div class="controls">
+        <button class="btn" onclick="prevSlide()">← Anterior</button>
+        <button class="btn" onclick="nextSlide()">Siguiente →</button>
+    </div>
+
+    <!-- Contador de slides -->
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">4</span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Navegación con teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        // Click para avanzar
+        document.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('btn')) {
+                nextSlide();
+            }
+        });
+    </script>
+</body>
+</html>

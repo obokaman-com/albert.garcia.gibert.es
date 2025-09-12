@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje de Amigos 2026 - República Checa + Rock for People</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: 
+                linear-gradient(rgba(30, 58, 95, 0.85), rgba(255, 215, 0, 0.85)),
+                url('https://images.unsplash.com/photo-1541849546-216549ae216d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .slide-title {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .slide.active .slide-title {
+            display: block;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .context-box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .context-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .context-item {
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .option-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            width: 100%;
+            align-items: start;
+        }
+
+        .option-left, .option-right {
+            text-align: left;
+        }
+
+        .experience-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .experience-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-list li:before {
+            content: "🍺";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .itinerary {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .budget-box {
+            background: linear-gradient(45deg, #8b0000, #ffd700);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .why-choose {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #ff6b35;
+        }
+
+        .conclusion-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .option-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .option-card.praga {
+            border-color: #ffd700;
+        }
+
+        .option-card.castillos {
+            border-color: #ff6b35;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .slide-counter {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        .beer-emoji {
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        .rock-emoji {
+            font-size: 2rem;
+            animation: headbang 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes headbang {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-10deg);
+            }
+            75% {
+                transform: rotate(10deg);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide.active * {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .special-highlight {
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .comparison-box {
+            background: rgba(139, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Portada -->
+    <div class="slide active">
+        <div class="slide-title">PORTADA</div>
+        <h1>Viaje de Amigos 2026</h1>
+        <div class="beer-emoji">🍺</div>
+        <div class="rock-emoji">🤘</div>
+        <p class="subtitle">República Checa + Rock for People</p>
+        <div class="context-box">
+            <div class="context-grid">
+                <div class="context-item">
+                    <strong>📅 Fechas:</strong><br>10–15 junio 2026
+                </div>
+                <div class="context-item">
+                    <strong>🤘 Evento Central:</strong><br>Rock for People 2026<br><small>(11-13 junio, Hradec Králové)</small>
+                </div>
+                <div class="context-item">
+                    <strong>💰 Presupuesto:</strong><br>~12.000€ para los 4
+                </div>
+                <div class="context-item">
+                    <strong>🎯 Objetivo:</strong><br>Festival rock + aventura cervecera + castillos bohemios + canalleo Praga
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Opción 1 Praga -->
+    <div class="slide">
+        <div class="slide-title">OPCIÓN 1 - PRAGA BEER</div>
+        <h2>🍺 Rock for People + Praga Beer Adventure</h2>
+        <p class="subtitle">Festival rock + capital cervecera del mundo + castillos bohemios</p>
+        
+        <div class="option-content">
+            <div class="option-left">
+                <h3>🍺 Experiencias Clave</h3>
+                <ul class="experience-list">
+                    <li><strong>Festival:</strong> Rock for People VIP + after-parties + Praga nightlife</li>
+                    <li><strong>Gastronomía:</strong> Tours cervecerías + beer spa + Alcron (Michelin) + beer sommelier</li>
+                    <li><strong>Aventura:</strong> Rafting Vltava + Karlštejn Castle + quad bosques + escalada</li>
+                    <li><strong>Exclusividad:</strong> Pilsner Urquell privado + cervecerías secretas + suite histórica</li>
+                </ul>
+
+                <div class="budget-box">
+                    <h3>💰 Presupuesto: ~12.000€</h3>
+                    <small>Vuelos (800€) + Hotels luxury (2.000€) + Festival VIP (1.000€) + Tours cerveza (1.200€) + Aventuras (1.400€) + Gastronomía (2.500€) + Extras (3.100€)</small>
+                </div>
+            </div>
+
+            <div class="option-right">
+                <div class="itinerary">
+                    <h3>📋 Itinerario 6 días</h3>
+                    <p><strong>Mar:</strong> BCN→Praga, Old Town + U Fleků (500 años)</p>
+                    <p><strong>Mié:</strong> <span class="special-highlight">ROCK FOR PEOPLE DÍA 1</span> + camping VIP</p>
+                    <p><strong>Jue:</strong> <span class="special-highlight">ROCK FOR PEOPLE DÍA 2</span> + after-parties</p>
+                    <p><strong>Vie:</strong> <span class="special-highlight">ROCK FOR PEOPLE DÍA 3</span> + vuelta Praga</p>
+                    <p><strong>Sáb:</strong> Pilsner privado + Karlštejn + rafting + Alcron</p>
+                    <p><strong>Dom:</strong> Beer spa + quad adventure + Praga→BCN</p>
+                </div>
+
+                <div class="why-choose">
+                    <h3>✅ Por qué elegir esta opción</h3>
+                    <p>• <strong>Equilibrio perfecto:</strong> festival + cultura cervecera única</p>
+                    <p>• <strong>Mejor precio/calidad:</strong> República Checa es barata</p>
+                    <p>• <strong>Experiencia auténtica:</strong> menos turístico que Alemania</p>
+                    <p>• <strong>Festival único:</strong> aeropuerto convertido, ambiente industrial</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Opción 2 Castillos -->
+    <div class="slide">
+        <div class="slide-title">OPCIÓN 2 - CASTILLOS + BRNO</div>
+        <h2>🏰 Rock for People + Castillos + Brno Adventure</h2>
+        <p class="subtitle">Festival + ruta castillos bohemios + segunda ciudad checa</p>
+        
+        <div class="option-content">
+            <div class="option-left">
+                <h3>🍺 Experiencias Clave</h3>
+                <ul class="experience-list">
+                    <li><strong>Festival + cultura:</strong> Rock for People VIP + castillos UNESCO + Brno nightlife auténtico</li>
+                    <li><strong>Gastronomía:</strong> Cervecerías tradicionales + vinos moravianos + Villa Richter (Michelin)</li>
+                    <li><strong>Aventura:</strong> Espeleología cuevas + kayak + mountain biking + via ferrata</li>
+                    <li><strong>Exclusividad:</strong> Český Krumlov privado + cena medieval + vinícolas Moravia</li>
+                </ul>
+
+                <div class="budget-box">
+                    <h3>💰 Presupuesto: ~12.000€</h3>
+                    <small>Vuelos (800€) + Hotels multi-ciudad (1.800€) + Festival VIP (1.000€) + Car rental (800€) + UNESCO tours (1.400€) + Aventuras (1.600€) + Wine tours (1.800€) + Extras (2.800€)</small>
+                </div>
+            </div>
+
+            <div class="option-right">
+                <div class="itinerary">
+                    <h3>📋 Itinerario 6 días</h3>
+                    <p><strong>Mar:</strong> BCN→Praga→Český Krumlov UNESCO + cena medieval</p>
+                    <p><strong>Mié:</strong> Karlštejn + <span class="special-highlight">ROCK FOR PEOPLE DÍA 1</span></p>
+                    <p><strong>Jue:</strong> <span class="special-highlight">ROCK FOR PEOPLE DÍA 2</span> + rock after-parties</p>
+                    <p><strong>Vie:</strong> <span class="special-highlight">ROCK FOR PEOPLE DÍA 3</span> + drive Brno</p>
+                    <p><strong>Sáb:</strong> Cuevas Moravský + Brno city + wine region + Villa Richter</p>
+                    <p><strong>Dom:</strong> Mountain biking + spa termal + Praga→BCN</p>
+                </div>
+
+                <div class="why-choose">
+                    <h3>✅ Por qué elegir esta opción</h3>
+                    <p>• <strong>Más aventura:</strong> cuevas, kayak, mountain bike únicos</p>
+                    <p>• <strong>Cultura profunda:</strong> UNESCO sites + experiencias off-the-beaten-path</p>
+                    <p>• <strong>Diversidad geográfica:</strong> 3 regiones checas diferentes</p>
+                    <p>• <strong>Vinos moravianos:</strong> experiencia vinícola secreta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Conclusión -->
+    <div class="slide">
+        <div class="slide-title">CONCLUSIÓN</div>
+        <h2>🤔 ¿Cuál Elegimos?</h2>
+        <p class="subtitle">Dos filosofías de aventura checa</p>
+        
+        <div class="conclusion-grid">
+            <div class="option-card praga">
+                <h3>🍺 Praga Beer Adventure</h3>
+                <p><strong>LA EXPERIENCIA CHECA COMPLETA</strong></p>
+                <br>
+                <p>✅ <strong>Equilibrio ideal:</strong> festival rock + cultura cervecera legendaria + Praga histórica</p>
+                <br>
+                <p>✅ <strong>Mejor precio/calidad:</strong> República Checa es barata, dinero rinde brutal</p>
+                <br>
+                <p>✅ <strong>Festival aeropuerto:</strong> ubicación industrial única</p>
+                <br>
+                <p>✅ <strong>Beer capital:</strong> mejores cervezas más baratas Europa</p>
+                <br>
+                <p><em>"El plan más completo y equilibrado"</em></p>
+            </div>
+
+            <div class="option-card castillos">
+                <h3>🏰 Castillos + Brno</h3>
+                <p><strong>AVENTURA CULTURAL PROFUNDA</strong></p>
+                <br>
+                <p>🔥 <strong>UNESCO sites:</strong> castillos de cuento + cuevas únicas</p>
+                <br>
+                <p>🔥 <strong>Off-the-beaten-path:</strong> experiencias que pocos turistas viven</p>
+                <br>
+                <p>🔥 <strong>Diversidad geográfica:</strong> 3 regiones checas diferentes</p>
+                <br>
+                <p>⚠️ <strong>Más intenso:</strong> mucho driving entre ciudades</p>
+                <br>
+                <p><em>"La experiencia más auténtica y cultural"</em></p>
+            </div>
+        </div>
+
+        <div class="comparison-box">
+            <h3>🍺 Por qué República Checa + Rock for People es Épico</h3>
+            <p style="font-size: 1.1rem; text-align: center;">
+                <strong>✅ La cerveza más barata y mejor de Europa:</strong> 1€ la pinta auténtica<br>
+                <strong>✅ Festival en aeropuerto convertido:</strong> ubicación única, ambiente industrial<br>
+                <strong>✅ Presupuesto que rinde:</strong> 12.000€ dan para muchísimo más<br>
+                <strong>✅ Cultura auténtica:</strong> menos turístico, experiencias reales con locales
+            </p>
+        </div>
+
+        <div class="context-box" style="margin-top: 20px;">
+            <h3>🎯 Decisión Final</h3>
+            <p style="font-size: 1.2rem; text-align: center;">
+                <strong>¿Queremos la experiencia checa completa con cerveza épica?</strong> → <span class="highlight">PRAGA BEER</span><br>
+                <strong>¿Queremos aventura cultural profunda y naturaleza?</strong> → <span class="highlight">CASTILLOS + BRNO</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Controles de navegación -->
+    <div class="controls">
+        <button class="btn" onclick="prevSlide()">← Anterior</button>
+        <button class="btn" onclick="nextSlide()">Siguiente →</button>
+    </div>
+
+    <!-- Contador de slides -->
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">4</span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Navegación con teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        // Click para avanzar
+        document.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('btn')) {
+                nextSlide();
+            }
+        });
+    </script>
+</body>
+</html>

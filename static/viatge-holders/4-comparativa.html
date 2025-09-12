@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje 2026 - Comparación Final</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: 
+                linear-gradient(135deg, rgba(25, 25, 25, 0.95), rgba(50, 50, 50, 0.95)),
+                url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff6b35, #ffa500, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .option-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            padding: 30px 25px;
+            border: 2px solid;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.05), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .option-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .lisboa {
+            border-color: #ff6b35;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+        }
+
+        .oktoberfest {
+            border-color: #ffa500;
+            box-shadow: 0 10px 30px rgba(255, 165, 0, 0.2);
+        }
+
+        .czech {
+            border-color: #666;
+            box-shadow: 0 10px 30px rgba(102, 102, 102, 0.1);
+            opacity: 0.85;
+        }
+
+        .option-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .lisboa:hover {
+            border-color: #ff8c42;
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
+        }
+
+        .oktoberfest:hover {
+            border-color: #ffb84d;
+            box-shadow: 0 20px 40px rgba(255, 165, 0, 0.4);
+        }
+
+        .option-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .flag {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+
+        .pros-cons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .pros, .cons {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pros .section-title {
+            color: #4ade80;
+        }
+
+        .cons .section-title {
+            color: #f87171;
+        }
+
+        .point {
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+            padding-left: 15px;
+            position: relative;
+            line-height: 1.3;
+        }
+
+        .pro-point::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+
+        .con-point::before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #ff6b35, #ffa500);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .epic-factor {
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            text-align: center;
+        }
+
+        .epic-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff6b35, #ffa500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .epic-ranking {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .ranking-item {
+            font-size: 1.1rem;
+            padding: 15px 25px;
+            border-radius: 15px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .rank-1 {
+            background: linear-gradient(45deg, #ff6b35, #ffa500);
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+        }
+
+        .rank-2 {
+            background: linear-gradient(45deg, #ffa500, #ffb84d);
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3);
+        }
+
+        .rank-3 {
+            background: rgba(102, 102, 102, 0.3);
+            opacity: 0.8;
+        }
+
+        .final-verdict {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border-left: 4px solid #ff6b35;
+        }
+
+        .verdict-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #ff6b35;
+        }
+
+        .verdict-text {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+            }
+            to {
+                text-shadow: 0 0 30px rgba(255, 107, 53, 0.6), 0 0 40px rgba(255, 165, 0, 0.3);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .option-card {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .lisboa {
+            animation-delay: 0.1s;
+        }
+
+        .oktoberfest {
+            animation-delay: 0.3s;
+        }
+
+        .czech {
+            animation-delay: 0.5s;
+        }
+
+        @media (max-width: 1200px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .epic-ranking {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Viaje de Amigos 2026</h1>
+        <p class="subtitle">Comparación Final: ¿Cuál Elegimos?</p>
+        
+        <div class="options-grid">
+            <!-- Lisboa Option -->
+            <div class="option-card lisboa">
+                <div class="option-header">
+                    <span class="flag">🇵🇹</span>
+                    LISBOA + AZORES
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="section-title">PROs</div>
+                        <div class="point pro-point">Momento épico único: <span class="highlight">Linkin Park legendario</span></div>
+                        <div class="point pro-point">Azores = <span class="highlight">volcanes únicos en Europa</span></div>
+                        <div class="point pro-point">Historia para contar toda la vida</div>
+                        <div class="point pro-point">Dos experiencias en una: festival + naturaleza brutal</div>
+                        <div class="point pro-point">Timing perfecto: 1 día festival + 4 días aventura</div>
+                    </div>
+                    
+                    <div class="cons">
+                        <div class="section-title">CONs</div>
+                        <div class="point con-point">Solo 1 noche de festival vs múltiples días</div>
+                        <div class="point con-point">Junio = temporada alta en Lisboa</div>
+                        <div class="point con-point">Vuelos extra Lisboa-Azores</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oktoberfest Option -->
+            <div class="option-card oktoberfest">
+                <div class="option-header">
+                    <span class="flag">🇩🇪</span>
+                    OKTOBERFEST + SUPERCARS
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="section-title">PROs</div>
+                        <div class="point pro-point">Festival histórico: <span class="highlight">200+ años tradición</span></div>
+                        <div class="point pro-point">Para car enthusiasts: <span class="highlight">BMW + Porsche track day</span></div>
+                        <div class="point pro-point">Triple combo: Oktoberfest + Alpes + supercars</div>
+                        <div class="point pro-point">4-5 días de festival vs 1 noche</div>
+                        <div class="point pro-point">Exclusividad máxima driving experiences</div>
+                    </div>
+                    
+                    <div class="cons">
+                        <div class="section-title">CONs</div>
+                        <div class="point con-point">Más caro: Alemania es cara</div>
+                        <div class="point con-point">Muy masificado (6M+ personas)</div>
+                        <div class="point con-point">Reservas difíciles, agobio potencial</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Czech Republic Option -->
+            <div class="option-card czech">
+                <div class="option-header">
+                    <span class="flag">🇨🇿</span>
+                    REP. CHECA + CERVEZA
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="section-title">PROs</div>
+                        <div class="point pro-point">Mejor precio/calidad: cerveza 1€</div>
+                        <div class="point pro-point">Experiencia más auténtica</div>
+                        <div class="point pro-point">Festival aeropuerto: ambiente industrial</div>
+                        <div class="point pro-point">Capital cervecera mundial</div>
+                        <div class="point pro-point">Aventuras off-the-beaten-path</div>
+                    </div>
+                    
+                    <div class="cons">
+                        <div class="section-title">CONs</div>
+                        <div class="point con-point">Festival menos épico que otros</div>
+                        <div class="point con-point">Barrera idioma (checo complicado)</div>
+                        <div class="point con-point">¿Preferimos autenticidad o experiencias brutales?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="epic-factor">
+            <div class="epic-title">🔥 Factor "Historia Épica para Contar"</div>
+            <div class="epic-ranking">
+                <div class="ranking-item rank-1">🇵🇹 Lisboa Azores</div>
+                <div class="ranking-item rank-2">🇩🇪 Oktoberfest Supercars</div>
+                <div class="ranking-item rank-3">🇨🇿 Rep. Checa</div>
+            </div>
+            
+            <div class="final-verdict">
+                <div class="verdict-title">💡 Recomendación Final</div>
+                <div class="verdict-text">
+                    <strong>🇵🇹 LISBOA/AZORES</strong> si queréis la historia más brutal: Linkin Park + volcanes únicos en Europa<br>
+                    <strong>🇩🇪 OKTOBERFEST/SUPERCARS</strong> si sois car enthusiasts + queréis tradición + driving experiences únicos<br>
+                    <strong>🇨🇿 REP. CHECA</strong> si presupuesto es prioridad... pero seamos honestos, <em>¿no merecemos algo más épico?</em>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
