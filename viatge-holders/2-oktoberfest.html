@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje de Amigos 2026 - Alemania + Oktoberfest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: 
+                linear-gradient(rgba(44, 85, 48, 0.85), rgba(255, 165, 0, 0.85)),
+                url('https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .slide-title {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .slide.active .slide-title {
+            display: block;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ffa500, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .context-box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .context-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .context-item {
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border-left: 4px solid #ffa500;
+        }
+
+        .option-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            width: 100%;
+            align-items: start;
+        }
+
+        .option-left, .option-right {
+            text-align: left;
+        }
+
+        .experience-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .experience-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-list li:before {
+            content: "🍺";
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .itinerary {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .budget-box {
+            background: linear-gradient(45deg, #8b4513, #ffa500);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .why-choose {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #ff6b35;
+        }
+
+        .conclusion-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .option-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .option-card.castillos {
+            border-color: #ffa500;
+        }
+
+        .option-card.driving {
+            border-color: #ff6b35;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .slide-counter {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #ffa500, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        .beer-emoji {
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide.active * {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .special-highlight {
+            background: linear-gradient(45deg, #ffa500, #ff6b35);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .comparison-box {
+            background: rgba(139, 69, 19, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Portada -->
+    <div class="slide active">
+        <div class="slide-title">PORTADA</div>
+        <h1>Viaje de Amigos 2026</h1>
+        <div class="beer-emoji">🍺</div>
+        <p class="subtitle">Alemania + Oktoberfest Épico</p>
+        <div class="context-box">
+            <div class="context-grid">
+                <div class="context-item">
+                    <strong>📅 Fechas:</strong><br>20–25 septiembre 2026
+                </div>
+                <div class="context-item">
+                    <strong>🍺 Evento Central:</strong><br>Oktoberfest Munich 2026<br><small>(sábado 19 sep - domingo 4 oct)</small>
+                </div>
+                <div class="context-item">
+                    <strong>💰 Presupuesto:</strong><br>~12.000€ para los 4
+                </div>
+                <div class="context-item">
+                    <strong>🎯 Objetivo:</strong><br>Apertura histórica festival + aventura bávara + gastronomía cervecera + Alpes
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Opción 1 Castillos -->
+    <div class="slide">
+        <div class="slide-title">OPCIÓN 1 - CASTILLOS BÁVAROS</div>
+        <h2>🏰 Oktoberfest + Castillos Bávaros Adventure</h2>
+        <p class="subtitle">Festival legendario + fairy-tale castles + aventura alpina</p>
+        
+        <div class="option-content">
+            <div class="option-left">
+                <h3>🍺 Experiencias Clave</h3>
+                <ul class="experience-list">
+                    <li><strong>Festival:</strong> Mesa VIP Hofbräu-Festzelt + "O'zapft is!" histórico</li>
+                    <li><strong>Gastronomía:</strong> Carpas centenarias + Tantris (Michelin) + tours cervecerías</li>
+                    <li><strong>Aventura:</strong> Supercars Romantic Road + parapente + Zugspitze + rafting</li>
+                    <li><strong>Exclusividad:</strong> Neuschwanstein privado + Lederhosen personalizados</li>
+                </ul>
+
+                <div class="budget-box">
+                    <h3>💰 Presupuesto: ~12.000€</h3>
+                    <small>Vuelos (800€) + Hotels luxury (2.400€) + Oktoberfest VIP (1.200€) + Supercars (1.800€) + Aventuras (1.800€) + Gastronomía (2.200€) + Extras (2.000€)</small>
+                </div>
+            </div>
+
+            <div class="option-right">
+                <div class="itinerary">
+                    <h3>📋 Itinerario 5 días</h3>
+                    <p><strong>Vie:</strong> BCN→Munich, Marienplatz + Hofbräuhaus</p>
+                    <p><strong>Sáb:</strong> <span class="special-highlight">OKTOBERFEST OPENING</span> + "O'zapft is!" + VIP</p>
+                    <p><strong>Dom:</strong> Drive Füssen + Neuschwanstein + parapente</p>
+                    <p><strong>Lun:</strong> Zugspitze + supercars Romantic Road + Tantris</p>
+                    <p><strong>Mar:</strong> Cervecerías Munich + vuelta BCN</p>
+                </div>
+
+                <div class="why-choose">
+                    <h3>✅ Por qué elegir esta opción</h3>
+                    <p>• <strong>Equilibrio perfecto:</strong> festival + aventura + lujo</p>
+                    <p>• <strong>Experiencia irrepetible:</strong> apertura oficial Oktoberfest 2026</p>
+                    <p>• <strong>Aventuras épicas:</strong> parapente sobre castillo Disney</p>
+                    <p>• <strong>Factor historia:</strong> 200 años tradición + exclusividad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Opción 2 Driving -->
+    <div class="slide">
+        <div class="slide-title">OPCIÓN 2 - DRIVING EXPERIENCE</div>
+        <h2>🏎️ Oktoberfest + Conducción Extrema + Austria</h2>
+        <p class="subtitle">Festival + Alpine driving experience + extensión austriaca</p>
+        
+        <div class="option-content">
+            <div class="option-left">
+                <h3>🍺 Experiencias Clave</h3>
+                <ul class="experience-list">
+                    <li><strong>Festival + Motor:</strong> Oktoberfest VIP + BMW Welt + Porsche track day</li>
+                    <li><strong>Gastronomía:</strong> Beer halls + Michelin Austria + wine tasting Salzburg</li>
+                    <li><strong>Aventura:</strong> Rally BMW Alpine roads + Red Bull Ring + parapente</li>
+                    <li><strong>Exclusividad:</strong> BMW Welt privado + Red Bull Ring acceso + Mozart tour</li>
+                </ul>
+
+                <div class="budget-box">
+                    <h3>💰 Presupuesto: ~12.000€</h3>
+                    <small>Vuelos (800€) + Hotels luxury (2.600€) + Oktoberfest VIP (1.200€) + BMW Rally + Porsche (3.200€) + Austria tours (1.000€) + Gastronomía (2.400€) + Extras (800€)</small>
+                </div>
+            </div>
+
+            <div class="option-right">
+                <div class="itinerary">
+                    <h3>📋 Itinerario 6 días</h3>
+                    <p><strong>Vie:</strong> BCN→Munich, BMW Welt + beer garden</p>
+                    <p><strong>Sáb:</strong> <span class="special-highlight">OKTOBERFEST OPENING</span> + VIP día completo</p>
+                    <p><strong>Dom:</strong> Rally BMW → Salzburg + Mozart + wine</p>
+                    <p><strong>Lun:</strong> Red Bull Ring Porsche + parapente Austria</p>
+                    <p><strong>Mar:</strong> Alpine roads → Munich + Tantris + nightlife</p>
+                    <p><strong>Mié:</strong> Recovery + Munich→BCN</p>
+                </div>
+
+                <div class="why-choose">
+                    <h3>✅ Por qué elegir esta opción</h3>
+                    <p>• <strong>Car enthusiasts:</strong> BMW + Porsche experiences únicas</p>
+                    <p>• <strong>Dos países:</strong> Alemania + Austria en un viaje</p>
+                    <p>• <strong>Aventura premium:</strong> track day circuito profesional</p>
+                    <p>• <strong>Contraste cultural:</strong> Oktoberfest + elegancia austriaca</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Conclusión -->
+    <div class="slide">
+        <div class="slide-title">CONCLUSIÓN</div>
+        <h2>🤔 ¿Cuál Elegimos?</h2>
+        <p class="subtitle">Dos filosofías de aventura alemana</p>
+        
+        <div class="conclusion-grid">
+            <div class="option-card castillos">
+                <h3>🏰 Castillos Bávaros</h3>
+                <p><strong>LA EXPERIENCIA OKTOBERFEST PERFECTA</strong></p>
+                <br>
+                <p>✅ <strong>Equilibrio ideal:</strong> festival histórico + aventura fairy-tale + lujo alpino</p>
+                <br>
+                <p>✅ <strong>Experiencia irrepetible:</strong> vivir "O'zapft is!" + parapente sobre Neuschwanstein</p>
+                <br>
+                <p>✅ <strong>Aventuras memorables:</strong> supercars + Zugspitze + rafting</p>
+                <br>
+                <p>✅ <strong>Gastronomía completa:</strong> carpas históricas + Michelin</p>
+                <br>
+                <p><em>"El plan más completo y equilibrado"</em></p>
+            </div>
+
+            <div class="option-card driving">
+                <h3>🏎️ Driving Experience</h3>
+                <p><strong>PARA CAR ENTHUSIASTS AUTÉNTICOS</strong></p>
+                <br>
+                <p>🔥 <strong>BMW + Porsche:</strong> experiencias imposibles de replicar</p>
+                <br>
+                <p>🔥 <strong>Red Bull Ring:</strong> track day en circuito profesional</p>
+                <br>
+                <p>🔥 <strong>Dos países:</strong> Alemania + Austria, más diversidad</p>
+                <br>
+                <p>⚠️ <strong>Más intenso:</strong> menos recovery tiempo post-Oktoberfest</p>
+                <br>
+                <p><em>"La experiencia más exclusiva para car lovers"</em></p>
+            </div>
+        </div>
+
+        <div class="comparison-box">
+            <h3>🍺 Por qué Oktoberfest 2026 es Épico</h3>
+            <p style="font-size: 1.1rem; text-align: center;">
+                <strong>✅ Festival histórico:</strong> 200+ años de tradición bávara<br>
+                <strong>✅ Experiencia tribal:</strong> 6+ millones de personas de todo el mundo<br>
+                <strong>✅ Aventuras alpinas:</strong> paisajes de cuento en los Alpes bávaros<br>
+                <strong>✅ Gastronomía única:</strong> cultura cervecera auténtica + Michelin
+            </p>
+        </div>
+
+        <div class="context-box" style="margin-top: 20px;">
+            <h3>🎯 Decisión Final</h3>
+            <p style="font-size: 1.2rem; text-align: center;">
+                <strong>¿Queremos la experiencia Oktoberfest perfecta?</strong> → <span class="highlight">CASTILLOS BÁVAROS</span><br>
+                <strong>¿Somos car enthusiasts y queremos exclusividad máxima?</strong> → <span class="highlight">DRIVING EXPERIENCE</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Controles de navegación -->
+    <div class="controls">
+        <button class="btn" onclick="prevSlide()">← Anterior</button>
+        <button class="btn" onclick="nextSlide()">Siguiente →</button>
+    </div>
+
+    <!-- Contador de slides -->
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">4</span>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Navegación con teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        // Click para avanzar
+        document.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('btn')) {
+                nextSlide();
+            }
+        });
+    </script>
+</body>
+</html>
