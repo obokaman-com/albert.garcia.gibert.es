@@ -1,6 +1,6 @@
 +++
-date = "2007-06-19 22:53:47"
-author = ""
+date = 2007-06-19T22:53:47Z
+author = "Albert García"
 title = "Entrevista en SoloMacs"
 slug = "entrevista-solomacs-14520"
 tags = [ "apple","blogs","entrevista","mac","nexoblogs","solomacs","video" ]

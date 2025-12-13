@@ -1,6 +1,6 @@
 +++
-date = "2008-01-21 23:12:00"
-author = ""
+date = 2008-01-21T23:12:00Z
+author = "Albert García"
 title = "Cómo rodar el desembarco de Normandía con 3 actores"
 slug = "rodar-desembarco-normandia-3-actores-55509"
 tags = [ "cine","curiosidades","postproducción" ]

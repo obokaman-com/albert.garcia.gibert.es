@@ -591,6 +591,7 @@ body.nav-opened .site-wrapper {
     background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
+    text-shadow: 0 2px rgba(0,0,0,0.1);
 }
 
 .main-header .inner {

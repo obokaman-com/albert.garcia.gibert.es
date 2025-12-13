@@ -1,6 +1,6 @@
 +++
-date = "2007-02-15 19:19:47"
-author = ""
+date = 2007-02-15T19:19:47Z
+author = "Albert García"
 title = "I'll see you in hell, Pachelbel"
 slug = "ill-see-you-in-hell-pachelbel-8191"
 tags = [ "humor","musica clásica","pachelbel","videos" ]
