@@ -1,0 +1,62 @@
+<article class="post {{ .Section }}">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </header>
+    <section class="post-excerpt">
+
+        {{ if .Params.image }}
+            {{ $originalImg := resources.Get ( .Params.image ) }}
+            {{ if $originalImg }}
+                {{ $thumbnailImg := $originalImg.Fill "150x150 Center" }}
+                <figure>
+                    <img width="150" height="150" src="{{ $thumbnailImg.RelPermalink | safeHTML }}" align="right" alt="{{ .Title }}">
+                </figure>
+            {{ end }}
+        {{ end }}
+
+
+        {{if .Params.excerpt }}
+            <p>{{ .Params.excerpt }} <a class="read-more" href="{{.RelPermalink}}">... &raquo;</a></p>
+        {{else}}
+            {{- $summary := .Summary -}}
+            {{- /* Eliminar tags <figure> completos */ -}}
+            {{- $summary = replaceRE `(?s)<figure[^>]*>.*?</figure>` "" $summary -}}
+            {{- /* Eliminar tags <img> */ -}}
+            {{- $summary = replaceRE `<img[^>]*>` "" $summary -}}
+            {{- /* Eliminar embeds de Twitter/X */ -}}
+            {{- $summary = replaceRE `(?s)<blockquote class="twitter-tweet"[^>]*>.*?</blockquote>` "" $summary -}}
+            {{- /* Eliminar embeds de Instagram */ -}}
+            {{- $summary = replaceRE `(?s)<blockquote class="instagram-media"[^>]*>.*?</blockquote>` "" $summary -}}
+            {{- /* Eliminar divs wrapper con display:flex (embeds) */ -}}
+            {{- $summary = replaceRE `(?s)<div[^>]*display:\s*flex[^>]*>.*?</div>` "" $summary -}}
+            {{- /* Eliminar iframes (Slideshare, YouTube, etc) */ -}}
+            {{- $summary = replaceRE `(?s)<iframe[^>]*>.*?</iframe>` "" $summary -}}
+            {{- /* Eliminar scripts de widgets */ -}}
+            {{- $summary = replaceRE `(?s)<script[^>]*>.*?</script>` "" $summary -}}
+            <p>{{ $summary | safeHTML }} <a class="read-more" href="{{.RelPermalink}}">... &raquo;</a></p>
+        {{end}}
+    </section>
+    <footer class="post-meta">
+
+
+        {{ if or .Params.author .Site.Params.author}}
+            {{$authorname := or .Params.author .Site.Params.author }}
+            {{$authoravatar := or .Params.authoravatar .Site.Params.logo }}
+
+            {{with $authoravatar}}
+            <img class="author-thumb" src="{{ $authoravatar| relURL  }}" alt="Author image" nopin="nopin" />
+            {{end}}
+
+            {{with $authorname}}
+            {{$authorname}}
+            {{end}}
+        {{end}}
+
+        {{if .Params.tags }}en
+            {{ range $index, $tag := .Params.tags }}<span class="enumeration"><a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a></span>{{ end }}
+        {{end}}
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Day }} {{ index $.Site.Data.months (printf "%d" .Date.Month) }} {{ .Date.Year }}
+        </time>
+    </footer>
+</article>

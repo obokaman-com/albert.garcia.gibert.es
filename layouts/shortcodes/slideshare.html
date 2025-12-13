@@ -1,0 +1,39 @@
+{{- $key := .Get "key" -}}
+{{- $url := .Get "url" -}}
+
+{{- if $url -}}
+  {{- /* Si se proporciona URL, intentar extraer el ID del final */ -}}
+  {{- $parts := split $url "/" -}}
+  {{- $id := index $parts (sub (len $parts) 1) -}}
+
+  <div style="display: flex; justify-content: center; margin: 1rem 0;">
+    <div style="position: relative; width: 100%; max-width: 597px;">
+      <div style="position: relative; padding-bottom: calc(81.41% + 38px); height: 0; overflow: hidden;">
+        <iframe src="https://www.slideshare.net/slideshow/embed_code/{{ $id }}"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 94%;"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                scrolling="no"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+{{- else if $key -}}
+  {{- /* Si se proporciona key directamente */ -}}
+  <div style="display: flex; justify-content: center; margin: 1rem 0;">
+    <div style="position: relative; width: 100%; max-width: 597px;">
+      <div style="position: relative; padding-bottom: calc(81.41% + 38px); height: 0; overflow: hidden;">
+        <iframe src="https://www.slideshare.net/slideshow/embed_code/key/{{ $key }}"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 94%;"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                scrolling="no"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+{{- end -}}

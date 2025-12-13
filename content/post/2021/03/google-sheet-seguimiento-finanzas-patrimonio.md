@@ -14,7 +14,7 @@ Algunos sabéis ya de **mi afición por hacerme listas**, _Notions_ y _Google Sh
 > 
 > He montado **un Google Sheet con el que poder hacer seguimiento en el tiempo de la evolución a grandes rasgos de tus ahorros y tus inversiones**.
 > 
-> 👇 Lo comparto aquí por si puede ser útil para otros.
+> 👇 Lo comparto aquí por si puede ser útil para otros. <!--more-->
 > 
 > 📊 [**Registro y estado de patrimonio &raquo;**](https://bit.ly/gsheet-patrimonio) 
 > 

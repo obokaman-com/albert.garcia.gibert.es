@@ -17,6 +17,8 @@ En este artículo te comparto algunos detalles técnicos sobre **el stack y las 
 - Varios workers se encargan tanto de los **procesos periódicos** (sincronización de precios y tratamiento de datos) como de consumir y tratar los **eventos** que se generan en la aplicación (eventos de dominio varios, analítica, sistema de feedback que sincroniza las sesiones de feedback con threads en nuestro Slack...)
 - **MySql 8.0** ahora. **DynamoDB** mientras estuvimos en Lambdas en AWS.
 
+<!--more-->
+
 #### Entorno y servicios complementarios
 
 ##### Infraestructura
