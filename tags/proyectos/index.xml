@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proyectos on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/proyectos/</link><description>Recent content in Proyectos on Albert García Gibert</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Sat, 02 Jan 2021 18:50:15 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/proyectos/index.xml" rel="self" type="application/rss+xml"/><item><title>El de cuando hicimos el logotipo de CryptoAdvisor.Club</title><link>https://albert.garcia.gibert.es/logotipo-cryptoadvisor/</link><pubDate>Sat, 02 Jan 2021 18:50:15 +0000</pubDate><guid>https://albert.garcia.gibert.es/logotipo-cryptoadvisor/</guid><description>&lt;p>Hace ya un par de meses pusimos en marcha la beta de &lt;a href="https://cryptoadvisor.club">CryptoAdvisor.Club&lt;/a>. De la misma forma que lanzamos el servicio a modo de producto mínimo viable, &lt;strong>tratamos de reducir a la mínima expresión cualquier otro &amp;ldquo;complemento necesario&amp;rdquo; que rodeara al lanzamiento&lt;/strong> (página web con Notion, Integromat para automatizar publicaciones, etc.). Lo mismo con el logo.&lt;/p>
-&lt;p>Para las primeras versiones simplemente tomamos una imagen de stock con el logotipo de Bitcoin, y que cumpliera dos requisitos importantes:&lt;/p></description></item><item><title>El making of de CryptoAdvisor.Club</title><link>https://albert.garcia.gibert.es/criptoadvisor-como-se-hizo/</link><pubDate>Thu, 29 Oct 2020 11:13:15 +0000</pubDate><guid>https://albert.garcia.gibert.es/criptoadvisor-como-se-hizo/</guid><description>&lt;p>Anteriormente te explicaba &lt;a href="https://albert.garcia.gibert.es/nuevo-proyecto-playground-chatbots-cryptoadvisor/">los motivos que nos llevaron a lanzar CryptoAdvisor.Club&lt;/a>, el asistente virtual para la inversión en criptomonedas.&lt;/p>
-&lt;p>En este artículo te comparto algunos detalles técnicos sobre &lt;strong>el stack y las herramientas que hemos utilizado para construir el bot de &lt;a href="https://cryptoadvisor.club/es">CryptoAdvisor.Club&lt;/a>&lt;/strong>.&lt;/p>
-&lt;h4 id="el-stack-técnico">El &lt;em>stack&lt;/em> técnico&lt;/h4>
-&lt;ul>
-&lt;li>Es una aplicación en &lt;strong>PHP 7.4&lt;/strong>, con Symfony. CQRS, DDD, eventos&amp;hellip;&lt;/li>
-&lt;li>Usamos intensivamente la librería &lt;strong>&lt;a href="https://botman.io/">BotMan&lt;/a>&lt;/strong>, con algunos drivers propios para modificar algunos comportamientos a la hora de interactuar con menús y botones.&lt;/li>
-&lt;li>Varios workers se encargan tanto de los &lt;strong>procesos periódicos&lt;/strong> (sincronización de precios y tratamiento de datos) como de consumir y tratar los &lt;strong>eventos&lt;/strong> que se generan en la aplicación (eventos de dominio varios, analítica, sistema de feedback que sincroniza las sesiones de feedback con threads en nuestro Slack&amp;hellip;)&lt;/li>
-&lt;li>&lt;strong>MySql 8.0&lt;/strong> ahora. &lt;strong>DynamoDB&lt;/strong> mientras estuvimos en Lambdas en AWS.&lt;/li>
-&lt;/ul>
-&lt;h4 id="entorno-y-servicios-complementarios">Entorno y servicios complementarios&lt;/h4>
-&lt;h5 id="infraestructura">Infraestructura&lt;/h5>
-&lt;ul>
-&lt;li>&lt;strong>Ansible&lt;/strong> y &lt;strong>Terraform&lt;/strong> nos permiten provisionar y configurar el servidor y algunos servicios de AWS que utilizamos. Poco que decir: imprescindibles para &lt;strong>abstraer y automatizar cualquier tema relacionado con servicios de infraestructura&lt;/strong>.&lt;/li>
-&lt;li>La aplicación corre en contenedores de &lt;strong>Docker&lt;/strong>, tanto en el entorno de desarrollo como en producción. Usamos &lt;strong>Github Actions&lt;/strong> para automatizar el build del contenedor que se usará en producción con la versión actualizada del código, pushearla al registry que tenemos en AWS, y hacer el pull de ese contenedor desde el servidor de producción, integrando también la ejecución de los tests, notificación a New Relic, Slack, etc.&lt;/li>
-&lt;li>Usamos &lt;a href="https://ngrok.com/">&lt;strong>ngrok&lt;/strong>&lt;/a> para &lt;strong>crear una URL pública que sirva de túnel a nuestro entorno local&lt;/strong>. Esto es imprescindible para poder llevar a cabo las pruebas durante el desarrollo. Tenemos varios bots de pruebas que usan estas URL públicas como webhooks. Los comandos para levantar y parar la aplicación en desarrollo &lt;strong>automatizan&lt;/strong> la ejecución de ngrok en segundo plano, la notificación de la URL resultante a Telegram y copian la URL pública de ngrok al portapapeles. &lt;a href="https://gist.github.com/obokaman-com/07e66dcfcbcbe09bce50c970fabac079">&lt;em>He compartido el script en un Gist aquí&lt;/em> »&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;figure>&lt;img src="https://albert.garcia.gibert.es/images/2020/10/ngrok.png"
- alt="Ngrok">&lt;figcaption>
- &lt;p>Ngrok&lt;/p></description></item><item><title>CryptoAdvisor.Club: El asistente virtual para invertir en criptomonedas</title><link>https://albert.garcia.gibert.es/nuevo-proyecto-playground-chatbots-cryptoadvisor/</link><pubDate>Wed, 28 Oct 2020 19:27:36 +0000</pubDate><guid>https://albert.garcia.gibert.es/nuevo-proyecto-playground-chatbots-cryptoadvisor/</guid><description>&lt;p>Esta semana &lt;em>Albert Lombarte&lt;/em> y yo ponemos en marcha &lt;a href="https://cryptoadvisor.club/es">&lt;strong>CryptoAdvisor.Club&lt;/strong>&lt;/a>, un asistente virtual en forma de bot de Telegram que puede ayudarnos a &lt;strong>sacar mayor partido a nuestra cartera de criptomonedas&lt;/strong>. 🚀&lt;/p>
-&lt;p>Se trata de un &lt;em>side project&lt;/em> en el que hemos trabajado los últimos dos meses, con la intención de &lt;strong>aprender todo lo necesario para montar un chatbot&lt;/strong>: UX para interfaces conversacionales, librerías y herramientas disponibles, sistemas de analítica para bots, buenas prácticas para el diseño de la infraestructura técnica necesaria, particularidades de las diferentes plataformas de chat disponibles.&lt;/p></description></item><item><title>Aprender, contínuamente</title><link>https://albert.garcia.gibert.es/aprender-continuamente-153126/</link><pubDate>Fri, 07 Nov 2008 01:29:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/aprender-continuamente-153126/</guid><description>&lt;p>
- Esa ha sido siempre &lt;strong>una de mis mayores
- motivaciones&lt;/strong>. Iba a decir que en el plano profesional,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proyectos on Albert García Gibert</title><link>https://albert.garcia.gibert.es/tags/proyectos/</link><description>Recent content in Proyectos on Albert García Gibert</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Sat, 02 Jan 2021 18:50:15 +0000</lastBuildDate><atom:link href="https://albert.garcia.gibert.es/tags/proyectos/index.xml" rel="self" type="application/rss+xml"/><item><title>El de cuando hicimos el logotipo de CryptoAdvisor.Club</title><link>https://albert.garcia.gibert.es/logotipo-cryptoadvisor/</link><pubDate>Sat, 02 Jan 2021 18:50:15 +0000</pubDate><guid>https://albert.garcia.gibert.es/logotipo-cryptoadvisor/</guid><description>&lt;p&gt;Hace ya un par de meses pusimos en marcha la beta de &lt;a href="https://cryptoadvisor.club"&gt;CryptoAdvisor.Club&lt;/a&gt;. De la misma forma que lanzamos el servicio a modo de producto mínimo viable, &lt;strong&gt;tratamos de reducir a la mínima expresión cualquier otro &amp;ldquo;complemento necesario&amp;rdquo; que rodeara al lanzamiento&lt;/strong&gt; (página web con Notion, Integromat para automatizar publicaciones, etc.). Lo mismo con el logo.&lt;/p&gt;
+&lt;p&gt;Para las primeras versiones simplemente tomamos una imagen de stock con el logotipo de Bitcoin, y que cumpliera dos requisitos importantes:&lt;/p&gt;</description></item><item><title>El making of de CryptoAdvisor.Club</title><link>https://albert.garcia.gibert.es/criptoadvisor-como-se-hizo/</link><pubDate>Thu, 29 Oct 2020 11:13:15 +0000</pubDate><guid>https://albert.garcia.gibert.es/criptoadvisor-como-se-hizo/</guid><description>&lt;p&gt;Anteriormente te explicaba &lt;a href="https://albert.garcia.gibert.es/nuevo-proyecto-playground-chatbots-cryptoadvisor/"&gt;los motivos que nos llevaron a lanzar CryptoAdvisor.Club&lt;/a&gt;, el asistente virtual para la inversión en criptomonedas.&lt;/p&gt;
+&lt;p&gt;En este artículo te comparto algunos detalles técnicos sobre &lt;strong&gt;el stack y las herramientas que hemos utilizado para construir el bot de &lt;a href="https://cryptoadvisor.club/es"&gt;CryptoAdvisor.Club&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4 id="el-stack-técnico"&gt;El &lt;em&gt;stack&lt;/em&gt; técnico&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Es una aplicación en &lt;strong&gt;PHP 7.4&lt;/strong&gt;, con Symfony. CQRS, DDD, eventos&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Usamos intensivamente la librería &lt;strong&gt;&lt;a href="https://botman.io/"&gt;BotMan&lt;/a&gt;&lt;/strong&gt;, con algunos drivers propios para modificar algunos comportamientos a la hora de interactuar con menús y botones.&lt;/li&gt;
+&lt;li&gt;Varios workers se encargan tanto de los &lt;strong&gt;procesos periódicos&lt;/strong&gt; (sincronización de precios y tratamiento de datos) como de consumir y tratar los &lt;strong&gt;eventos&lt;/strong&gt; que se generan en la aplicación (eventos de dominio varios, analítica, sistema de feedback que sincroniza las sesiones de feedback con threads en nuestro Slack&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MySql 8.0&lt;/strong&gt; ahora. &lt;strong&gt;DynamoDB&lt;/strong&gt; mientras estuvimos en Lambdas en AWS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="entorno-y-servicios-complementarios"&gt;Entorno y servicios complementarios&lt;/h4&gt;
+&lt;h5 id="infraestructura"&gt;Infraestructura&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ansible&lt;/strong&gt; y &lt;strong&gt;Terraform&lt;/strong&gt; nos permiten provisionar y configurar el servidor y algunos servicios de AWS que utilizamos. Poco que decir: imprescindibles para &lt;strong&gt;abstraer y automatizar cualquier tema relacionado con servicios de infraestructura&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;La aplicación corre en contenedores de &lt;strong&gt;Docker&lt;/strong&gt;, tanto en el entorno de desarrollo como en producción. Usamos &lt;strong&gt;Github Actions&lt;/strong&gt; para automatizar el build del contenedor que se usará en producción con la versión actualizada del código, pushearla al registry que tenemos en AWS, y hacer el pull de ese contenedor desde el servidor de producción, integrando también la ejecución de los tests, notificación a New Relic, Slack, etc.&lt;/li&gt;
+&lt;li&gt;Usamos &lt;a href="https://ngrok.com/"&gt;&lt;strong&gt;ngrok&lt;/strong&gt;&lt;/a&gt; para &lt;strong&gt;crear una URL pública que sirva de túnel a nuestro entorno local&lt;/strong&gt;. Esto es imprescindible para poder llevar a cabo las pruebas durante el desarrollo. Tenemos varios bots de pruebas que usan estas URL públicas como webhooks. Los comandos para levantar y parar la aplicación en desarrollo &lt;strong&gt;automatizan&lt;/strong&gt; la ejecución de ngrok en segundo plano, la notificación de la URL resultante a Telegram y copian la URL pública de ngrok al portapapeles. &lt;a href="https://gist.github.com/obokaman-com/07e66dcfcbcbe09bce50c970fabac079"&gt;&lt;em&gt;He compartido el script en un Gist aquí&lt;/em&gt; »&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;&lt;img src="https://albert.garcia.gibert.es/images/2020/10/ngrok.png"
+ alt="Ngrok"&gt;&lt;figcaption&gt;
+ &lt;p&gt;Ngrok&lt;/p&gt;</description></item><item><title>CryptoAdvisor.Club: El asistente virtual para invertir en criptomonedas</title><link>https://albert.garcia.gibert.es/nuevo-proyecto-playground-chatbots-cryptoadvisor/</link><pubDate>Wed, 28 Oct 2020 19:27:36 +0000</pubDate><guid>https://albert.garcia.gibert.es/nuevo-proyecto-playground-chatbots-cryptoadvisor/</guid><description>&lt;p&gt;Esta semana &lt;em&gt;Albert Lombarte&lt;/em&gt; y yo ponemos en marcha &lt;a href="https://cryptoadvisor.club/es"&gt;&lt;strong&gt;CryptoAdvisor.Club&lt;/strong&gt;&lt;/a&gt;, un asistente virtual en forma de bot de Telegram que puede ayudarnos a &lt;strong&gt;sacar mayor partido a nuestra cartera de criptomonedas&lt;/strong&gt;. 🚀&lt;/p&gt;
+&lt;p&gt;Se trata de un &lt;em&gt;side project&lt;/em&gt; en el que hemos trabajado los últimos dos meses, con la intención de &lt;strong&gt;aprender todo lo necesario para montar un chatbot&lt;/strong&gt;: UX para interfaces conversacionales, librerías y herramientas disponibles, sistemas de analítica para bots, buenas prácticas para el diseño de la infraestructura técnica necesaria, particularidades de las diferentes plataformas de chat disponibles.&lt;/p&gt;</description></item><item><title>Aprender, contínuamente</title><link>https://albert.garcia.gibert.es/aprender-continuamente-153126/</link><pubDate>Fri, 07 Nov 2008 01:29:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/aprender-continuamente-153126/</guid><description>&lt;p&gt;
+ Esa ha sido siempre &lt;strong&gt;una de mis mayores
+ motivaciones&lt;/strong&gt;. Iba a decir que en el plano profesional,
  pero en realidad lo es también en el plano personal -al fin y al
  cabo siempre me ha gustado rodearme de personas de las que pueda
  aprender, a querer, a conocerme mejor, a enfrentar los problemas,
  a dialogar...-.
-&lt;/p>
-&lt;p>
+&lt;/p&gt;
+&lt;p&gt;
  En lo profesional, hago memoria echando la mirada atrás y trato
  de recordar los motivos por los que acepté, rechazé o dejé
  algunos trabajos... y sí, ese fué el denominador común. Quizás
@@ -34,49 +34,105 @@
  en 5 lugares diferentes: Técnico multimedia en La Capsa,
  diseñador en Keropa, Formador en El Centro Cívico Ribera Baixa,
  desarrollador web en Anilina... Siempre, llegados a un punto,
- &lt;strong>sentía una imperiosa necesidad de "seguir creciendo", de
- llenar un vacío&lt;/strong>.Y debo decir que siempre disfruté
+ &lt;strong&gt;sentía una imperiosa necesidad de "seguir creciendo", de
+ llenar un vacío&lt;/strong&gt;.Y debo decir que siempre disfruté
  enormemente esos procesos de adaptación y de cambio, como una
  manera de poner a prueba la experiencia y los conocimientos
  adquiridos.
-&lt;/p></description></item><item><title>Nuevos blogs en nexoBlogs</title><link>https://albert.garcia.gibert.es/nuevos-blogs-nexoblogs-8166/</link><pubDate>Wed, 14 Feb 2007 21:20:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/nuevos-blogs-nexoblogs-8166/</guid><description>&lt;p>
- Bueno, la cosa sigue adelante: esta semana &lt;a href= "https://www.nexoblogs.com">&lt;strong>nexoBlogs&lt;/strong>&lt;/a>
+&lt;/p&gt;</description></item><item><title>Nuevos blogs en nexoBlogs</title><link>https://albert.garcia.gibert.es/nuevos-blogs-nexoblogs-8166/</link><pubDate>Wed, 14 Feb 2007 21:20:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/nuevos-blogs-nexoblogs-8166/</guid><description>&lt;p&gt;
+ Bueno, la cosa sigue adelante: esta semana &lt;a href= "https://www.nexoblogs.com"&gt;&lt;strong&gt;nexoBlogs&lt;/strong&gt;&lt;/a&gt;
  presenta dos nuevos blogs en su red.
-&lt;/p>
-&lt;p>
- &lt;a href="https://www.econosfera.com">&lt;strong>Observando la
- Econosfera&lt;/strong>&lt;/a>, un blog sobre actualidad económica,
- financiera y empresarial mantenido por &lt;a href= "https://www.nexoblogs.com/static/equipo#esteve">&lt;strong>Esteve
- Regales&lt;/strong>&lt;/a>, y &lt;a href= "https://www.orbitaverde.com">&lt;strong>Órbita Verde&lt;/strong>&lt;/a>,
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;a href="https://www.econosfera.com"&gt;&lt;strong&gt;Observando la
+ Econosfera&lt;/strong&gt;&lt;/a&gt;, un blog sobre actualidad económica,
+ financiera y empresarial mantenido por &lt;a href= "https://www.nexoblogs.com/static/equipo#esteve"&gt;&lt;strong&gt;Esteve
+ Regales&lt;/strong&gt;&lt;/a&gt;, y &lt;a href= "https://www.orbitaverde.com"&gt;&lt;strong&gt;Órbita Verde&lt;/strong&gt;&lt;/a&gt;,
  sobre ecología, medio ambiente y desarrollo sostenible, impulsado
- y mantenido por &lt;a href= "https://www.nexoblogs.com/static/equipo#xavi">&lt;strong>Xavi
- Hueso&lt;/strong>&lt;/a>.
-&lt;/p>
-&lt;p>
- Confirmamos de esta forma &lt;a href= "/mensaje/5651/nexoblogs-y-miss-viajes-dos-nuevos-hermanitos-para-obolog">
- nuestra intención inicial&lt;/a>: crear una red de
- &lt;strong>contenidos de calidad, de la mano de expertos
- profesionales en cada materia tratada&lt;/strong>. En un mercado
+ y mantenido por &lt;a href= "https://www.nexoblogs.com/static/equipo#xavi"&gt;&lt;strong&gt;Xavi
+ Hueso&lt;/strong&gt;&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+ Confirmamos de esta forma &lt;a href= "/mensaje/5651/nexoblogs-y-miss-viajes-dos-nuevos-hermanitos-para-obolog"&gt;
+ nuestra intención inicial&lt;/a&gt;: crear una red de
+ &lt;strong&gt;contenidos de calidad, de la mano de expertos
+ profesionales en cada materia tratada&lt;/strong&gt;. En un mercado
  copado por blogs "mercenarios", basados en contenidos de terceros
  y traducciones de material anglosajón, y con escasa producción
- propia, &lt;strong>nuestra apuesta a largo plazo es por la calidad
- frente a la cantidad&lt;/strong>.
-&lt;/p></description></item><item><title>nexoBlogs y Miss Viajes, dos nuevos hermanitos para OboLog</title><link>https://albert.garcia.gibert.es/nexoblogs-miss-viajes-dos-nuevos-hermanitos-obolog-5651/</link><pubDate>Fri, 01 Dec 2006 09:07:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/nexoblogs-miss-viajes-dos-nuevos-hermanitos-obolog-5651/</guid><description>&lt;p>
+ propia, &lt;strong&gt;nuestra apuesta a largo plazo es por la calidad
+ frente a la cantidad&lt;/strong&gt;.
+&lt;/p&gt;</description></item><item><title>nexoBlogs y Miss Viajes, dos nuevos hermanitos para OboLog</title><link>https://albert.garcia.gibert.es/nexoblogs-miss-viajes-dos-nuevos-hermanitos-obolog-5651/</link><pubDate>Fri, 01 Dec 2006 09:07:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/nexoblogs-miss-viajes-dos-nuevos-hermanitos-obolog-5651/</guid><description>&lt;p&gt;
  No quería dejar pasar la ocasión sin compartir con vosotros la
  emoción que supone empezar algo nuevo, y eso es justo lo que
  estamos haciendo durante los últimos meses.
-&lt;/p>
-&lt;p>
+&lt;/p&gt;
+&lt;p&gt;
  De un tiempo aquí venía dando vueltas a dos proyectos: en primer
- lugar &lt;strong>un completo rediseño de &lt;a href= "https://www.obolog.com">OboLog&lt;/a>&lt;/strong> . Después de
- &lt;strong>casi un año, tras más de 5500 mensajes y unos 1200 blogs
- creados&lt;/strong>, la verdad es que vuestras sugerencias y
+ lugar &lt;strong&gt;un completo rediseño de &lt;a href= "https://www.obolog.com"&gt;OboLog&lt;/a&gt;&lt;/strong&gt; . Después de
+ &lt;strong&gt;casi un año, tras más de 5500 mensajes y unos 1200 blogs
+ creados&lt;/strong&gt;, la verdad es que vuestras sugerencias y
  vuestros comentarios nos han sido de una ayuda extraordinaria, y
  creemos que podemos focalizar la experiencia acumulada en vistas
  a conseguir mejorar al herramienta que día a día nos permite
  expresarnos y comunicarnos desde estas pequeñas parcelas, estos
  nuevos "hogares virtuales", en los que se han convertido los
  blogs.
-&lt;/p></description></item><item><title>Los emprendedores y la implicación</title><link>https://albert.garcia.gibert.es/emprendedores-implicacion-5069/</link><pubDate>Fri, 10 Nov 2006 18:27:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/emprendedores-implicacion-5069/</guid><description>&lt;p>
-Hace poco le&amp;iacute; un art&amp;iacute;culo muy interesante de &lt;strong>&lt;a href="https://paulgraham.com/bio.html">Paul Graham&lt;/a>&lt;/strong>, y hoy al &lt;a href="https://www.the-mixer.net/mixer/post/2006/11/09/18-errores-matan-startup">encontrarlo referenciado&lt;/a> en &lt;a href="https://www.the-mixer.net/mixer/post/2006/11/09/18-errores-matan-startup">el blog de &lt;strong>Alberto Knapp&lt;/strong>&lt;/a> , no he querido dejarlo pasar sin compartirlo contigo. Se trata de una de estas t&amp;iacute;picas listas de &amp;quot;&lt;em>N cosas que nunca debes olvidar/hacer&lt;/em>&amp;quot;, orientada a emprendedores y redactada pensando en proyectos online, aunque algunos puntos son f&amp;aacute;cilmente extrapolables a modelos fuera de la red. Algunas obvias, otras no tanto. Interesante en general.
-&lt;/p></description></item></channel></rss>
+&lt;/p&gt;</description></item><item><title>Los emprendedores y la implicación</title><link>https://albert.garcia.gibert.es/emprendedores-implicacion-5069/</link><pubDate>Fri, 10 Nov 2006 18:27:00 +0000</pubDate><guid>https://albert.garcia.gibert.es/emprendedores-implicacion-5069/</guid><description>Hace poco leí un artículo muy interesante de **[Paul Graham](https://paulgraham.com/bio.html)**, y hoy al [encontrarlo referenciado](https://www.the-mixer.net/mixer/post/2006/11/09/18-errores-matan-startup) en [el blog de **Alberto Knapp**](https://www.the-mixer.net/mixer/post/2006/11/09/18-errores-matan-startup), no he querido dejarlo pasar sin compartirlo contigo. Se trata de una de estas típicas listas de "*N cosas que nunca debes olvidar/hacer*", orientada a emprendedores y redactada pensando en proyectos online, aunque algunos puntos son fácilmente extrapolables a modelos fuera de la red. Algunas obvias, otras no tanto. Interesante en general.
+
+Paul nos enumera los "**18 errores que pueden matar una Startup**" de la siguiente manera:
+
+1. **Tener un único fundador**
+ En esto no estoy del todo deacuerdo, o al menos no con los argumentos que usa... Efectivamente, no hay muchas empresas con un único fundador... pero *haberlas háylas*, conozco algunos casos de primera mano...
+
+2. **Escoger mal la ubicación**
+ Por muchos motivos: recursos, instalaciones, proximidad a posibles proveedores, a clientes, a inversores, a colaboradores... Aunque tu idea de negocio esté online, la gente que va a moverlo en el futuro... no.
+
+3. **Nicho demasiado reducido o limitado**
+ De qué sirve ser el primero... de algo que nadie quiere? Paul aconseja no amedrentarse ni dejarse influir por un "complejo de inferioridad"... Para eso puede ayudar pensar en la idea en tercera persona: "Para cualquier otro... que sería una *gran idea de negocio*?"
+
+4. **Usar ideas de otros**
+ Alberto no lo tiene muy claro, y por mi parte no estoy en absoluto de acuerdo en este punto. Las ideas *per sé* no triunfan. Triunfan las implementaciones. Google casi nunca ha hecho nada nuevo, ha hecho cosas que otros ya hacían, pero las ha hecho mejor que nadie. Y ahí están los resultados.
+
+5. **Obstinación**
+ Pues eso... si tú no te lo crees, y no te entregas en consecuencia apaga y vámonos.
+
+6. **Contratar malos programadores**
+ Pues serán el motor de tu bólido.
+
+7. **Escoger la plataforma incorrecta**
+ Y cuál es la plataforma correcta. No hay una sóla respuesta a esto ( aunque algunos sólo tengan ojos para los Rubíes ). Esos buenos programadores que habremos contratado haciendo caso al punto anterior nos darán la respuesta: aquella plataforma sobre la que se desenvuelvan de forma más ágil será la correcta.
+
+8. **Tardar demasiado en salir a la luz**
+ Muévete, sin parar. Nada ni nadie es perfecto. ¿Funciona? Ok, pues vamos allá. No vale la pena preocuparse en exceso por problemas que aún no existen.
+
+9. **Salir a la luz demasiado pronto**
+ Mira que te lo pregunté... ¿Funciona? Igual que dormirse en los laureles puede ser contraproducente, también puede serlo salir en pañales. Tu imagen y tu credibilidad quedarán heridas de muerte.
+
+10. **No tener ningún usuario específico en mente**
+ Intenta gustarle a todo el mundo y vas a tenerlos a todos descontentos.
+
+11. **Invertir demasiado poco**
+
+12. **Gastar demasiado**
+
+13. **Invertir demasiado**
+ En definitiva: gestiona bien tus dineros, prioriza tus gastos, sé realista con las inversiones, no escatimes en lo crítico... Y asegúrate de que eres TÚ quien lidera el proyecto y lo conduce y no LA INVERSIÓN.
+
+14. **Mala gestión de inversores**
+ Que ya, que sí, que a tí lo que te gusta es dedicarte a lo que sabes, pero antes o después tendrás que entablar contactos con inversores que permitan a tu negocio dar el salto necesario. Saca brillo a tus dotes sociales, y hazlo lo antes posible.
+
+15. **Sacrificar usuarios por supuestos beneficios**
+ Céntrate primero en conseguir usuarios, que les guste lo que haces, antes de preocuparte en exceso cómo van a pagarte por ello... Ya es suficientemente difícil. Pensar en el modelo de negocio es importante. Pensar en el producto es CRÍTICO.
+
+16. **No querer ensuciarse las manos**
+ Debes ser el primero en arremangarte y esforzarte en sacar el proyecto adelante. "El ejemplo arrastra". ¿Cómo si no vas a convencer?
+
+17. **Peleas entre socios**
+ O "el maravilloso y difícil arte de dialogar"
+
+18. **Esforzarse "a medias"**
+ Y aquí entra en juego lo que cada uno entienda por "esforzarse a medias". Paul se plantea que, aunque los grandes fracasos hacen mucho ruido, la mayoría de ideas emprendedoras que fracasan, lo hacen porque sus percusores nunca llegaron a implicarse "del todo". Siguieron con sus trabajos estables, con sus ingresos fijos, sin llegar a lanzarse nunca de lleno con su proyecto, y eso fue lo que lo mató poco a poco.
+
+Éste último punto es, por encima de los demás, el que más dudas existenciales me plantea. ¿Puede realmente una idea llegar a tener éxito "poco a poco"? ¿El hecho que sólo dedique horas sueltas de mi tiempo libre a estos proyectos los condena a una muerte lenta y silenciosa?, ¿les resta credibilidad, ¿les resta calidad? Me gustaría creer que no, pero no dejo de encontrar opiniones que se reafirman en esta idea, como la de [**Jesús Encinar**](https://www.obokaman.com) en "[Empezar una empresa no es un hobby](https://www.jesusencinar.com/2006/10/empezar_una_emp.html)", que me dejan la moral por los suelos.
+
+Yo, por si acaso los *gurús* se equivocan, seguiré metiendo horas, a primera hora de la mañana, antes de salir para el trabajo, durante las tardes y también a altas horas de la noche, los fines de semana, e incluso cuando estoy de viaje. ¿Quién sabe? A veces ocurren cosas increíbles. Y yo soy muy cabezón.</description></item></channel></rss>
