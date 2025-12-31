@@ -14,7 +14,7 @@ Cosas de friki, lo sé. Pero es que ahora no es tan difícil...
 
 <!--more-->
 
-{{< figure src="/images/2025/selfie-con-indie.jpg" caption="Entre toma y toma..." width="90%" >}}
+{{< figure src="/images/2025/selfie-con-indy.jpg" caption="Entre toma y toma..." width="90%" >}}
 
 Llevaba un tiempo intentando hacer este tipo de montajes con varias personas y no había manera. Con [Freepik](https://www.freepik.com/ai/image-generator), [Midjourney](https://www.midjourney.com/), [ChatGPT](https://chat.openai.com/)... si solo había un protagonista, los resultados eran decentes. Pero en cuanto metía a varias personas, la cosa se descontrolaba. A veces incluso con una sola.
 
