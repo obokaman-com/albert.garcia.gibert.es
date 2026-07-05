@@ -36,9 +36,8 @@
             <p>{{ $summary | safeHTML }} <a class="read-more" href="{{.RelPermalink}}">... &raquo;</a></p>
         {{end}}
     </section>
-    <footer class="post-meta">
-
-
+    <footer class="post-meta post-meta--list">
+        <span class="post-meta-info">
         {{ if or .Params.author .Site.Params.author}}
             {{$authorname := or .Params.author .Site.Params.author }}
             {{$authoravatar := or .Params.authoravatar .Site.Params.logo }}
@@ -55,6 +54,7 @@
         {{if .Params.tags }}en
             {{ range $index, $tag := .Params.tags }}<span class="enumeration"><a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a></span>{{ end }}
         {{end}}
+        </span>
         <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
             {{ .Date.Day }} {{ index $.Site.Data.months (printf "%d" .Date.Month) }} {{ .Date.Year }}
         </time>

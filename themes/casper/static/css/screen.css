@@ -1102,6 +1102,40 @@ body:not(.post-template) .post-title {
     text-decoration: underline;
 }
 
+/* Listing meta: keep the date pinned to the right and fade long tag lists
+   before they reach it, instead of clipping the whole line with an ellipsis. */
+.post-meta--list {
+    display: flex;
+    align-items: baseline;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.post-meta--list .post-meta-info {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+            mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+}
+
+.post-meta--list .post-date {
+    flex: 0 0 auto;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+}
+
+/* The separator pipe only shows up when the tags actually run into the date;
+   when they fall short it would just look odd floating out there. */
+.post-meta--list.is-tight .post-date {
+    margin-left: 8px;
+    padding-left: 12px;
+    border-left: #d5dbde 1px solid;
+}
+
 .enumeration + .enumeration:before {
     content: ", ";
 }

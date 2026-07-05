@@ -13,6 +13,27 @@
     {{ end }}
 
     <script>
+    // Mostrar el separador (pipe) de la fecha solo cuando las tags llegan hasta ella
+    (function() {
+        function updatePipes() {
+            document.querySelectorAll('.post-meta--list').forEach(function(meta) {
+                var info = meta.querySelector('.post-meta-info');
+                if (!info) return;
+                var overflows = info.scrollWidth > info.clientWidth + 1;
+                meta.classList.toggle('is-tight', overflows);
+            });
+        }
+        var raf;
+        window.addEventListener('resize', function() {
+            cancelAnimationFrame(raf);
+            raf = requestAnimationFrame(updatePipes);
+        });
+        window.addEventListener('load', updatePipes);
+        updatePipes();
+    })();
+    </script>
+
+    <script>
     // Auto-scroll suave al contenido en páginas paginadas
     (function() {
         // Detectar si estamos en una página paginada
