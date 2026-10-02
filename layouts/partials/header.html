@@ -46,7 +46,7 @@
     <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL}}">
 	  <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | absURL}}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ "css/screen.css" | absURL}}?v2" />
+    <link rel="stylesheet" type="text/css" href="{{ "css/screen.css" | absURL}}?v3" />
     <link rel="stylesheet" type="text/css" href="{{ "css/nav.css" | absURL}}?v2" />
 
     {{ range .Site.Params.customCSS }}
@@ -109,7 +109,7 @@
         {{ partial .Site.Params.customHeaderPartial . }}
     {{ end }}
 </head>
-<body class="nav-closed">
+<body class="nav-closed{{ if .IsPage }} post-template{{ end }}">
 
   {{ partial "navigation.html" . }}
 
