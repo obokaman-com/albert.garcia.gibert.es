@@ -2223,6 +2223,74 @@ body:not(.post-template) .post-title {
 
 
 /* ==========================================================================
+   Post page heading scale: smaller sizes with a clearer h1 > h2 > h3 step
+   ========================================================================== */
+
+.post-template .post-title {
+    font-size: 4.4rem;
+}
+
+.post-template .post-title,
+.post-template .post-content h2,
+.post-template .post-content h3,
+.post-template .post-content h4 {
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+
+.post-template .post-content h2 {
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+    color: #3A4145;
+}
+
+.post-template .post-content h3 {
+    font-size: 2.2rem;
+}
+
+.post-template .post-content h4 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .post-template .post-title {
+        font-size: 4rem;
+    }
+
+    .post-template .post-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .post-template .post-content h3 {
+        font-size: 2.1rem;
+    }
+
+    .post-template .post-content h4 {
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .post-template .post-title {
+        font-size: 3rem;
+    }
+
+    .post-template .post-content h2 {
+        font-size: 2.1rem;
+        letter-spacing: 0;
+    }
+
+    .post-template .post-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .post-template .post-content h4 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
