@@ -6,17 +6,7 @@
         {{end}}
     {{ end }}
 
-    {{ if not ($.Scratch.Get "paginatedSections") }}
-        {{ if .Site.Params.paginatedsections }}
-            {{ $.Scratch.Set "paginatedSections" .Site.Params.paginatedsections }}
-        {{ else }}
-            {{ $.Scratch.Set "paginatedSections" "post" }}
-        {{ end }}
-    {{ end }}
-
-    {{ $list := where .Site.RegularPages "Section" "in" ($.Scratch.Get "paginatedSections") }}
-    {{ $list := where $list "Section" "!=" "" }}
-    {{ $paginator := .Paginate ( $list ) }}
+    {{ $paginator := .Paginate (partial "home-pages.html" .) }}
 
     <div class="extra-pagination inner">
         {{ partial "pagination.html" $paginator }}

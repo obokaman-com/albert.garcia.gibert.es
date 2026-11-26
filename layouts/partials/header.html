@@ -76,7 +76,16 @@
     {{end}}
     {{hugo.Generator}}
 
-    <link rel="canonical" href="{{ .Permalink }}" />
+    {{- /* Paginated pages get a self-referencing canonical; thin listings (tags, /post/) stay out of the index but keep their links followed. */ -}}
+    {{- $canonical := .Permalink -}}
+    {{- if .IsHome -}}
+      {{- $pager := .Paginate (partial "home-pages.html" .) -}}
+      {{- if gt $pager.PageNumber 1 }}{{ $canonical = $pager.URL | absURL }}{{ end -}}
+    {{- else if in (slice "section" "taxonomy" "term") .Kind -}}
+      {{- if gt .Paginator.PageNumber 1 }}{{ $canonical = .Paginator.URL | absURL }}{{ end }}
+    <meta name="robots" content="noindex, follow" />
+    {{- end }}
+    <link rel="canonical" href="{{ $canonical }}" />
 
     {{ if .Params.customSemanticPartial }}
       {{ partial .Params.customSemanticPartial . }}

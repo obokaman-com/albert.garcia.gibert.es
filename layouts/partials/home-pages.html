@@ -1,0 +1,5 @@
+{{- /* Pages listed (and paginated) on the home page. Shared by home-content.html and header.html so both build the same paginator. */ -}}
+{{- $sections := .Site.Params.paginatedsections | default "post" -}}
+{{- $list := where .Site.RegularPages "Section" "in" $sections -}}
+{{- $list = where $list "Section" "!=" "" -}}
+{{- return $list -}}
